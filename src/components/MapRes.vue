@@ -2,6 +2,8 @@
   <div>
     <h2>{{mapData.title}}</h2>
     <v-data-table
+      disable-pagination
+      hide-default-footer
       :headers="headers"
       :items="mobs"
     >
