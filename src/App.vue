@@ -372,8 +372,6 @@ export default {
           mobData.demonSprite,
           mobData.frozenScorch,
           mobData.boneScarab,
-          mobData.frozenScorch,
-          mobData.boneScarab,
           mobData.hellWhip,
           mobData.hellSpawn,
           mobData.slinger,
