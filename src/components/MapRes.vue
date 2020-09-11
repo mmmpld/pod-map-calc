@@ -108,24 +108,59 @@
 <script>
 export default {
   name: "MapRes",
-  props: [
-    "mapData",
-    "convictionResistance",
-    "lowerResResistance",
-    "grimWardResistance",
-    "hasAmplifyDamage",
-    "hasDecrepify",
-    "coldPierce",
-    "firePierce",
-    "lightningPierce",
-    "poisonPierce",
-    "mapColdResistance",
-    "mapFireResistance",
-    "mapLightningResistance",
-    "mapMagicResistance",
-    "mapPhysicalResistance",
-    "mapPoisonResistance",
-  ],
+  props: {
+    mapData: {
+      type: Object,
+      default: null,
+    },
+    convictionResistanceRaw: {
+      default: 0,
+    },
+    lowerResResistanceRaw: {
+      default: 0,
+    },
+    grimWardResistanceRaw: {
+      default: 0,
+    },
+    hasAmplifyDamage: {
+      type: Boolean,
+      default: false,
+    },
+    hasDecrepify: {
+      type: Boolean,
+      default: false,
+    },
+    coldPierceRaw: {
+      default: 0,
+    },
+    firePierceRaw: {
+      default: 0,
+    },
+    lightningPierceRaw: {
+      default: 0,
+    },
+    poisonPierceRaw: {
+      default: 0,
+    },
+    mapColdResistanceRaw: {
+      default: 0,
+    },
+    mapFireResistanceRaw: {
+      default: 0,
+    },
+    mapLightningResistanceRaw: {
+      default: 0,
+    },
+    mapMagicResistanceRaw: {
+      default: 0,
+    },
+    mapPhysicalResistanceRaw: {
+      default: 0,
+    },
+    mapPoisonResistanceRaw: {
+      default: 0,
+    },
+  },
   data: () => ({
     headers: [
       {
@@ -162,6 +197,58 @@ export default {
     },
   },
   computed: {
+    convictionResistance: function () {
+      if (typeof(this.convictionResistanceRaw) === "number") return this.convictionResistanceRaw;
+      return 0;
+    },
+    lowerResResistance: function () {
+      if (typeof(this.lowerResResistanceRaw) === "number") return this.lowerResResistanceRaw;
+      return 0;
+    },
+    grimWardResistance: function () {
+      if (typeof(this.grimWardResistanceRaw) === "number") return this.grimWardResistanceRaw;
+      return 0;
+    },
+    coldPierce: function () {
+      if (typeof(this.coldPierceRaw) === "number") return this.coldPierceRaw;
+      return 0;
+    },
+    firePierce: function () {
+      if (typeof(this.firePierceRaw) === "number") return this.firePierceRaw;
+      return 0;
+    },
+    lightningPierce: function () {
+      if (typeof(this.lightningPierceRaw) === "number") return this.lightningPierceRaw;
+      return 0;
+    },
+    poisonPierce: function () {
+      if (typeof(this.poisonPierceRaw) === "number") return this.poisonPierceRaw;
+      return 0;
+    },
+    mapColdResistance: function () {
+      if (typeof(this.mapColdResistanceRaw) === "number") return this.mapColdResistanceRaw;
+      return 0;
+    },
+    mapFireResistance: function () {
+      if (typeof(this.mapFireResistanceRaw) === "number") return this.mapFireResistanceRaw;
+      return 0;
+    },
+    mapLightningResistance: function () {
+      if (typeof(this.mapLightningResistanceRaw) === "number") return this.mapLightningResistanceRaw;
+      return 0;
+    },
+    mapMagicResistance: function () {
+      if (typeof(this.mapMagicResistanceRaw) === "number") return this.mapMagicResistanceRaw;
+      return 0;
+    },
+    mapPhysicalResistance: function () {
+      if (typeof(this.mapPhysicalResistanceRaw) === "number") return this.mapPhysicalResistanceRaw;
+      return 0;
+    },
+    mapPoisonResistance: function () {
+      if (typeof(this.mapPoisonResistanceRaw) === "number") return this.mapPoisonResistanceRaw;
+      return 0;
+    },
     mobs: function () {
       let ampResistance = this.hasAmplifyDamage ? -100 : 0;
       let decrepifyResistance = this.hasDecrepify ? -50 : 0;

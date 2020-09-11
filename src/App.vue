@@ -13,51 +13,51 @@
           <v-form>
             <h3>Resistance Reduction</h3>
             <v-select
-              v-model="convictionResistance"
+              v-model="convictionResistanceRaw"
               :items="convictionOptions"
               label="Conviction Level"
             ></v-select>
             <v-select
-              v-model="lowerResResistance"
+              v-model="lowerResResistanceRaw"
               :items="lowerResOptions"
               label="Lower Resistance Level"
             ></v-select>
-            <v-select v-model="grimWardResistance" :items="grimWardOptions" label="Grim Ward Level"></v-select>
+            <v-select v-model="grimWardResistanceRaw" :items="grimWardOptions" label="Grim Ward Level"></v-select>
             <v-switch v-model="hasAmplifyDamage" label="Amplify Damage"></v-switch>
             <v-switch v-model="hasDecrepify" label="Decrepify"></v-switch>
-            <v-text-field type="number" label="Cold Pierce %" v-model.number="coldPierce"></v-text-field>
-            <v-text-field type="number" label="Fire Pierce %" v-model.number="firePierce"></v-text-field>
-            <v-text-field type="number" label="Lightning Pierce %" v-model.number="lightningPierce"></v-text-field>
-            <v-text-field type="number" label="Poison Pierce %" v-model.number="poisonPierce"></v-text-field>
+            <v-text-field type="number" label="Cold Pierce %" v-model.number="coldPierceRaw"></v-text-field>
+            <v-text-field type="number" label="Fire Pierce %" v-model.number="firePierceRaw"></v-text-field>
+            <v-text-field type="number" label="Lightning Pierce %" v-model.number="lightningPierceRaw"></v-text-field>
+            <v-text-field type="number" label="Poison Pierce %" v-model.number="poisonPierceRaw"></v-text-field>
             <h3>Additional Monster Resistance</h3>
             <v-text-field
               type="number"
               label="Map Cold Resist %"
-              v-model.number="mapColdResistance"
+              v-model.number="mapColdResistanceRaw"
               min="0"
             ></v-text-field>
             <v-text-field
               type="number"
               label="Map Fire Resist %"
-              v-model.number="mapFireResistance"
+              v-model.number="mapFireResistanceRaw"
               min="0"
             ></v-text-field>
             <v-text-field
               type="number"
               label="Map Lightning Resist %"
-              v-model.number="mapLightningResistance"
+              v-model.number="mapLightningResistanceRaw"
               min="0"
             ></v-text-field>
             <v-text-field
               type="number"
               label="Map Physical Resist %"
-              v-model.number="mapPhysicalResistance"
+              v-model.number="mapPhysicalResistanceRaw"
               min="0"
             ></v-text-field>
             <v-text-field
               type="number"
               label="Map Poison Resist %"
-              v-model.number="mapPoisonResistance"
+              v-model.number="mapPoisonResistanceRaw"
               min="0"
             ></v-text-field>
           </v-form>
@@ -69,21 +69,21 @@
               v-for="(map, index) in maps"
               :key="index"
               :map-data="map"
-              :conviction-resistance="convictionResistance"
-              :lower-res-resistance="lowerResResistance"
-              :grim-ward-resistance="grimWardResistance"
+              :conviction-resistance-raw="convictionResistanceRaw"
+              :lower-res-resistance-raw="lowerResResistanceRaw"
+              :grim-ward-resistance-raw="grimWardResistanceRaw"
               :has-amplify-damage="hasAmplifyDamage"
               :has-decrepify="hasDecrepify"
-              :cold-pierce="coldPierce"
-              :fire-pierce="firePierce"
-              :lightning-pierce="lightningPierce"
-              :poison-pierce="poisonPierce"
-              :map-cold-resistance="mapColdResistance"
-              :map-fire-resistance="mapFireResistance"
-              :map-lightning-resistance="mapLightningResistance"
-              :map-magic-resistance="mapMagicResistance"
-              :map-physical-resistance="mapPhysicalResistance"
-              :map-poison-resistance="mapPoisonResistance"
+              :cold-pierce-raw="coldPierceRaw"
+              :fire-pierce-raw="firePierceRaw"
+              :lightning-pierce-raw="lightningPierceRaw"
+              :poison-pierce-raw="poisonPierceRaw"
+              :map-cold-resistance-raw="mapColdResistanceRaw"
+              :map-fire-resistance-raw="mapFireResistanceRaw"
+              :map-lightning-resistance-raw="mapLightningResistanceRaw"
+              :map-magic-resistance-raw="mapMagicResistanceRaw"
+              :map-physical-resistance-raw="mapPhysicalResistanceRaw"
+              :map-poison-resistance-raw="mapPoisonResistanceRaw"
             ></MapRes>
           </v-main>
         </v-col>
@@ -524,9 +524,9 @@ export default {
     MapRes,
   },
   data: () => ({
-    convictionResistance: 0,
+    convictionResistanceRaw: null,
     convictionOptions: [
-      { value: 0, text: "none" },
+      { value: null, text: "none" },
       { value: -30, text: "1" },
       { value: -35, text: "2" },
       { value: -40, text: "3" },
@@ -553,9 +553,9 @@ export default {
       { value: -145, text: "24" },
       { value: -150, text: "25" },
     ],
-    lowerResResistance: 0,
+    lowerResResistanceRaw: null,
     lowerResOptions: [
-      { value: 0, text: "none" },
+      { value: null, text: "none" },
       { value: -52, text: "1" },
       { value: -61, text: "2" },
       { value: -68, text: "3" },
@@ -617,8 +617,9 @@ export default {
       { value: -146, text: "59" },
       { value: -147, text: "60" },
     ],
-    grimWardResistance: 0,
+    grimWardResistanceRaw: null,
     grimWardOptions: [
+      { value: null, text: "none" },
       { value: -10, text: "1" },
       { value: -12, text: "2" },
       { value: -14, text: "3" },
@@ -682,16 +683,16 @@ export default {
     ],
     hasAmplifyDamage: false,
     hasDecrepify: false,
-    coldPierce: 0,
-    firePierce: 0,
-    lightningPierce: 0,
-    poisonPierce: 0,
-    mapColdResistance: 0,
-    mapFireResistance: 0,
-    mapLightningResistance: 0,
-    mapMagicResistance: 0,
-    mapPhysicalResistance: 0,
-    mapPoisonResistance: 0,
+    coldPierceRaw: null,
+    firePierceRaw: null,
+    lightningPierceRaw: null,
+    poisonPierceRaw: null,
+    mapColdResistanceRaw: null,
+    mapFireResistanceRaw: null,
+    mapLightningResistanceRaw: null,
+    mapMagicResistanceRaw: null,
+    mapPhysicalResistanceRaw: null,
+    mapPoisonResistanceRaw: null,
     maps: [
       {
         title: "Icy Cavern",
@@ -814,5 +815,13 @@ export default {
       },
     ],
   }),
+  watch: {
+    hasAmplifyDamage: function (val) {
+      if (val) this.hasDecrepify = false;
+    },
+    hasDecrepify: function (val) {
+      if (val) this.hasAmplifyDamage = false;
+    }
+  }
 };
 </script>
