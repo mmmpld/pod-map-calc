@@ -4,16 +4,16 @@
       <h2 class="mr-10 align-self-baseline">{{mapData.title}}</h2>
       <div v-if="immunes.count > 0" class="align-self-baseline">
         <span class="mr-2">immunes</span>
-        <v-chip v-if="immunes.cold" color="blue" dark title="cold immunes" class="mr-2" x-small>
+        <v-chip v-if="immunes.cold" color="blue" title="cold immunes" class="mr-2" x-small>
           <strong>{{ immunes.cold }}</strong>
         </v-chip>
-        <v-chip v-if="immunes.fire" color="red" dark title="fire immunes" class="mr-2" x-small>
+        <v-chip v-if="immunes.fire" color="red" title="fire immunes" class="mr-2" x-small>
           <strong>{{ immunes.fire }}</strong>
         </v-chip>
         <v-chip
           v-if="immunes.lightning"
           color="amber"
-          dark
+          light
           title="lightning immunes"
           class="mr-2"
           x-small
@@ -26,7 +26,6 @@
         <v-chip
           v-if="immunes.physical"
           color="brown"
-          dark
           title="physical immunes"
           class="mr-2"
           x-small
@@ -36,7 +35,6 @@
         <v-chip
           v-if="immunes.poison"
           color="green"
-          dark
           title="poison immunes"
           class="mr-2"
           x-small
