@@ -48,7 +48,7 @@
     </div>
     <v-data-table disable-pagination hide-default-footer :headers="headers" :items="mobs" dense>
       <template v-slot:item.cold="{ item }">
-        <v-chip v-if="item.cold >= 100" color="cold" dark small>
+        <v-chip v-if="item.cold >= 100" color="cold" small>
           <strong>{{ item.cold }}</strong>
         </v-chip>
         <v-chip v-else-if="item.cold >= 75" color="cold darken-3" small>{{ item.cold }}</v-chip>
@@ -57,7 +57,7 @@
         <v-chip v-else color="transparent" small>{{ item.cold }}</v-chip>
       </template>
       <template v-slot:item.fire="{ item }">
-        <v-chip v-if="item.fire >= 100" color="fire" dark small>
+        <v-chip v-if="item.fire >= 100" color="fire" small>
           <strong>{{ item.fire }}</strong>
         </v-chip>
         <v-chip v-else-if="item.fire >= 75" color="fire darken-3" small>{{ item.fire }}</v-chip>
@@ -66,7 +66,7 @@
         <v-chip v-else color="transparent" small>{{ item.fire }}</v-chip>
       </template>
       <template v-slot:item.lightning="{ item }">
-        <v-chip v-if="item.lightning >= 100" color="lightning" small>
+        <v-chip v-if="item.lightning >= 100" color="lightning" light small>
           <strong>{{ item.lightning }}</strong>
         </v-chip>
         <v-chip v-else-if="item.lightning >= 75" color="lightning darken-3" small>{{ item.lightning }}</v-chip>
@@ -75,7 +75,7 @@
         <v-chip v-else color="transparent" small>{{ item.lightning }}</v-chip>
       </template>
       <template v-slot:item.magic="{ item }">
-        <v-chip v-if="item.magic >= 100" color="magic" dark small>
+        <v-chip v-if="item.magic >= 100" color="magic" small>
           <strong>{{ item.magic }}</strong>
         </v-chip>
         <v-chip v-else-if="item.magic >= 75" color="magic darken-3" small>{{ item.magic }}</v-chip>
@@ -84,7 +84,7 @@
         <v-chip v-else color="transparent" small>{{ item.magic }}</v-chip>
       </template>
       <template v-slot:item.physical="{ item }">
-        <v-chip v-if="item.physical >= 100" color="physical" dark small>
+        <v-chip v-if="item.physical >= 100" color="physical" small>
           <strong>{{ item.physical }}</strong>
         </v-chip>
         <v-chip v-else-if="item.physical >= 75" color="physical darken-3" small>{{ item.physical }}</v-chip>
@@ -93,7 +93,7 @@
         <v-chip v-else color="transparent" small>{{ item.physical }}</v-chip>
       </template>
       <template v-slot:item.poison="{ item }">
-        <v-chip v-if="item.poison >= 100" color="poison" dark small>
+        <v-chip v-if="item.poison >= 100" color="poison" small>
           <strong>{{ item.poison }}</strong>
         </v-chip>
         <v-chip v-else-if="item.poison >= 75" color="poison darken-3" small>{{ item.poison }}</v-chip>
