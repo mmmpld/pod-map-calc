@@ -48,58 +48,58 @@
     </div>
     <v-data-table disable-pagination hide-default-footer :headers="headers" :items="mobs" dense>
       <template v-slot:item.cold="{ item }">
-        <v-chip v-if="item.cold >= 100" color="blue" dark>
+        <v-chip v-if="item.cold >= 100" color="blue" dark small>
           <strong>{{ item.cold }}</strong>
         </v-chip>
-        <v-chip v-else-if="item.cold >= 75" color="blue lighten-3">{{ item.cold }}</v-chip>
-        <v-chip v-else-if="item.cold >= 50" color="blue lighten-4">{{ item.cold }}</v-chip>
-        <v-chip v-else-if="item.cold >= 1" color="blue lighten-5">{{ item.cold }}</v-chip>
-        <v-chip v-else color="white">{{ item.cold }}</v-chip>
+        <v-chip v-else-if="item.cold >= 75" color="blue lighten-3" small>{{ item.cold }}</v-chip>
+        <v-chip v-else-if="item.cold >= 50" color="blue lighten-4" small>{{ item.cold }}</v-chip>
+        <v-chip v-else-if="item.cold >= 1" color="blue lighten-5" small>{{ item.cold }}</v-chip>
+        <v-chip v-else color="white" small>{{ item.cold }}</v-chip>
       </template>
       <template v-slot:item.fire="{ item }">
-        <v-chip v-if="item.fire >= 100" color="red" dark>
+        <v-chip v-if="item.fire >= 100" color="red" dark small>
           <strong>{{ item.fire }}</strong>
         </v-chip>
-        <v-chip v-else-if="item.fire >= 75" color="red lighten-3">{{ item.fire }}</v-chip>
-        <v-chip v-else-if="item.fire >= 50" color="red lighten-4">{{ item.fire }}</v-chip>
-        <v-chip v-else-if="item.fire >= 1" color="red lighten-5">{{ item.fire }}</v-chip>
-        <v-chip v-else color="white">{{ item.fire }}</v-chip>
+        <v-chip v-else-if="item.fire >= 75" color="red lighten-3" small>{{ item.fire }}</v-chip>
+        <v-chip v-else-if="item.fire >= 50" color="red lighten-4" small>{{ item.fire }}</v-chip>
+        <v-chip v-else-if="item.fire >= 1" color="red lighten-5" small>{{ item.fire }}</v-chip>
+        <v-chip v-else color="white" small>{{ item.fire }}</v-chip>
       </template>
       <template v-slot:item.lightning="{ item }">
-        <v-chip v-if="item.lightning >= 100" color="amber">
+        <v-chip v-if="item.lightning >= 100" color="amber" small>
           <strong>{{ item.lightning }}</strong>
         </v-chip>
-        <v-chip v-else-if="item.lightning >= 75" color="amber lighten-3">{{ item.lightning }}</v-chip>
-        <v-chip v-else-if="item.lightning >= 50" color="amber lighten-4">{{ item.lightning }}</v-chip>
-        <v-chip v-else-if="item.lightning >= 1" color="amber lighten-5">{{ item.lightning }}</v-chip>
-        <v-chip v-else color="white">{{ item.lightning }}</v-chip>
+        <v-chip v-else-if="item.lightning >= 75" color="amber lighten-3" small>{{ item.lightning }}</v-chip>
+        <v-chip v-else-if="item.lightning >= 50" color="amber lighten-4" small>{{ item.lightning }}</v-chip>
+        <v-chip v-else-if="item.lightning >= 1" color="amber lighten-5" small>{{ item.lightning }}</v-chip>
+        <v-chip v-else color="white" small>{{ item.lightning }}</v-chip>
       </template>
       <template v-slot:item.magic="{ item }">
-        <v-chip v-if="item.magic >= 100" color="purple" dark>
+        <v-chip v-if="item.magic >= 100" color="purple" dark small>
           <strong>{{ item.magic }}</strong>
         </v-chip>
-        <v-chip v-else-if="item.magic >= 75" color="purple lighten-3">{{ item.magic }}</v-chip>
-        <v-chip v-else-if="item.magic >= 50" color="purple lighten-4">{{ item.magic }}</v-chip>
-        <v-chip v-else-if="item.magic >= 1" color="purple lighten-5">{{ item.magic }}</v-chip>
-        <v-chip v-else color="white">{{ item.magic }}</v-chip>
+        <v-chip v-else-if="item.magic >= 75" color="purple lighten-3" small>{{ item.magic }}</v-chip>
+        <v-chip v-else-if="item.magic >= 50" color="purple lighten-4" small>{{ item.magic }}</v-chip>
+        <v-chip v-else-if="item.magic >= 1" color="purple lighten-5" small>{{ item.magic }}</v-chip>
+        <v-chip v-else color="white" small>{{ item.magic }}</v-chip>
       </template>
       <template v-slot:item.physical="{ item }">
-        <v-chip v-if="item.physical >= 100" color="brown" dark>
+        <v-chip v-if="item.physical >= 100" color="brown" dark small>
           <strong>{{ item.physical }}</strong>
         </v-chip>
-        <v-chip v-else-if="item.physical >= 75" color="brown lighten-3">{{ item.physical }}</v-chip>
-        <v-chip v-else-if="item.physical >= 50" color="brown lighten-4">{{ item.physical }}</v-chip>
-        <v-chip v-else-if="item.physical >= 1" color="brown lighten-5">{{ item.physical }}</v-chip>
-        <v-chip v-else color="white">{{ item.physical }}</v-chip>
+        <v-chip v-else-if="item.physical >= 75" color="brown lighten-3" small>{{ item.physical }}</v-chip>
+        <v-chip v-else-if="item.physical >= 50" color="brown lighten-4" small>{{ item.physical }}</v-chip>
+        <v-chip v-else-if="item.physical >= 1" color="brown lighten-5" small>{{ item.physical }}</v-chip>
+        <v-chip v-else color="white" small>{{ item.physical }}</v-chip>
       </template>
       <template v-slot:item.poison="{ item }">
-        <v-chip v-if="item.poison >= 100" color="green" dark>
+        <v-chip v-if="item.poison >= 100" color="green" dark small>
           <strong>{{ item.poison }}</strong>
         </v-chip>
-        <v-chip v-else-if="item.poison >= 75" color="green lighten-3">{{ item.poison }}</v-chip>
-        <v-chip v-else-if="item.poison >= 50" color="green lighten-4">{{ item.poison }}</v-chip>
-        <v-chip v-else-if="item.poison >= 1" color="green lighten-5">{{ item.poison }}</v-chip>
-        <v-chip v-else color="white">{{ item.poison }}</v-chip>
+        <v-chip v-else-if="item.poison >= 75" color="green lighten-3" small>{{ item.poison }}</v-chip>
+        <v-chip v-else-if="item.poison >= 50" color="green lighten-4" small>{{ item.poison }}</v-chip>
+        <v-chip v-else-if="item.poison >= 1" color="green lighten-5" small>{{ item.poison }}</v-chip>
+        <v-chip v-else color="white" small>{{ item.poison }}</v-chip>
       </template>
     </v-data-table>
   </div>
