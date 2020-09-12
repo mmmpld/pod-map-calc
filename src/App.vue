@@ -1,15 +1,162 @@
+<style>
+  .cold {
+    background-color: rgb(33,150,243,1) !important;
+    border-color: rgb(33,150,243,1) !important;
+  }
+  .cold.darken-1 {
+    background-color: rgb(33,150,243,0.8) !important;
+    border-color: rgb(33,150,243,0.8) !important;
+  }
+  .cold.darken-2 {
+    background-color: rgb(33,150,243,0.6) !important;
+    border-color: rgb(33,150,243,0.7) !important;
+  }
+  .cold.darken-3 {
+    background-color: rgb(33,150,243,0.4) !important;
+    border-color: rgb(33,150,243,0.4) !important;
+  }
+  .cold.darken-4 {
+    background-color: rgb(33,150,243,0.2) !important;
+    border-color: rgb(33,150,243,0.2) !important;
+  }
+  .cold.darken-5 {
+    background-color: rgb(33,150,243,0.1) !important;
+    border-color: rgb(33,150,243,0.1) !important;
+  }
+  .fire {
+    background-color: rgb(244,67,54,1) !important;
+    border-color: rgb(244,67,54,1) !important;
+  }
+  .fire.darken-1 {
+    background-color: rgb(244,67,54,0.8) !important;
+    border-color: rgb(244,67,54,0.8) !important;
+  }
+  .fire.darken-2 {
+    background-color: rgb(244,67,54,0.6) !important;
+    border-color: rgb(244,67,54,0.7) !important;
+  }
+  .fire.darken-3 {
+    background-color: rgb(244,67,54,0.4) !important;
+    border-color: rgb(244,67,54,0.4) !important;
+  }
+  .fire.darken-4 {
+    background-color: rgb(244,67,54,0.2) !important;
+    border-color: rgb(244,67,54,0.2) !important;
+  }
+  .fire.darken-5 {
+    background-color: rgb(244,67,54,0.1) !important;
+    border-color: rgb(244,67,54,0.1) !important;
+  }
+  .lightning {
+    background-color: rgb(255,193,7,1) !important;
+    border-color: rgb(255,193,7,1) !important;
+  }
+  .lightning.darken-1 {
+    background-color: rgb(255,193,7,0.8) !important;
+    border-color: rgb(255,193,7,0.8) !important;
+  }
+  .lightning.darken-2 {
+    background-color: rgb(255,193,7,0.6) !important;
+    border-color: rgb(255,193,7,0.7) !important;
+  }
+  .lightning.darken-3 {
+    background-color: rgb(255,193,7,0.4) !important;
+    border-color: rgb(255,193,7,0.4) !important;
+  }
+  .lightning.darken-4 {
+    background-color: rgb(255,193,7,0.2) !important;
+    border-color: rgb(255,193,7,0.2) !important;
+  }
+  .lightning.darken-5 {
+    background-color: rgb(255,193,7,0.1) !important;
+    border-color: rgb(255,193,7,0.1) !important;
+  }
+  .magic {
+    background-color: rgb(156,39,176,1) !important;
+    border-color: rgb(156,39,176,1) !important;
+  }
+  .magic.darken-1 {
+    background-color: rgb(156,39,176,0.8) !important;
+    border-color: rgb(156,39,176,0.8) !important;
+  }
+  .magic.darken-2 {
+    background-color: rgb(156,39,176,0.6) !important;
+    border-color: rgb(156,39,176,0.7) !important;
+  }
+  .magic.darken-3 {
+    background-color: rgb(156,39,176,0.4) !important;
+    border-color: rgb(156,39,176,0.4) !important;
+  }
+  .magic.darken-4 {
+    background-color: rgb(156,39,176,0.2) !important;
+    border-color: rgb(156,39,176,0.2) !important;
+  }
+  .magic.darken-5 {
+    background-color: rgb(156,39,176,0.1) !important;
+    border-color: rgb(156,39,176,0.1) !important;
+  }
+  .physical {
+    background-color: rgb(121,85,72,1) !important;
+    border-color: rgb(121,85,72,1) !important;
+  }
+  .physical.darken-1 {
+    background-color: rgb(121,85,72,0.8) !important;
+    border-color: rgb(121,85,72,0.8) !important;
+  }
+  .physical.darken-2 {
+    background-color: rgb(121,85,72,0.6) !important;
+    border-color: rgb(121,85,72,0.7) !important;
+  }
+  .physical.darken-3 {
+    background-color: rgb(121,85,72,0.4) !important;
+    border-color: rgb(121,85,72,0.4) !important;
+  }
+  .physical.darken-4 {
+    background-color: rgb(121,85,72,0.2) !important;
+    border-color: rgb(121,85,72,0.2) !important;
+  }
+  .physical.darken-5 {
+    background-color: rgb(121,85,72,0.1) !important;
+    border-color: rgb(121,85,72,0.1) !important;
+  }
+  .poison {
+    background-color: rgb(76,175,80,1) !important;
+    border-color: rgb(76,175,80,1) !important;
+  }
+  .poison.darken-1 {
+    background-color: rgb(76,175,80,0.8) !important;
+    border-color: rgb(76,175,80,0.8) !important;
+  }
+  .poison.darken-2 {
+    background-color: rgb(76,175,80,0.6) !important;
+    border-color: rgb(76,175,80,0.7) !important;
+  }
+  .poison.darken-3 {
+    background-color: rgb(76,175,80,0.4) !important;
+    border-color: rgb(76,175,80,0.4) !important;
+  }
+  .poison.darken-4 {
+    background-color: rgb(76,175,80,0.2) !important;
+    border-color: rgb(76,175,80,0.2) !important;
+  }
+  .poison.darken-5 {
+    background-color: rgb(76,175,80,0.1) !important;
+    border-color: rgb(76,175,80,0.1) !important;
+  }
+</style>
+
 <template>
   <v-app>
     <v-container fluid class="pt-0">
       <v-row>
-        <v-col cols="12" lg="2" md="4" class="px-8 grey lighten-5 d-none d-md-block"></v-col>
+        <v-col cols="12" lg="2" md="4" class="px-8 black d-none d-md-block"></v-col>
         <v-divider vertical></v-divider>
         <v-col class="px-8">
           <h1>Path of Diablo Map Calculator</h1>
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" lg="2" md="4" class="px-8 grey lighten-5">
+        <v-col cols="12" lg="2" md="4" class="px-8 black">
           <v-form>
             <h3>Resistance Reduction</h3>
             <v-select
