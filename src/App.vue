@@ -69,21 +69,21 @@
               v-for="(map, index) in maps"
               :key="index"
               :map-data="map"
-              :conviction-resistance-raw="convictionResistanceRaw"
-              :lower-res-resistance-raw="lowerResResistanceRaw"
-              :grim-ward-resistance-raw="grimWardResistanceRaw"
+              :conviction-resistance="convictionResistance"
+              :lower-res-resistance="lowerResResistance"
+              :grim-ward-resistance="grimWardResistance"
               :has-amplify-damage="hasAmplifyDamage"
               :has-decrepify="hasDecrepify"
-              :cold-pierce-raw="coldPierceRaw"
-              :fire-pierce-raw="firePierceRaw"
-              :lightning-pierce-raw="lightningPierceRaw"
-              :poison-pierce-raw="poisonPierceRaw"
-              :map-cold-resistance-raw="mapColdResistanceRaw"
-              :map-fire-resistance-raw="mapFireResistanceRaw"
-              :map-lightning-resistance-raw="mapLightningResistanceRaw"
-              :map-magic-resistance-raw="mapMagicResistanceRaw"
-              :map-physical-resistance-raw="mapPhysicalResistanceRaw"
-              :map-poison-resistance-raw="mapPoisonResistanceRaw"
+              :cold-pierce="coldPierce"
+              :fire-pierce="firePierce"
+              :lightning-pierce="lightningPierce"
+              :poison-pierce="poisonPierce"
+              :map-cold-resistance="mapColdResistance"
+              :map-fire-resistance="mapFireResistance"
+              :map-lightning-resistance="mapLightningResistance"
+              :map-magic-resistance="mapMagicResistance"
+              :map-physical-resistance="mapPhysicalResistance"
+              :map-poison-resistance="mapPoisonResistance"
             ></MapRes>
           </v-main>
         </v-col>
@@ -524,7 +524,7 @@ export default {
     MapRes,
   },
   data: () => ({
-    convictionResistanceRaw: null,
+    convictionResistanceRaw: parseInt(localStorage.convictionResistance) || null,
     convictionOptions: [
       { value: null, text: "none" },
       { value: -30, text: "1" },
@@ -553,7 +553,7 @@ export default {
       { value: -145, text: "24" },
       { value: -150, text: "25" },
     ],
-    lowerResResistanceRaw: null,
+    lowerResResistanceRaw: parseInt(localStorage.lowerResResistance) || null,
     lowerResOptions: [
       { value: null, text: "none" },
       { value: -52, text: "1" },
@@ -617,7 +617,7 @@ export default {
       { value: -146, text: "59" },
       { value: -147, text: "60" },
     ],
-    grimWardResistanceRaw: null,
+    grimWardResistanceRaw: parseInt(localStorage.grimWardResistance) || null,
     grimWardOptions: [
       { value: null, text: "none" },
       { value: -10, text: "1" },
@@ -681,12 +681,12 @@ export default {
       { value: -126, text: "59" },
       { value: -128, text: "60" },
     ],
-    hasAmplifyDamage: false,
-    hasDecrepify: false,
-    coldPierceRaw: null,
-    firePierceRaw: null,
-    lightningPierceRaw: null,
-    poisonPierceRaw: null,
+    hasAmplifyDamage: localStorage.hasAmplifyDamage === "true",
+    hasDecrepify: localStorage.hasDecrepify === "true",
+    coldPierceRaw: parseInt(localStorage.coldPierce) || null,
+    firePierceRaw: parseInt(localStorage.firePierce) || null,
+    lightningPierceRaw: parseInt(localStorage.lightningPierce) || null,
+    poisonPierceRaw: parseInt(localStorage.poisonPierce) || null,
     mapColdResistanceRaw: null,
     mapFireResistanceRaw: null,
     mapLightningResistanceRaw: null,
@@ -815,13 +815,107 @@ export default {
       },
     ],
   }),
+  computed: {
+    convictionResistance: function () {
+      if (typeof(this.convictionResistanceRaw) === "number") {
+        localStorage.convictionResistance = this.convictionResistanceRaw;
+        return this.convictionResistanceRaw;
+      }
+      localStorage.removeItem("convictionResistance");
+      return 0;
+    },
+    lowerResResistance: function () {
+      if (typeof(this.lowerResResistanceRaw) === "number") {
+        localStorage.lowerResResistance = this.lowerResResistanceRaw;
+        return this.lowerResResistanceRaw;
+      }
+      localStorage.removeItem("lowerResResistance");
+      return 0;
+    },
+    grimWardResistance: function () {
+      if (typeof(this.grimWardResistanceRaw) === "number") {
+        localStorage.grimWardResistance = this.grimWardResistanceRaw;
+        return this.grimWardResistanceRaw;
+      }
+      localStorage.removeItem("grimWardResistance");
+      return 0;
+    },
+    coldPierce: function () {
+      if (typeof(this.coldPierceRaw) === "number") {
+        localStorage.coldPierce = this.coldPierceRaw;
+        return this.coldPierceRaw;
+      }
+      localStorage.removeItem("coldPierce");
+      return 0;
+    },
+    firePierce: function () {
+      if (typeof(this.firePierceRaw) === "number") {
+        localStorage.firePierce = this.firePierceRaw;
+        return this.firePierceRaw;
+      }
+      localStorage.removeItem("firePierce");
+      return 0;
+    },
+    lightningPierce: function () {
+      if (typeof(this.lightningPierceRaw) === "number") {
+        localStorage.lightningPierce = this.lightningPierceRaw;
+        return this.lightningPierceRaw;
+      }
+      localStorage.removeItem("lightningPierce");
+      return 0;
+    },
+    poisonPierce: function () {
+      if (typeof(this.poisonPierceRaw) === "number") {
+        localStorage.poisonPierce = this.poisonPierceRaw;
+        return this.poisonPierceRaw;
+      }
+      localStorage.removeItem("poisonPierce");
+      return 0;
+    },
+    mapColdResistance: function () {
+      if (typeof(this.mapColdResistanceRaw) === "number") return this.mapColdResistanceRaw;
+      return 0;
+    },
+    mapFireResistance: function () {
+      if (typeof(this.mapFireResistanceRaw) === "number") return this.mapFireResistanceRaw;
+      return 0;
+    },
+    mapLightningResistance: function () {
+      if (typeof(this.mapLightningResistanceRaw) === "number") return this.mapLightningResistanceRaw;
+      return 0;
+    },
+    mapMagicResistance: function () {
+      if (typeof(this.mapMagicResistanceRaw) === "number") return this.mapMagicResistanceRaw;
+      return 0;
+    },
+    mapPhysicalResistance: function () {
+      if (typeof(this.mapPhysicalResistanceRaw) === "number") return this.mapPhysicalResistanceRaw;
+      return 0;
+    },
+    mapPoisonResistance: function () {
+      if (typeof(this.mapPoisonResistanceRaw) === "number") return this.mapPoisonResistanceRaw;
+      return 0;
+    },
+  },
   watch: {
     hasAmplifyDamage: function (val) {
-      if (val) this.hasDecrepify = false;
+      if (val) {
+        this.hasDecrepify = false;
+        localStorage.hasAmplifyDamage = "true";
+        localStorage.removeItem("hasDecrepify");
+      } else {
+        localStorage.removeItem("hasAmplifyDamage");
+      }
     },
     hasDecrepify: function (val) {
-      if (val) this.hasAmplifyDamage = false;
-    }
+      if (val) {
+        this.hasAmplifyDamage = false;
+        localStorage.hasDecrepify = "true";
+        localStorage.removeItem("hasAmplifyDamage");
+      } else {
+        localStorage.removeItem("hasDecrepify");
+      }
+    },
   }
 };
 </script>
