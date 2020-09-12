@@ -7,7 +7,7 @@
         <v-chip v-if="immunes.cold" color="blue" title="cold immunes" class="mr-2" x-small>
           <strong>{{ immunes.cold }}</strong>
         </v-chip>
-        <v-chip v-if="immunes.fire" color="red" title="fire immunes" class="mr-2" x-small>
+        <v-chip v-if="immunes.fire" color="red" light title="fire immunes" class="mr-2" x-small>
           <strong>{{ immunes.fire }}</strong>
         </v-chip>
         <v-chip
@@ -55,7 +55,7 @@
         <v-chip v-else color="transparent" small>{{ item.cold }}</v-chip>
       </template>
       <template v-slot:item.fire="{ item }">
-        <v-chip v-if="item.fire >= 100" color="fire" small>
+        <v-chip v-if="item.fire >= 100" color="fire" light small>
           <strong>{{ item.fire }}</strong>
         </v-chip>
         <v-chip v-else-if="item.fire >= 75" color="fire darken-3" small>{{ item.fire }}</v-chip>
