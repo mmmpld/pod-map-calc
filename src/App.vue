@@ -231,6 +231,7 @@
               :map-magic-resistance="mapMagicResistance"
               :map-physical-resistance="mapPhysicalResistance"
               :map-poison-resistance="mapPoisonResistance"
+              class="mb-8"
             ></MapRes>
           </v-main>
         </v-col>

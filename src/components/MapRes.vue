@@ -46,7 +46,7 @@
       </div>
       <div v-else class="align-self-baseline">no immunes</div>
     </div>
-    <v-data-table disable-pagination hide-default-footer :headers="headers" :items="mobs" dense>
+    <v-data-table disable-pagination hide-default-footer :headers="headers" :items="mobs" dense calculate-widths>
       <template v-slot:item.cold="{ item }">
         <v-chip v-if="item.cold >= 100" color="cold" small>
           <strong>{{ item.cold }}</strong>
@@ -176,19 +176,14 @@ export default {
   },
   data: () => ({
     headers: [
-      {
-        text: "Name",
-        align: "start",
-        sortable: false,
-        value: "name",
-      },
-      { text: "Model", value: "model" },
-      { text: "Cold", value: "cold" },
-      { text: "Fire", value: "fire" },
-      { text: "Lightning", value: "lightning" },
-      { text: "Magic", value: "magic" },
-      { text: "Physical", value: "physical" },
-      { text: "Poison", value: "poison" },
+      { text: "Name", value: "name", width: "20%" },
+      { text: "Model", value: "model", width: "20%" },
+      { text: "Cold", value: "cold", width: "10%" },
+      { text: "Fire", value: "fire", width: "10%" },
+      { text: "Lightning", value: "lightning", width: "10%" },
+      { text: "Magic", value: "magic", width: "10%" },
+      { text: "Physical", value: "physical", width: "10%" },
+      { text: "Poison", value: "poison", width: "10%" },
     ],
   }),
   methods: {
