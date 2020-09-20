@@ -514,6 +514,17 @@ let mobData = {
     physical: 33,
     poison: 50,
   },
+  horror: {
+    name: "Horror",
+    note: "boss area only",
+    model: "Skeleton",
+    cold: 0,
+    fire: 0,
+    lightning: 120,
+    magic: 70,
+    physical: 33,
+    poison: 75,
+  },
   horrorArcher: {
     name: "Horror Archer",
     model: "Skeleton Archer",
@@ -850,6 +861,7 @@ export default {
           mobData.unholyCorpse,
           mobData.demonSprite,
           mobData.bushBarb,
+          mobData.horror,
         ],
       },
       {

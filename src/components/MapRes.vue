@@ -45,6 +45,9 @@
       <div v-else class="align-self-baseline">no immunes</div>
     </div>
     <v-data-table disable-pagination hide-default-footer :headers="headers" :items="mobs" dense calculate-widths>
+      <template v-slot:item.name="{ item }">
+        {{ item.name }}<span v-if="item.note"> ({{ item.note }})</span>
+      </template>
       <template v-slot:item.cold="{ item }">
         <v-chip v-if="item.cold >= 100" color="cold" small>
           <strong>{{ item.cold }}</strong>
