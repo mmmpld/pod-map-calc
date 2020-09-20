@@ -577,7 +577,7 @@ let mobData = {
   },
   pitLord: {
     name: "Pit Lord",
-    model: "Mega Daemon",
+    model: "Megademon",
     cold: 100,
     fire: 145,
     lightning: 100,
