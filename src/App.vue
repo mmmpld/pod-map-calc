@@ -173,20 +173,20 @@
             <v-switch v-model="hasAmplifyDamage" label="Amplify Damage"></v-switch>
             <v-switch v-model="hasDecrepify" label="Decrepify"></v-switch>
             <v-text-field type="number" label="Cold Pierce %" v-model.number="coldPierceRaw"></v-text-field>
-            <v-text-field type="number" label="Fire Pierce %" v-model.number="firePierceRaw"></v-text-field>
             <v-text-field type="number" label="Lightning Pierce %" v-model.number="lightningPierceRaw"></v-text-field>
+            <v-text-field type="number" label="Fire Pierce %" v-model.number="firePierceRaw"></v-text-field>
             <v-text-field type="number" label="Poison Pierce %" v-model.number="poisonPierceRaw"></v-text-field>
             <h3>Additional Monster Resistance</h3>
             <v-text-field
               type="number"
-              label="Map Cold Resist %"
-              v-model.number="mapColdResistanceRaw"
+              label="Map Physical Resist %"
+              v-model.number="mapPhysicalResistanceRaw"
               min="0"
             ></v-text-field>
             <v-text-field
               type="number"
-              label="Map Fire Resist %"
-              v-model.number="mapFireResistanceRaw"
+              label="Map Cold Resist %"
+              v-model.number="mapColdResistanceRaw"
               min="0"
             ></v-text-field>
             <v-text-field
@@ -197,8 +197,8 @@
             ></v-text-field>
             <v-text-field
               type="number"
-              label="Map Physical Resist %"
-              v-model.number="mapPhysicalResistanceRaw"
+              label="Map Fire Resist %"
+              v-model.number="mapFireResistanceRaw"
               min="0"
             ></v-text-field>
             <v-text-field
