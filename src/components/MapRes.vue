@@ -46,7 +46,7 @@
     </div>
     <v-data-table disable-pagination hide-default-footer :headers="headers" :items="mobs" dense calculate-widths>
       <template v-slot:item.name="{ item }">
-        {{ item.name }}<span v-if="item.note"> ({{ item.note }})</span>
+        {{ item.name }} <span v-if="item.note" class="text-caption">({{ item.note }})</span>
       </template>
       <template v-slot:item.cold="{ item }">
         <v-chip v-if="item.cold >= 100" color="cold" small>
@@ -177,8 +177,9 @@ export default {
   },
   data: () => ({
     headers: [
-      { text: "Name", value: "name", width: "20%" },
-      { text: "Model", value: "model", width: "20%" },
+      { text: "Name", value: "name", width: "15%" },
+      { text: "Model", value: "model", width: "15%" },
+      { text: "Type", value: "type", width: "10%" },
       { text: "Cold", value: "cold", width: "10%" },
       { text: "Fire", value: "fire", width: "10%" },
       { text: "Lightning", value: "lightning", width: "10%" },

@@ -243,10 +243,17 @@
 <script>
 import MapRes from "./components/MapRes";
 
+let mobTypes = {
+  demon: "Demon",
+  undead: "Undead",
+  animal: "Animal"
+};
+
 let mobData = {
   blackRogue: {
     name: "Black Rogue",
     model: "Corrupt Rogue",
+    type: mobTypes.demon,
     cold: 140,
     fire: 33,
     lightning: 33,
@@ -257,6 +264,7 @@ let mobData = {
   bloodLord: {
     name: "Blood Lord",
     model: "Blood Lord",
+    type: mobTypes.animal,
     cold: 33,
     fire: 33,
     lightning: 33,
@@ -267,6 +275,7 @@ let mobData = {
   bloodTemptress: {
     name: "Blood Temptress",
     model: "Succubus",
+    type: mobTypes.demon,
     cold: 50,
     fire: 66,
     lightning: 50,
@@ -277,6 +286,7 @@ let mobData = {
   bloodWing: {
     name: "Blood Wing",
     model: "Giant Mosquito",
+    type: mobTypes.animal,
     cold: 0,
     fire: 0,
     lightning: 33,
@@ -287,6 +297,7 @@ let mobData = {
   blunderbore: {
     name: "Blunderbore",
     model: "Blunderbore",
+    type: mobTypes.demon,
     cold: 33,
     fire: 33,
     lightning: 33,
@@ -297,6 +308,7 @@ let mobData = {
   boneScarab: {
     name: "Bone Scarab",
     model: "Scarab Demon",
+    type: mobTypes.animal,
     cold: 0,
     fire: 0,
     lightning: 120,
@@ -307,6 +319,7 @@ let mobData = {
   burningDeadMage: {
     name: "Burning Dead Mage",
     model: "Skeleton Mage",
+    type: mobTypes.undead,
     cold: 50,
     fire: 130,
     lightning: 0,
@@ -317,6 +330,7 @@ let mobData = {
   bushBarb: {
     name: "Bush Barb",
     model: "Spike Fiend",
+    type: mobTypes.animal,
     cold: 50,
     fire: 0,
     lightning: 0,
@@ -327,6 +341,7 @@ let mobData = {
   cadaver: {
     name: "Cadaver",
     model: "Mummy",
+    type: mobTypes.undead,
     cold: 33,
     fire: 0,
     lightning: 33,
@@ -337,6 +352,7 @@ let mobData = {
   councilMember: {
     name: "Council Member",
     model: "Council Member",
+    type: mobTypes.demon,
     cold: 33,
     fire: 33,
     lightning: 100,
@@ -347,6 +363,7 @@ let mobData = {
   damned: {
     name: "Damned",
     model: "Tainted",
+    type: mobTypes.demon,
     cold: 0,
     fire: 0,
     lightning: 120,
@@ -357,6 +374,7 @@ let mobData = {
   darkShape: {
     name: "Dark Shape",
     model: "Wraith",
+    type: mobTypes.undead,
     cold: 80,
     fire: 0,
     lightning: 0,
@@ -367,6 +385,7 @@ let mobData = {
   deathClan: {
     name: "Death Clan",
     model: "Goatman",
+    type: mobTypes.demon,
     cold: 0,
     fire: 75,
     lightning: 0,
@@ -377,6 +396,7 @@ let mobData = {
   deathMauler: {
     name: "Death Mauler",
     model: "Death Mauler",
+    type: mobTypes.animal,
     cold: 50,
     fire: 50,
     lightning: 100,
@@ -387,6 +407,7 @@ let mobData = {
   demonSprite: {
     name: "Demon Sprite",
     model: "Demon Imp",
+    type: mobTypes.demon,
     cold: 33,
     fire: 120,
     lightning: 25,
@@ -397,6 +418,7 @@ let mobData = {
   doomKnight: {
     name: "Doom Knight",
     model: "Oblivion Knight",
+    type: mobTypes.undead,
     cold: 25,
     fire: 140,
     lightning: 25,
@@ -407,6 +429,7 @@ let mobData = {
   fanaticEnslaved: {
     name: "Fanatic Enslaved",
     model: "Suicide Minion",
+    type: mobTypes.animal,
     cold: 130,
     fire: 60,
     lightning: 15,
@@ -417,6 +440,7 @@ let mobData = {
   fiend: {
     name: "Fiend",
     model: "Bat Demon",
+    type: mobTypes.animal,
     cold: 33,
     fire: 33,
     lightning: 100,
@@ -426,7 +450,9 @@ let mobData = {
   },
   fireTower: {
     name: "Fire Tower",
+    note: "static",
     model: "Fire Tower",
+    type: mobTypes.animal,
     cold: 85,
     fire: 99,
     lightning: 50,
@@ -437,6 +463,7 @@ let mobData = {
   fleshLancer: {
     name: "Flesh Lancer",
     model: "Corrupt Rogue Spearwoman",
+    type: mobTypes.demon,
     cold: 130,
     fire: 25,
     lightning: 25,
@@ -447,6 +474,7 @@ let mobData = {
   flyingScimitar: {
     name: "Flying Scimitar",
     model: "Object",
+    type: mobTypes.animal,
     cold: 0,
     fire: 100,
     lightning: 100,
@@ -457,6 +485,7 @@ let mobData = {
   frozenScorch: {
     name: "Frozen Scorch",
     model: "Frozen Horror",
+    type: mobTypes.animal,
     cold: 190,
     fire: 0,
     lightning: 33,
@@ -467,6 +496,7 @@ let mobData = {
   hellBovine: {
     name: "Hell Bovine",
     model: "Hell Bovine",
+    type: mobTypes.animal,
     cold: 50,
     fire: 50,
     lightning: 50,
@@ -477,6 +507,7 @@ let mobData = {
   hellSpawn: {
     name: "Hell Spawn",
     model: "Baal's Minion",
+    type: mobTypes.animal,
     cold: 50,
     fire: 110,
     lightning: 25,
@@ -487,6 +518,7 @@ let mobData = {
   hellWhip: {
     name: "Hell Whip",
     model: "Overseer",
+    type: mobTypes.demon,
     cold: 160,
     fire: 33,
     lightning: 20,
@@ -497,6 +529,7 @@ let mobData = {
   hierophant: {
     name: "Hierophant",
     model: "Zakarum Priest",
+    type: mobTypes.animal,
     cold: 160,
     fire: 25,
     lightning: 33,
@@ -507,6 +540,7 @@ let mobData = {
   horadrimAncient: {
     name: "Horadrim Ancient",
     model: "Greater Mummy",
+    type: mobTypes.undead,
     cold: 50,
     fire: 50,
     lightning: 50,
@@ -518,6 +552,7 @@ let mobData = {
     name: "Horror",
     note: "boss area only",
     model: "Skeleton",
+    type: mobTypes.undead,
     cold: 0,
     fire: 0,
     lightning: 120,
@@ -528,6 +563,7 @@ let mobData = {
   horrorArcher: {
     name: "Horror Archer",
     model: "Skeleton Archer",
+    type: mobTypes.undead,
     cold: 66,
     fire: 66,
     lightning: 66,
@@ -538,6 +574,7 @@ let mobData = {
   horrorMage: {
     name: "Horror Mage",
     model: "Skeleton Mage",
+    type: mobTypes.undead,
     cold: 0,
     fire: 0,
     lightning: 115,
@@ -548,6 +585,7 @@ let mobData = {
   infidel: {
     name: "Infidel",
     model: "Sand Raider",
+    type: mobTypes.animal,
     cold: 110,
     fire: 5,
     lightning: 0,
@@ -558,6 +596,7 @@ let mobData = {
   mauler: {
     name: "Mauler",
     model: "Blunderbore",
+    type: mobTypes.demon,
     cold: 50,
     fire: 50,
     lightning: 100,
@@ -568,6 +607,7 @@ let mobData = {
   oblivionKnight: {
     name: "Oblivion Knight",
     model: "Oblivion Knight",
+    type: mobTypes.undead,
     cold: 150,
     fire: 60,
     lightning: 60,
@@ -578,6 +618,7 @@ let mobData = {
   pitLord: {
     name: "Pit Lord",
     model: "Megademon",
+    type: mobTypes.demon,
     cold: 100,
     fire: 145,
     lightning: 100,
@@ -588,6 +629,7 @@ let mobData = {
   serpentMagus: {
     name: "Serpent Magus",
     model: "Claw Viper",
+    type: mobTypes.animal,
     cold: 120,
     fire: 33,
     lightning: 0,
@@ -598,6 +640,7 @@ let mobData = {
   slinger: {
     name: "Slinger",
     model: "Slinger",
+    type: mobTypes.animal,
     cold: 150,
     fire: 50,
     lightning: 15,
@@ -608,6 +651,7 @@ let mobData = {
   soulKiller: {
     name: "Soul Killer",
     model: "Fetish",
+    type: mobTypes.demon,
     cold: 25,
     fire: 105,
     lightning: 25,
@@ -618,6 +662,7 @@ let mobData = {
   spiderMagnus: {
     name: "Spider Magnus",
     model: "Gaint Spider",
+    type: mobTypes.animal,
     cold: 0,
     fire: 120,
     lightning: 0,
@@ -628,6 +673,7 @@ let mobData = {
   stormCaster: {
     name: "Storm Caster",
     model: "Finger Mage",
+    type: mobTypes.undead,
     cold: 25,
     fire: 66,
     lightning: 100,
@@ -638,6 +684,7 @@ let mobData = {
   templeGuard: {
     name: "Temple Guard",
     model: "Baboon Demon",
+    type: mobTypes.animal,
     cold: 33,
     fire: 0,
     lightning: 100,
@@ -648,6 +695,7 @@ let mobData = {
   theBanished: {
     name: "The Banished",
     model: "Vampire",
+    type: mobTypes.undead,
     cold: 150,
     fire: 33,
     lightning: 25,
@@ -658,6 +706,7 @@ let mobData = {
   unholyCorpse: {
     name: "Unholy Corpse",
     model: "Reanimated Horde",
+    type: mobTypes.undead,
     cold: 0,
     fire: 0,
     lightning: 0,
@@ -668,6 +717,7 @@ let mobData = {
   zealot: {
     name: "Zealot",
     model: "Zakarum Zealot",
+    type: mobTypes.animal,
     cold: 33,
     fire: 25,
     lightning: 100,
