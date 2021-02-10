@@ -212,27 +212,58 @@
         <v-divider vertical></v-divider>
         <v-col class="px-8">
           <v-main>
-            <MapRes
-              v-for="(map, index) in maps"
-              :key="index"
-              :map-data="map"
-              :conviction-resistance="convictionResistance"
-              :lower-res-resistance="lowerResResistance"
-              :grim-ward-resistance="grimWardResistance"
-              :has-amplify-damage="hasAmplifyDamage"
-              :has-decrepify="hasDecrepify"
-              :cold-pierce="coldPierce"
-              :fire-pierce="firePierce"
-              :lightning-pierce="lightningPierce"
-              :poison-pierce="poisonPierce"
-              :map-cold-resistance="mapColdResistance"
-              :map-fire-resistance="mapFireResistance"
-              :map-lightning-resistance="mapLightningResistance"
-              :map-magic-resistance="mapMagicResistance"
-              :map-physical-resistance="mapPhysicalResistance"
-              :map-poison-resistance="mapPoisonResistance"
-              class="mb-8"
-            ></MapRes>
+            <v-tabs v-model="tab">
+              <v-tab>Maps</v-tab>
+              <v-tab>Farms</v-tab>
+            </v-tabs>
+            <v-tabs-items v-model="tab" class="pt-5">
+              <v-tab-item key="maps">
+                <MapRes
+                  v-for="(map, index) in maps"
+                  :key="index"
+                  :map-data="map"
+                  :conviction-resistance="convictionResistance"
+                  :lower-res-resistance="lowerResResistance"
+                  :grim-ward-resistance="grimWardResistance"
+                  :has-amplify-damage="hasAmplifyDamage"
+                  :has-decrepify="hasDecrepify"
+                  :cold-pierce="coldPierce"
+                  :fire-pierce="firePierce"
+                  :lightning-pierce="lightningPierce"
+                  :poison-pierce="poisonPierce"
+                  :map-cold-resistance="mapColdResistance"
+                  :map-fire-resistance="mapFireResistance"
+                  :map-lightning-resistance="mapLightningResistance"
+                  :map-magic-resistance="mapMagicResistance"
+                  :map-physical-resistance="mapPhysicalResistance"
+                  :map-poison-resistance="mapPoisonResistance"
+                  class="mb-8"
+                ></MapRes>
+              </v-tab-item>
+              <v-tab-item key="farms">
+                <MapRes
+                  v-for="(map, index) in farms"
+                  :key="index"
+                  :map-data="map"
+                  :conviction-resistance="convictionResistance"
+                  :lower-res-resistance="lowerResResistance"
+                  :grim-ward-resistance="grimWardResistance"
+                  :has-amplify-damage="hasAmplifyDamage"
+                  :has-decrepify="hasDecrepify"
+                  :cold-pierce="coldPierce"
+                  :fire-pierce="firePierce"
+                  :lightning-pierce="lightningPierce"
+                  :poison-pierce="poisonPierce"
+                  :map-cold-resistance="mapColdResistance"
+                  :map-fire-resistance="mapFireResistance"
+                  :map-lightning-resistance="mapLightningResistance"
+                  :map-magic-resistance="mapMagicResistance"
+                  :map-physical-resistance="mapPhysicalResistance"
+                  :map-poison-resistance="mapPoisonResistance"
+                  class="mb-8"
+                ></MapRes>
+              </v-tab-item>
+            </v-tabs-items>
           </v-main>
         </v-col>
       </v-row>
@@ -242,490 +273,7 @@
 
 <script>
 import MapRes from "./components/MapRes";
-
-let mobTypes = {
-  demon: "Demon",
-  undead: "Undead",
-  animal: "Animal"
-};
-
-let mobData = {
-  blackRogue: {
-    name: "Black Rogue",
-    model: "Corrupt Rogue",
-    type: mobTypes.demon,
-    cold: 140,
-    fire: 33,
-    lightning: 33,
-    magic: 20,
-    physical: 20,
-    poison: 20,
-  },
-  bloodLord: {
-    name: "Blood Lord",
-    model: "Blood Lord",
-    type: mobTypes.animal,
-    cold: 33,
-    fire: 33,
-    lightning: 33,
-    magic: 33,
-    physical: 100,
-    poison: 33,
-  },
-  bloodTemptress: {
-    name: "Blood Temptress",
-    model: "Succubus",
-    type: mobTypes.demon,
-    cold: 50,
-    fire: 66,
-    lightning: 50,
-    magic: 0,
-    physical: 25,
-    poison: 120,
-  },
-  bloodWing: {
-    name: "Blood Wing",
-    model: "Giant Mosquito",
-    type: mobTypes.animal,
-    cold: 0,
-    fire: 0,
-    lightning: 33,
-    magic: 0,
-    physical: 0,
-    poison: 120,
-  },
-  blunderbore: {
-    name: "Blunderbore",
-    model: "Blunderbore",
-    type: mobTypes.demon,
-    cold: 33,
-    fire: 33,
-    lightning: 33,
-    magic: 0,
-    physical: 75,
-    poison: 0,
-  },
-  boneScarab: {
-    name: "Bone Scarab",
-    model: "Scarab Demon",
-    type: mobTypes.animal,
-    cold: 0,
-    fire: 0,
-    lightning: 120,
-    magic: 0,
-    physical: 0,
-    poison: 0,
-  },
-  burningDeadMage: {
-    name: "Burning Dead Mage",
-    model: "Skeleton Mage",
-    type: mobTypes.undead,
-    cold: 50,
-    fire: 130,
-    lightning: 0,
-    magic: 0,
-    physical: 33,
-    poison: 110,
-  },
-  bushBarb: {
-    name: "Bush Barb",
-    model: "Spike Fiend",
-    type: mobTypes.animal,
-    cold: 50,
-    fire: 0,
-    lightning: 0,
-    magic: 0,
-    physical: 50,
-    poison: 0,
-  },
-  cadaver: {
-    name: "Cadaver",
-    model: "Mummy",
-    type: mobTypes.undead,
-    cold: 33,
-    fire: 0,
-    lightning: 33,
-    magic: 0,
-    physical: 50,
-    poison: 110,
-  },
-  councilMember: {
-    name: "Council Member",
-    model: "Council Member",
-    type: mobTypes.demon,
-    cold: 33,
-    fire: 33,
-    lightning: 100,
-    magic: 0,
-    physical: 50,
-    poison: 33,
-  },
-  damned: {
-    name: "Damned",
-    model: "Tainted",
-    type: mobTypes.demon,
-    cold: 0,
-    fire: 0,
-    lightning: 120,
-    magic: 0,
-    physical: 0,
-    poison: 25,
-  },
-  darkShape: {
-    name: "Dark Shape",
-    model: "Wraith",
-    type: mobTypes.undead,
-    cold: 80,
-    fire: 0,
-    lightning: 0,
-    magic: 50,
-    physical: 100,
-    poison: 75,
-  },
-  deathClan: {
-    name: "Death Clan",
-    model: "Goatman",
-    type: mobTypes.demon,
-    cold: 0,
-    fire: 75,
-    lightning: 0,
-    magic: 50,
-    physical: 50,
-    poison: 0,
-  },
-  deathMauler: {
-    name: "Death Mauler",
-    model: "Death Mauler",
-    type: mobTypes.animal,
-    cold: 50,
-    fire: 50,
-    lightning: 100,
-    magic: 0,
-    physical: 33,
-    poison: 0,
-  },
-  demonSprite: {
-    name: "Demon Sprite",
-    model: "Demon Imp",
-    type: mobTypes.demon,
-    cold: 33,
-    fire: 120,
-    lightning: 25,
-    magic: 25,
-    physical: 0,
-    poison: 0,
-  },
-  doomKnight: {
-    name: "Doom Knight",
-    model: "Oblivion Knight",
-    type: mobTypes.undead,
-    cold: 25,
-    fire: 140,
-    lightning: 25,
-    magic: 0,
-    physical: 33,
-    poison: 50,
-  },
-  fanaticEnslaved: {
-    name: "Fanatic Enslaved",
-    model: "Suicide Minion",
-    type: mobTypes.animal,
-    cold: 130,
-    fire: 60,
-    lightning: 15,
-    magic: 0,
-    physical: 25,
-    poison: 15,
-  },
-  fiend: {
-    name: "Fiend",
-    model: "Bat Demon",
-    type: mobTypes.animal,
-    cold: 33,
-    fire: 33,
-    lightning: 100,
-    magic: 0,
-    physical: 10,
-    poison: 0,
-  },
-  fireTower: {
-    name: "Fire Tower",
-    note: "static",
-    model: "Fire Tower",
-    type: mobTypes.animal,
-    cold: 85,
-    fire: 99,
-    lightning: 50,
-    magic: 50,
-    physical: 40,
-    poison: 1000,
-  },
-  fleshLancer: {
-    name: "Flesh Lancer",
-    model: "Corrupt Rogue Spearwoman",
-    type: mobTypes.demon,
-    cold: 130,
-    fire: 25,
-    lightning: 25,
-    magic: 0,
-    physical: 45,
-    poison: 25,
-  },
-  flyingScimitar: {
-    name: "Flying Scimitar",
-    model: "Object",
-    type: mobTypes.animal,
-    cold: 0,
-    fire: 100,
-    lightning: 100,
-    magic: 0,
-    physical: 25,
-    poison: 0,
-  },
-  frozenScorch: {
-    name: "Frozen Scorch",
-    model: "Frozen Horror",
-    type: mobTypes.animal,
-    cold: 190,
-    fire: 0,
-    lightning: 33,
-    magic: 0,
-    physical: 25,
-    poison: 33,
-  },
-  hellBovine: {
-    name: "Hell Bovine",
-    model: "Hell Bovine",
-    type: mobTypes.animal,
-    cold: 50,
-    fire: 50,
-    lightning: 50,
-    magic: 33,
-    physical: 50,
-    poison: 33,
-  },
-  hellSpawn: {
-    name: "Hell Spawn",
-    model: "Baal's Minion",
-    type: mobTypes.animal,
-    cold: 50,
-    fire: 110,
-    lightning: 25,
-    magic: 0,
-    physical: 33,
-    poison: 0,
-  },
-  hellWhip: {
-    name: "Hell Whip",
-    model: "Overseer",
-    type: mobTypes.demon,
-    cold: 160,
-    fire: 33,
-    lightning: 20,
-    magic: 0,
-    physical: 40,
-    poison: 0,
-  },
-  hierophant: {
-    name: "Hierophant",
-    model: "Zakarum Priest",
-    type: mobTypes.animal,
-    cold: 160,
-    fire: 25,
-    lightning: 33,
-    magic: 0,
-    physical: 10,
-    poison: 20,
-  },
-  horadrimAncient: {
-    name: "Horadrim Ancient",
-    model: "Greater Mummy",
-    type: mobTypes.undead,
-    cold: 50,
-    fire: 50,
-    lightning: 50,
-    magic: 100,
-    physical: 33,
-    poison: 50,
-  },
-  horror: {
-    name: "Horror",
-    note: "boss area only",
-    model: "Skeleton",
-    type: mobTypes.undead,
-    cold: 0,
-    fire: 0,
-    lightning: 120,
-    magic: 70,
-    physical: 33,
-    poison: 75,
-  },
-  horrorArcher: {
-    name: "Horror Archer",
-    model: "Skeleton Archer",
-    type: mobTypes.undead,
-    cold: 66,
-    fire: 66,
-    lightning: 66,
-    magic: 10,
-    physical: 33,
-    poison: 140,
-  },
-  horrorMage: {
-    name: "Horror Mage",
-    model: "Skeleton Mage",
-    type: mobTypes.undead,
-    cold: 0,
-    fire: 0,
-    lightning: 115,
-    magic: 0,
-    physical: 33,
-    poison: 0,
-  },
-  infidel: {
-    name: "Infidel",
-    model: "Sand Raider",
-    type: mobTypes.animal,
-    cold: 110,
-    fire: 5,
-    lightning: 0,
-    magic: 0,
-    physical: 25,
-    poison: 33,
-  },
-  mauler: {
-    name: "Mauler",
-    model: "Blunderbore",
-    type: mobTypes.demon,
-    cold: 50,
-    fire: 50,
-    lightning: 100,
-    magic: 0,
-    physical: 55,
-    poison: 0,
-  },
-  oblivionKnight: {
-    name: "Oblivion Knight",
-    model: "Oblivion Knight",
-    type: mobTypes.undead,
-    cold: 150,
-    fire: 60,
-    lightning: 60,
-    magic: 25,
-    physical: 33,
-    poison: 75,
-  },
-  pitLord: {
-    name: "Pit Lord",
-    model: "Megademon",
-    type: mobTypes.demon,
-    cold: 100,
-    fire: 145,
-    lightning: 100,
-    magic: 100,
-    physical: 50,
-    poison: 145,
-  },
-  serpentMagus: {
-    name: "Serpent Magus",
-    model: "Claw Viper",
-    type: mobTypes.animal,
-    cold: 120,
-    fire: 33,
-    lightning: 0,
-    magic: 70,
-    physical: 40,
-    poison: 60,
-  },
-  slinger: {
-    name: "Slinger",
-    model: "Slinger",
-    type: mobTypes.animal,
-    cold: 150,
-    fire: 50,
-    lightning: 15,
-    magic: 0,
-    physical: 25,
-    poison: 15,
-  },
-  soulKiller: {
-    name: "Soul Killer",
-    model: "Fetish",
-    type: mobTypes.demon,
-    cold: 25,
-    fire: 105,
-    lightning: 25,
-    magic: 0,
-    physical: 15,
-    poison: 33,
-  },
-  spiderMagnus: {
-    name: "Spider Magnus",
-    model: "Gaint Spider",
-    type: mobTypes.animal,
-    cold: 0,
-    fire: 120,
-    lightning: 0,
-    magic: 0,
-    physical: 50,
-    poison: 65,
-  },
-  stormCaster: {
-    name: "Storm Caster",
-    model: "Finger Mage",
-    type: mobTypes.undead,
-    cold: 25,
-    fire: 66,
-    lightning: 100,
-    magic: 0,
-    physical: 40,
-    poison: 25,
-  },
-  templeGuard: {
-    name: "Temple Guard",
-    model: "Baboon Demon",
-    type: mobTypes.animal,
-    cold: 33,
-    fire: 0,
-    lightning: 100,
-    magic: 0,
-    physical: 33,
-    poison: 0,
-  },
-  theBanished: {
-    name: "The Banished",
-    model: "Vampire",
-    type: mobTypes.undead,
-    cold: 150,
-    fire: 33,
-    lightning: 25,
-    magic: 0,
-    physical: 50,
-    poison: 50,
-  },
-  unholyCorpse: {
-    name: "Unholy Corpse",
-    model: "Reanimated Horde",
-    type: mobTypes.undead,
-    cold: 0,
-    fire: 0,
-    lightning: 0,
-    magic: 50,
-    physical: 50,
-    poison: 120,
-  },
-  zealot: {
-    name: "Zealot",
-    model: "Zakarum Zealot",
-    type: mobTypes.animal,
-    cold: 33,
-    fire: 25,
-    lightning: 100,
-    magic: 0,
-    physical: 10,
-    poison: 20,
-  },
-};
+import mobs from './assets/mobs.json';
 
 export default {
   name: "App",
@@ -902,128 +450,172 @@ export default {
     mapMagicResistanceRaw: null,
     mapPhysicalResistanceRaw: null,
     mapPoisonResistanceRaw: null,
+    tab: null,
     maps: [
       {
         title: "Icy Cavern",
         mobs: [
-          mobData.bloodLord,
-          mobData.templeGuard,
-          mobData.unholyCorpse,
-          mobData.demonSprite,
-          mobData.bushBarb,
-          mobData.horror,
+          { data: mobs.bloodLord },
+          { data: mobs.templeGuard },
+          { data: mobs.unholyCorpse },
+          { data: mobs.demonSprite },
+          { data: mobs.bushBarb },
+          {
+            data: mobs.horror,
+            note: "boss area only",
+          }
         ],
       },
       {
         title: "Frigid Plateau",
         mobs: [
-          mobData.unholyCorpse,
-          mobData.horrorArcher,
-          mobData.doomKnight,
-          mobData.oblivionKnight,
-          mobData.blunderbore,
-          mobData.deathMauler,
-          mobData.fiend,
-          mobData.stormCaster,
-          mobData.templeGuard,
-          mobData.zealot,
+          { data: mobs.unholyCorpse },
+          { data: mobs.horrorArcher },
+          { data: mobs.doomKnightGuest },
+          { data: mobs.oblivionKnightGuest },
+          { data: mobs.blunderbore },
+          { data: mobs.deathMauler },
+          { data: mobs.fiend },
+          { data: mobs.stormCaster },
+          { data: mobs.templeGuard },
+          { data: mobs.zealot },
         ],
       },
       {
         title: "Dim Cellar",
         mobs: [
-          mobData.blunderbore,
-          mobData.spiderMagnus,
-          mobData.deathMauler,
-          mobData.fleshLancer,
-          mobData.theBanished,
-          mobData.soulKiller,
-          mobData.bushBarb,
+          { data: mobs.blunderbore },
+          { data: mobs.spiderMagnus },
+          { data: mobs.deathMauler },
+          { data: mobs.fleshLancer },
+          { data: mobs.theBanished },
+          { data: mobs.soulKiller },
+          { data: mobs.bushBarb },
         ],
       },
       {
         title: "Musty Crypt",
         mobs: [
-          mobData.bloodLord,
-          mobData.templeGuard,
-          mobData.unholyCorpse,
-          mobData.demonSprite,
-          mobData.frozenScorch,
-          mobData.boneScarab,
-          mobData.hellWhip,
-          mobData.hellSpawn,
-          mobData.slinger,
-          mobData.fiend,
-          mobData.fanaticEnslaved,
-          mobData.flyingScimitar,
+          { data: mobs.bloodLord },
+          { data: mobs.templeGuard },
+          { data: mobs.unholyCorpse },
+          { data: mobs.demonSprite },
+          { data: mobs.frozenScorch },
+          { data: mobs.boneScarab },
+          { data: mobs.hellWhip },
+          { data: mobs.hellSpawn },
+          { data: mobs.slinger },
+          { data: mobs.fiend },
+          { data: mobs.fanaticEnslaved },
+          { data: mobs.flyingScimitar },
         ],
       },
       {
         title: "Desecrated Temple",
         mobs: [
-          mobData.doomKnight,
-          mobData.oblivionKnight,
-          mobData.theBanished,
-          mobData.frozenScorch,
-          mobData.blunderbore,
-          mobData.bloodWing,
-          mobData.spiderMagnus,
-          mobData.deathClan,
-          mobData.stormCaster,
-          mobData.demonSprite,
-          mobData.bushBarb,
+          { data: mobs.doomKnightGuest },
+          { data: mobs.oblivionKnightGuest },
+          { data: mobs.theBanished },
+          { data: mobs.frozenScorch },
+          { data: mobs.blunderbore },
+          { data: mobs.bloodWing },
+          { data: mobs.spiderMagnus },
+          { data: mobs.deathClan },
+          { data: mobs.stormCaster },
+          { data: mobs.demonSprite },
+          { data: mobs.bushBarb },
         ],
       },
       {
         title: "Ruined Citadel",
         mobs: [
-          mobData.fleshLancer,
-          mobData.bloodTemptress,
-          mobData.serpentMagus,
-          mobData.boneScarab,
-          mobData.templeGuard,
-          mobData.hierophant,
-          mobData.zealot,
-          mobData.darkShape,
-          mobData.slinger,
-          mobData.cadaver,
+          { data: mobs.fleshLancer },
+          { data: mobs.bloodTemptress },
+          { data: mobs.serpentMagus },
+          { data: mobs.boneScarab },
+          { data: mobs.templeGuard },
+          { data: mobs.hierophant },
+          { data: mobs.zealot },
+          { data: mobs.darkShape },
+          { data: mobs.slinger },
+          { data: mobs.cadaver },
         ],
       },
       {
         title: "Forgotten Desert",
         mobs: [
-          mobData.bloodWing,
-          mobData.unholyCorpse,
-          mobData.hellWhip,
-          mobData.hellSpawn,
-          mobData.stormCaster,
-          mobData.councilMember,
-          mobData.soulKiller,
-          mobData.burningDeadMage,
-          mobData.bloodLord,
-          mobData.fireTower,
-          mobData.bushBarb,
+          { data: mobs.bloodWing },
+          { data: mobs.unholyCorpse },
+          { data: mobs.hellWhip },
+          { data: mobs.hellSpawn },
+          { data: mobs.stormCaster },
+          { data: mobs.councilMember },
+          { data: mobs.soulKiller },
+          { data: mobs.burningDeadMage },
+          { data: mobs.bloodLord },
+          {
+            data: mobs.fireTower,
+            note: "static",
+          },
+          { data: mobs.bushBarb },
         ],
       },
       {
         title: "Burnt Forest",
         mobs: [
-          mobData.pitLord,
-          mobData.horrorArcher,
-          mobData.templeGuard,
-          mobData.mauler,
-          mobData.horrorMage,
-          mobData.blackRogue,
-          mobData.horadrimAncient,
-          mobData.infidel,
-          mobData.damned,
+          { data: mobs.pitLord },
+          { data: mobs.horrorArcher },
+          { data: mobs.templeGuard },
+          { data: mobs.mauler },
+          { data: mobs.horrorMage },
+          { data: mobs.blackRogue },
+          { data: mobs.horadrimAncient },
+          { data: mobs.infidel },
+          { data: mobs.damned },
         ],
       },
       {
         title: "Pleasant Pasture",
-        mobs: [mobData.hellBovine],
+        mobs: [
+          { data: mobs.hellBovine }
+        ],
       },
     ],
+    farms: [
+      {
+        title: "Chaos Sanctuary",
+        mobs: [
+          { data: mobs.doomKnight },
+          { data: mobs.oblivionKnight },
+          { data: mobs.stormCaster },
+          { data: mobs.venomLord },
+          { data: mobs.grandVizierOfChaos },
+          { data: mobs.infectorOfSouls },
+          { data: mobs.lordDeSeis },
+          { data: mobs.diablo },
+        ],
+      },
+      {
+        title: "The Pit",
+        mobs: [
+          { data: mobs.boneWarrior },
+          { data: mobs.darkArcher },
+          { data: mobs.darkStalker },
+          { data: mobs.devilkin },
+        ],
+      },
+      {
+        title: "The Countess",
+        mobs: [
+          { data: mobs.bloodClan },
+          { data: mobs.darkArcher },
+          { data: mobs.devilkin },
+          { data: mobs.ghost },
+          { data: mobs.countess },
+          { data: mobs.darkStalker },
+        ],
+      }
+    ]
   }),
   computed: {
     convictionResistance: function () {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex">
-      <h2 class="mr-10 align-self-baseline">{{mapData.title}}</h2>
+      <h2 class="ml-4 mr-10 align-self-baseline">{{mapData.title}}</h2>
       <div v-if="immunes.count > 0" class="align-self-baseline">
         <span class="mr-2">immunes</span>
         <v-chip v-if="immunes.cold" color="blue" title="cold immunes" class="mr-2" x-small>
@@ -45,10 +45,10 @@
       <div v-else class="align-self-baseline">no immunes</div>
     </div>
     <v-data-table disable-pagination hide-default-footer :headers="headers" :items="mobs" dense calculate-widths>
-      <template v-slot:item.name="{ item }">
+      <template v-slot:[`item.name`]="{ item }">
         {{ item.name }} <span v-if="item.note" class="text-caption">({{ item.note }})</span>
       </template>
-      <template v-slot:item.cold="{ item }">
+      <template v-slot:[`item.cold`]="{ item }">
         <v-chip v-if="item.cold >= 100" color="cold" small>
           <strong>{{ item.cold }}</strong>
         </v-chip>
@@ -57,7 +57,7 @@
         <v-chip v-else-if="item.cold >= 1" color="cold darken-4" small>{{ item.cold }}</v-chip>
         <v-chip v-else color="transparent" small>{{ item.cold }}</v-chip>
       </template>
-      <template v-slot:item.fire="{ item }">
+      <template v-slot:[`item.fire`]="{ item }">
         <v-chip v-if="item.fire >= 100" color="fire" light small>
           <strong>{{ item.fire }}</strong>
         </v-chip>
@@ -66,7 +66,7 @@
         <v-chip v-else-if="item.fire >= 1" color="fire darken-4" small>{{ item.fire }}</v-chip>
         <v-chip v-else color="transparent" small>{{ item.fire }}</v-chip>
       </template>
-      <template v-slot:item.lightning="{ item }">
+      <template v-slot:[`item.lightning`]="{ item }">
         <v-chip v-if="item.lightning >= 100" color="lightning" light small>
           <strong>{{ item.lightning }}</strong>
         </v-chip>
@@ -75,7 +75,7 @@
         <v-chip v-else-if="item.lightning >= 1" color="lightning darken-5" small>{{ item.lightning }}</v-chip>
         <v-chip v-else color="transparent" small>{{ item.lightning }}</v-chip>
       </template>
-      <template v-slot:item.magic="{ item }">
+      <template v-slot:[`item.magic`]="{ item }">
         <v-chip v-if="item.magic >= 100" color="magic" small>
           <strong>{{ item.magic }}</strong>
         </v-chip>
@@ -84,7 +84,7 @@
         <v-chip v-else-if="item.magic >= 1" color="magic darken-4" small>{{ item.magic }}</v-chip>
         <v-chip v-else color="transparent" small>{{ item.magic }}</v-chip>
       </template>
-      <template v-slot:item.physical="{ item }">
+      <template v-slot:[`item.physical`]="{ item }">
         <v-chip v-if="item.physical >= 100" color="physical" small>
           <strong>{{ item.physical }}</strong>
         </v-chip>
@@ -93,7 +93,7 @@
         <v-chip v-else-if="item.physical >= 1" color="physical darken-4" small>{{ item.physical }}</v-chip>
         <v-chip v-else color="transparent" small>{{ item.physical }}</v-chip>
       </template>
-      <template v-slot:item.poison="{ item }">
+      <template v-slot:[`item.poison`]="{ item }">
         <v-chip v-if="item.poison >= 100" color="poison" small>
           <strong>{{ item.poison }}</strong>
         </v-chip>
@@ -212,7 +212,8 @@ export default {
       let decrepifyResistance = this.hasDecrepify ? -50 : 0;
       let mobs = [];
       for (let m = 0; m < this.mapData.mobs.length; m++) {
-        let mob = { ...this.mapData.mobs[m] }; // copy by value
+        let mob = { ...this.mapData.mobs[m].data }; // copy by value
+        if (this.mapData.mobs[m].note) mob.note = this.mapData.mobs[m].note; // add note to mobs data
         mob.cold = this.applyResistanceReduction(
           mob.cold + this.mapColdResistance,
           this.convictionResistance + this.lowerResResistance,
