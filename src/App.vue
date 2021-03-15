@@ -491,6 +491,7 @@ export default {
           { data: mobs.theBanished },
           { data: mobs.soulKiller },
           { data: mobs.bushBarb },
+          { data: mobs.bloodWing },
         ],
       },
       {
