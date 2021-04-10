@@ -573,6 +573,7 @@ export default {
           { data: mobs.horadrimAncient },
           { data: mobs.infidel },
           { data: mobs.damned },
+          { data: mobs.horror },
         ],
       },
       {

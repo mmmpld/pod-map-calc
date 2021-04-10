@@ -143,15 +143,16 @@
         "poison": 20
     },
     "damned": {
+        "id": "bighead10",
         "name": "Damned",
         "model": "Tainted",
         "type": "Demon",
-        "cold": 0,
-        "fire": 0,
-        "lightning": 120,
+        "cold": 85,
+        "fire": 85,
+        "lightning": 100,
         "magic": 0,
-        "physical": 0,
-        "poison": 25
+        "physical": 25,
+        "poison": 50
     },
     "darkArcher": {
         "name": "Dark Archer",
@@ -408,6 +409,7 @@
         "poison": 50
     },
     "horror": {
+        "id": "skeleton5",
         "name": "Horror",
         "model": "Skeleton",
         "type": "Undead",
@@ -508,15 +510,16 @@
         "poison": 75
     },
     "pitLord": {
+        "id": "megademon5",
         "name": "Pit Lord",
         "model": "Megademon",
         "type": "Demon",
-        "cold": 100,
+        "cold": 0,
         "fire": 145,
-        "lightning": 100,
-        "magic": 100,
+        "lightning": 33,
+        "magic": 20,
         "physical": 50,
-        "poison": 145
+        "poison": 50
     },
     "serpentMagus": {
         "name": "Serpent Magus",
