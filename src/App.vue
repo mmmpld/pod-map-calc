@@ -499,7 +499,6 @@ export default {
         mobs: [
           { data: mobs.bloodLord },
           { data: mobs.templeGuard },
-          { data: mobs.unholyCorpse },
           { data: mobs.demonSprite },
           { data: mobs.frozenScorch },
           { data: mobs.boneScarab },
