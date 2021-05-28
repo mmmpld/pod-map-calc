@@ -536,12 +536,12 @@
         "name": "Slinger",
         "model": "Slinger",
         "type": "Animal",
-        "cold": 150,
+        "cold": 50,
         "fire": 50,
-        "lightning": 15,
+        "lightning": 50,
         "magic": 0,
         "physical": 25,
-        "poison": 15
+        "poison": 100
     },
     "soulKiller": {
         "name": "Soul Killer",
