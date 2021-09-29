@@ -80,12 +80,12 @@
         "name": "Bone Warrior",
         "model": "Skeleton",
         "type": "Undead",
-        "cold": 25,
-        "fire": 50,
-        "lightning": 100,
-        "magic": 70,
+        "cold": 110,
+        "fire": 0,
+        "lightning": 0,
+        "magic": 0,
         "physical": 33,
-        "poison": 105
+        "poison": 75
     },
     "burningDeadMage": {
         "name": "Burning Dead Mage",
