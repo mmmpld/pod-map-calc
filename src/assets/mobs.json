@@ -32,7 +32,8 @@
     "lightning": 33,
     "magic": 33,
     "physical": 100,
-    "poison": 33
+    "poison": 33,
+    "id": "bloodlord3"
   },
   "bloodTemptress": {
     "name": "Blood Temptress",
@@ -78,8 +79,9 @@
     "fire": 0,
     "lightning": 120,
     "magic": 0,
-    "physical": 0,
-    "poison": 0
+    "physical": 50,
+    "poison": 0,
+    "id": "scarab5"
   },
   "boneWarrior": {
     "name": "Bone Warrior",
@@ -150,7 +152,8 @@
     "lightning": 33,
     "magic": 20,
     "physical": 20,
-    "poison": 20
+    "poison": 20,
+    "class": "corruptrogue3"
   },
   "damned": {
     "id": "bighead10",
@@ -290,11 +293,12 @@
     "model": "Suicide Minion",
     "type": "Animal",
     "cold": 130,
-    "fire": 60,
+    "fire": 66,
     "lightning": 15,
     "magic": 0,
     "physical": 25,
-    "poison": 15
+    "poison": 15,
+    "id": "suicideminion1"
   },
   "fiend": {
     "name": "Fiend",
@@ -377,7 +381,8 @@
     "lightning": 0,
     "magic": 0,
     "physical": 50,
-    "poison": 0
+    "poison": 0,
+    "class": "fingermage3"
   },
   "hellBovine": {
     "name": "Hell Bovine",
@@ -415,8 +420,8 @@
     "poison": 0,
     "id": "overseer5"
   },
-  "hierophant": {
-    "name": "Hierophant",
+  "heirophant": {
+    "name": "Heirophant",
     "model": "Zakarum Priest",
     "type": "Animal",
     "cold": 160,
@@ -424,7 +429,8 @@
     "lightning": 33,
     "magic": 0,
     "physical": 10,
-    "poison": 20
+    "poison": 20,
+    "id": "cantor3"
   },
   "horadrimAncient": {
     "name": "Horadrim Ancient",
@@ -471,7 +477,8 @@
     "lightning": 115,
     "magic": 0,
     "physical": 33,
-    "poison": 0
+    "poison": 75,
+    "id": "skmage_ltng4"
   },
   "infectorOfSouls": {
     "name": "Infector of Souls",
@@ -482,18 +489,20 @@
     "lightning": 75,
     "magic": 0,
     "physical": 50,
-    "poison": 75
+    "poison": 75,
+    "class": "megademon3"
   },
   "infidel": {
     "name": "Infidel",
     "model": "Sand Raider",
     "type": "Animal",
     "cold": 110,
-    "fire": 5,
+    "fire": 50,
     "lightning": 0,
     "magic": 0,
     "physical": 25,
-    "poison": 33
+    "poison": 33,
+    "id": "sandraider4"
   },
   "lordDeSeis": {
     "name": "Lord De Seis",
@@ -504,7 +513,8 @@
     "lightning": 60,
     "magic": 25,
     "physical": 33,
-    "poison": 75
+    "poison": 75,
+    "class": "doomknight3"
   },
   "mauler": {
     "name": "Mauler",
@@ -584,14 +594,15 @@
     "model": "Fetish",
     "type": "Demon",
     "cold": 25,
-    "fire": 105,
+    "fire": 115,
     "lightning": 25,
     "magic": 0,
     "physical": 15,
-    "poison": 33
+    "poison": 33,
+    "id": "fetish8"
   },
-  "spiderMagnus": {
-    "name": "Spider Magnus",
+  "spiderMagus": {
+    "name": "Spider Magus",
     "model": "Gaint Spider",
     "type": "Animal",
     "cold": 0,
@@ -599,7 +610,8 @@
     "lightning": 0,
     "magic": 0,
     "physical": 50,
-    "poison": 65
+    "poison": 65,
+    "id": "arach5"
   },
   "stormCaster": {
     "name": "Storm Caster",

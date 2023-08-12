@@ -338,7 +338,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
               </tr>
               <tr class=\\"\\">
-                <td class=\\"text-start\\"> Spider Magnus
+                <td class=\\"text-start\\"> Spider Magus
                   <!---->
                 </td>
                 <td class=\\"text-start\\">Gaint Spider</td>
@@ -396,7 +396,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\">Fetish</td>
                 <td class=\\"text-start\\">Demon</td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small cold darken-4\\"><span class=\\"v-chip__content\\"> 25 </span></span></td>
-                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small fire\\"><span class=\\"v-chip__content\\"><strong>105</strong></span></span></td>
+                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small fire\\"><span class=\\"v-chip__content\\"><strong>115</strong></span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small lightning darken-5\\"><span class=\\"v-chip__content\\"> 25 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small physical darken-4\\"><span class=\\"v-chip__content\\"> 15 </span></span></td>
@@ -529,7 +529,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small lightning\\"><span class=\\"v-chip__content\\"><strong>120</strong></span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
-                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
+                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small physical darken-4\\"><span class=\\"v-chip__content\\"> 50 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
               </tr>
               <tr class=\\"\\">
@@ -591,7 +591,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\">Suicide Minion</td>
                 <td class=\\"text-start\\">Animal</td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small cold\\"><span class=\\"v-chip__content\\"><strong>130</strong></span></span></td>
-                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small fire darken-4\\"><span class=\\"v-chip__content\\"> 60 </span></span></td>
+                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small fire darken-4\\"><span class=\\"v-chip__content\\"> 66 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small lightning darken-5\\"><span class=\\"v-chip__content\\"> 15 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small physical darken-4\\"><span class=\\"v-chip__content\\"> 25 </span></span></td>
@@ -729,7 +729,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small poison\\"><span class=\\"v-chip__content\\"><strong>120</strong></span></span></td>
               </tr>
               <tr class=\\"\\">
-                <td class=\\"text-start\\"> Spider Magnus
+                <td class=\\"text-start\\"> Spider Magus
                   <!---->
                 </td>
                 <td class=\\"text-start\\">Gaint Spider</td>
@@ -882,7 +882,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small lightning\\"><span class=\\"v-chip__content\\"><strong>120</strong></span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
-                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
+                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small physical darken-4\\"><span class=\\"v-chip__content\\"> 50 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
               </tr>
               <tr class=\\"\\">
@@ -899,7 +899,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
               </tr>
               <tr class=\\"\\">
-                <td class=\\"text-start\\"> Hierophant
+                <td class=\\"text-start\\"> Heirophant
                   <!---->
                 </td>
                 <td class=\\"text-start\\">Zakarum Priest</td>
@@ -1087,7 +1087,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\">Fetish</td>
                 <td class=\\"text-start\\">Demon</td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small cold darken-4\\"><span class=\\"v-chip__content\\"> 25 </span></span></td>
-                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small fire\\"><span class=\\"v-chip__content\\"><strong>105</strong></span></span></td>
+                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small fire\\"><span class=\\"v-chip__content\\"><strong>115</strong></span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small lightning darken-5\\"><span class=\\"v-chip__content\\"> 25 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small physical darken-4\\"><span class=\\"v-chip__content\\"> 15 </span></span></td>
@@ -1245,7 +1245,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small lightning\\"><span class=\\"v-chip__content\\"><strong>115</strong></span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small physical darken-4\\"><span class=\\"v-chip__content\\"> 33 </span></span></td>
-                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
+                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small poison darken-3\\"><span class=\\"v-chip__content\\"> 75 </span></span></td>
               </tr>
               <tr class=\\"\\">
                 <td class=\\"text-start\\"> Black Rogue
@@ -1280,7 +1280,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <td class=\\"text-start\\">Sand Raider</td>
                 <td class=\\"text-start\\">Animal</td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small cold\\"><span class=\\"v-chip__content\\"><strong>110</strong></span></span></td>
-                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small fire darken-4\\"><span class=\\"v-chip__content\\"> 5 </span></span></td>
+                <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small fire darken-4\\"><span class=\\"v-chip__content\\"> 50 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small transparent\\"><span class=\\"v-chip__content\\"> 0 </span></span></td>
                 <td class=\\"text-start\\"><span class=\\"v-chip theme--light v-size--small physical darken-4\\"><span class=\\"v-chip__content\\"> 25 </span></span></td>
