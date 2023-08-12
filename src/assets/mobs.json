@@ -8,7 +8,8 @@
     "lightning": 33,
     "magic": 20,
     "physical": 20,
-    "poison": 20
+    "poison": 20,
+    "id": "corruptrogue4"
   },
   "bloodClan": {
     "name": "Blood Clan",
@@ -19,7 +20,8 @@
     "lightning": 0,
     "magic": 0,
     "physical": 50,
-    "poison": 0
+    "poison": 0,
+    "id": "goatman3"
   },
   "bloodLord": {
     "name": "Blood Lord",
@@ -41,7 +43,8 @@
     "lightning": 50,
     "magic": 0,
     "physical": 25,
-    "poison": 120
+    "poison": 120,
+    "id": "succubus5"
   },
   "bloodWing": {
     "name": "Blood Wing",
@@ -52,7 +55,8 @@
     "lightning": 33,
     "magic": 0,
     "physical": 0,
-    "poison": 120
+    "poison": 120,
+    "id": "mosquito4"
   },
   "blunderbore": {
     "name": "Blunderbore",
@@ -63,7 +67,8 @@
     "lightning": 33,
     "magic": 0,
     "physical": 75,
-    "poison": 0
+    "poison": 0,
+    "id": "blunderbore5"
   },
   "boneScarab": {
     "name": "Bone Scarab",
@@ -85,7 +90,8 @@
     "lightning": 0,
     "magic": 0,
     "physical": 33,
-    "poison": 75
+    "poison": 75,
+    "id": "skeleton3"
   },
   "burningDeadMage": {
     "name": "Burning Dead Mage",
@@ -96,7 +102,8 @@
     "lightning": 0,
     "magic": 0,
     "physical": 33,
-    "poison": 110
+    "poison": 110,
+    "id": "skmage_fire6"
   },
   "bushBarb": {
     "name": "Bush Barb",
@@ -107,7 +114,8 @@
     "lightning": 0,
     "magic": 0,
     "physical": 50,
-    "poison": 0
+    "poison": 0,
+    "id": "quillrat5"
   },
   "cadaver": {
     "name": "Cadaver",
@@ -118,7 +126,8 @@
     "lightning": 33,
     "magic": 0,
     "physical": 50,
-    "poison": 110
+    "poison": 110,
+    "id": "mummy5"
   },
   "councilMember": {
     "name": "Council Member",
@@ -129,7 +138,8 @@
     "lightning": 100,
     "magic": 0,
     "physical": 50,
-    "poison": 33
+    "poison": 33,
+    "id": "councilmember2"
   },
   "countess": {
     "name": "The Countess",
@@ -163,7 +173,8 @@
     "lightning": 110,
     "magic": 0,
     "physical": 15,
-    "poison": 25
+    "poison": 25,
+    "id": "cr_archer3"
   },
   "darkShape": {
     "name": "Dark Shape",
@@ -174,7 +185,8 @@
     "lightning": 0,
     "magic": 50,
     "physical": 100,
-    "poison": 75
+    "poison": 75,
+    "id": "wraith5"
   },
   "darkStalker": {
     "name": "Dark Stalker",
@@ -185,7 +197,8 @@
     "lightning": 33,
     "magic": 20,
     "physical": 20,
-    "poison": 20
+    "poison": 20,
+    "id": "corruptrogue3"
   },
   "deathClan": {
     "name": "Death Clan",
@@ -196,7 +209,8 @@
     "lightning": 0,
     "magic": 50,
     "physical": 50,
-    "poison": 0
+    "poison": 0,
+    "id": "goatman5"
   },
   "deathMauler": {
     "name": "Death Mauler",
@@ -207,7 +221,8 @@
     "lightning": 100,
     "magic": 0,
     "physical": 33,
-    "poison": 0
+    "poison": 0,
+    "id": "deathmauler1"
   },
   "demonSprite": {
     "name": "Demon Sprite",
@@ -218,7 +233,8 @@
     "lightning": 25,
     "magic": 25,
     "physical": 0,
-    "poison": 0
+    "poison": 0,
+    "id": "imp5"
   },
   "devilkin": {
     "name": "Devilkin",
@@ -229,7 +245,8 @@
     "lightning": 0,
     "magic": 0,
     "physical": 15,
-    "poison": 0
+    "poison": 0,
+    "id": "fallen3"
   },
   "diablo": {
     "name": "Diablo",
@@ -240,7 +257,8 @@
     "lightning": 50,
     "magic": 0,
     "physical": 45,
-    "poison": 50
+    "poison": 50,
+    "id": "diablo"
   },
   "doomKnight": {
     "name": "Doom Knight",
@@ -251,7 +269,8 @@
     "lightning": 20,
     "magic": 0,
     "physical": 33,
-    "poison": 50
+    "poison": 50,
+    "id": "doomknight1"
   },
   "doomKnightGuest": {
     "name": "Doom Knight",
@@ -263,7 +282,8 @@
     "lightning": 25,
     "magic": 0,
     "physical": 33,
-    "poison": 50
+    "poison": 50,
+    "id": "dkfig2"
   },
   "fanaticEnslaved": {
     "name": "Fanatic Enslaved",
@@ -285,7 +305,8 @@
     "lightning": 100,
     "magic": 0,
     "physical": 10,
-    "poison": 0
+    "poison": 0,
+    "id": "batdemon7"
   },
   "fireTower": {
     "name": "Fire Tower",
@@ -296,7 +317,8 @@
     "lightning": 50,
     "magic": 50,
     "physical": 40,
-    "poison": 1000
+    "poison": 1000,
+    "id": "firetower"
   },
   "fleshLancer": {
     "name": "Flesh Lancer",
@@ -307,7 +329,8 @@
     "lightning": 25,
     "magic": 0,
     "physical": 45,
-    "poison": 25
+    "poison": 25,
+    "id": "cr_lancer5"
   },
   "flyingScimitar": {
     "name": "Flying Scimitar",
@@ -318,7 +341,8 @@
     "lightning": 100,
     "magic": 0,
     "physical": 25,
-    "poison": 0
+    "poison": 0,
+    "id": "flyingscimitar"
   },
   "frozenScorch": {
     "name": "Frozen Scorch",
@@ -329,7 +353,8 @@
     "lightning": 33,
     "magic": 0,
     "physical": 25,
-    "poison": 33
+    "poison": 33,
+    "id": "frozenhorror5"
   },
   "ghost": {
     "name": "Ghost",
@@ -340,7 +365,8 @@
     "lightning": 0,
     "magic": 50,
     "physical": 100,
-    "poison": 75
+    "poison": 75,
+    "id": "wraith1"
   },
   "grandVizierOfChaos": {
     "name": "Grand Vizier of Chaos",
@@ -362,7 +388,8 @@
     "lightning": 50,
     "magic": 33,
     "physical": 50,
-    "poison": 33
+    "poison": 33,
+    "id": "hellbovine"
   },
   "hellSpawn": {
     "name": "Hell Spawn",
@@ -373,7 +400,8 @@
     "lightning": 25,
     "magic": 0,
     "physical": 33,
-    "poison": 0
+    "poison": 0,
+    "id": "minion10"
   },
   "hellWhip": {
     "name": "Hell Whip",
@@ -384,7 +412,8 @@
     "lightning": 20,
     "magic": 0,
     "physical": 40,
-    "poison": 0
+    "poison": 0,
+    "id": "overseer5"
   },
   "hierophant": {
     "name": "Hierophant",
@@ -406,7 +435,8 @@
     "lightning": 50,
     "magic": 100,
     "physical": 33,
-    "poison": 50
+    "poison": 50,
+    "id": "unraveler4"
   },
   "horror": {
     "id": "skeleton5",
@@ -429,7 +459,8 @@
     "lightning": 66,
     "magic": 10,
     "physical": 33,
-    "poison": 140
+    "poison": 140,
+    "id": "sk_archer10"
   },
   "horrorMage": {
     "name": "Horror Mage",
@@ -484,7 +515,8 @@
     "lightning": 100,
     "magic": 0,
     "physical": 55,
-    "poison": 0
+    "poison": 0,
+    "id": "blunderbore3"
   },
   "oblivionKnight": {
     "name": "Oblivion Knight",
@@ -495,7 +527,8 @@
     "lightning": 60,
     "magic": 25,
     "physical": 33,
-    "poison": 75
+    "poison": 75,
+    "id": "doomknight3"
   },
   "oblivionKnightGuest": {
     "name": "Oblivion Knight",
@@ -507,7 +540,8 @@
     "lightning": 60,
     "magic": 0,
     "physical": 33,
-    "poison": 75
+    "poison": 75,
+    "id": "dkmag2"
   },
   "pitLord": {
     "id": "megademon5",
@@ -530,7 +564,8 @@
     "lightning": 0,
     "magic": 70,
     "physical": 40,
-    "poison": 60
+    "poison": 60,
+    "id": "clawviper5"
   },
   "slinger": {
     "name": "Slinger",
@@ -541,7 +576,8 @@
     "lightning": 50,
     "magic": 0,
     "physical": 25,
-    "poison": 100
+    "poison": 100,
+    "id": "slinger9"
   },
   "soulKiller": {
     "name": "Soul Killer",
@@ -574,7 +610,8 @@
     "lightning": 100,
     "magic": 0,
     "physical": 40,
-    "poison": 25
+    "poison": 25,
+    "id": "fingermage5"
   },
   "templeGuard": {
     "name": "Temple Guard",
@@ -585,7 +622,8 @@
     "lightning": 100,
     "magic": 0,
     "physical": 33,
-    "poison": 0
+    "poison": 0,
+    "id": "baboon7"
   },
   "theBanished": {
     "name": "The Banished",
@@ -596,7 +634,8 @@
     "lightning": 25,
     "magic": 0,
     "physical": 50,
-    "poison": 50
+    "poison": 50,
+    "id": "vampire5"
   },
   "unholyCorpse": {
     "name": "Unholy Corpse",
@@ -607,7 +646,8 @@
     "lightning": 0,
     "magic": 50,
     "physical": 50,
-    "poison": 120
+    "poison": 120,
+    "id": "reanimatedhorde6"
   },
   "venomLord": {
     "name": "Venom Lord",
@@ -618,7 +658,8 @@
     "lightning": 75,
     "magic": 0,
     "physical": 50,
-    "poison": 75
+    "poison": 75,
+    "id": "megademon3"
   },
   "zealot": {
     "name": "Zealot",
@@ -629,6 +670,7 @@
     "lightning": 100,
     "magic": 0,
     "physical": 10,
-    "poison": 20
+    "poison": 20,
+    "id": "zealot3"
   }
 }
