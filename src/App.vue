@@ -112,7 +112,10 @@
               v-model="tab"
               class="pt-5"
             >
-              <v-tab-item key="maps">
+              <v-tab-item
+                key="maps"
+                class="maps-tab"
+              >
                 <MapRes
                   v-for="(map, index) in maps"
                   :key="index"
@@ -135,7 +138,10 @@
                   class="mb-8"
                 />
               </v-tab-item>
-              <v-tab-item key="farms">
+              <v-tab-item
+                key="farms"
+                class="farms-tab"
+              >
                 <MapRes
                   v-for="(map, index) in farms"
                   :key="index"
