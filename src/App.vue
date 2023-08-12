@@ -272,7 +272,7 @@
 </template>
 
 <script>
-import MapRes from "./components/MapRes";
+import MapRes from "./components/MapRes.vue";
 import mobs from './assets/mobs.json';
 
 export default {
