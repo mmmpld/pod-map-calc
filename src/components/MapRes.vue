@@ -11,58 +11,55 @@
         <span class="mr-2">immunes</span>
         <v-chip
           v-if="immunes.cold"
-          color="blue"
+          color="cold"
           title="cold immunes"
           class="mr-2"
-          x-small
+          density="compact"
         >
           <strong>{{ immunes.cold }}</strong>
         </v-chip>
         <v-chip
           v-if="immunes.fire"
-          color="red"
-          light
+          color="fire"
           title="fire immunes"
           class="mr-2"
-          x-small
+          density="compact"
         >
           <strong>{{ immunes.fire }}</strong>
         </v-chip>
         <v-chip
           v-if="immunes.lightning"
-          color="amber"
-          light
+          color="lightning"
           title="lightning immunes"
           class="mr-2"
-          x-small
+          density="compact"
         >
           <strong>{{ immunes.lightning }}</strong>
         </v-chip>
         <v-chip
           v-if="immunes.magic"
-          color="purple"
-          dark
+          color="magic"
           title="magic immunes"
           class="mr-2"
-          x-small
+          density="compact"
         >
           <strong>{{ immunes.magic }}</strong>
         </v-chip>
         <v-chip
           v-if="immunes.physical"
-          color="brown"
+          color="physical"
           title="physical immunes"
           class="mr-2"
-          x-small
+          density="compact"
         >
           <strong>{{ immunes.physical }}</strong>
         </v-chip>
         <v-chip
           v-if="immunes.poison"
-          color="green"
+          color="poison"
           title="poison immunes"
           class="mr-2"
-          x-small
+          density="compact"
         >
           <strong>{{ immunes.poison }}</strong>
         </v-chip>
@@ -82,236 +79,235 @@
       dense
       calculate-widths
     >
-      <template #[`item.name`]="{ item }">
-        {{ item.name }} <span
-          v-if="item.note"
+      <template #item.name="{ item }">
+        {{ item.raw.name }} <span
+          v-if="item.raw.note"
           class="text-caption"
-        >({{ item.note }})</span>
+        >({{ item.raw.note }})</span>
       </template>
-      <template #[`item.cold`]="{ item }">
+      <template #item.cold="{ item }">
         <v-chip
-          v-if="item.cold >= 100"
+          v-if="item.raw.cold >= 100"
           color="cold"
-          small
+          size="small"
         >
-          <strong>{{ item.cold }}</strong>
+          <strong>{{ item.raw.cold }}</strong>
         </v-chip>
         <v-chip
-          v-else-if="item.cold >= 75"
+          v-else-if="item.raw.cold >= 75"
           color="cold darken-3"
-          small
+          size="small"
         >
-          {{ item.cold }}
+          {{ item.raw.cold }}
         </v-chip>
         <v-chip
-          v-else-if="item.cold >= 50"
+          v-else-if="item.raw.cold >= 50"
           color="cold darken-4"
-          small
+          size="small"
         >
-          {{ item.cold }}
+          {{ item.raw.cold }}
         </v-chip>
         <v-chip
-          v-else-if="item.cold >= 1"
+          v-else-if="item.raw.cold >= 1"
           color="cold darken-4"
-          small
+          size="small"
         >
-          {{ item.cold }}
+          {{ item.raw.cold }}
         </v-chip>
         <v-chip
           v-else
-          color="transparent"
-          small
+          variant="plain"
+          size="small"
         >
-          {{ item.cold }}
+          {{ item.raw.cold }}
         </v-chip>
       </template>
-      <template #[`item.fire`]="{ item }">
+      <template #item.fire="{ item }">
         <v-chip
-          v-if="item.fire >= 100"
+          v-if="item.raw.fire >= 100"
           color="fire"
-          light
-          small
+          size="small"
         >
-          <strong>{{ item.fire }}</strong>
+          <strong>{{ item.raw.fire }}</strong>
         </v-chip>
         <v-chip
-          v-else-if="item.fire >= 75"
+          v-else-if="item.raw.fire >= 75"
           color="fire darken-3"
-          small
+          size="small"
         >
-          {{ item.fire }}
+          {{ item.raw.fire }}
         </v-chip>
         <v-chip
-          v-else-if="item.fire >= 50"
+          v-else-if="item.raw.fire >= 50"
           color="fire darken-4"
-          small
+          size="small"
         >
-          {{ item.fire }}
+          {{ item.raw.fire }}
         </v-chip>
         <v-chip
-          v-else-if="item.fire >= 1"
+          v-else-if="item.raw.fire >= 1"
           color="fire darken-4"
-          small
+          size="small"
         >
-          {{ item.fire }}
+          {{ item.raw.fire }}
         </v-chip>
         <v-chip
           v-else
-          color="transparent"
-          small
+          variant="plain"
+          size="small"
         >
-          {{ item.fire }}
+          {{ item.raw.fire }}
         </v-chip>
       </template>
-      <template #[`item.lightning`]="{ item }">
+      <template #item.lightning="{ item }">
         <v-chip
-          v-if="item.lightning >= 100"
+          v-if="item.raw.lightning >= 100"
           color="lightning"
-          light
-          small
+          size="small"
         >
-          <strong>{{ item.lightning }}</strong>
+          <strong>{{ item.raw.lightning }}</strong>
         </v-chip>
         <v-chip
-          v-else-if="item.lightning >= 75"
+          v-else-if="item.raw.lightning >= 75"
           color="lightning darken-3"
-          small
+          size="small"
         >
-          {{ item.lightning }}
+          {{ item.raw.lightning }}
         </v-chip>
         <v-chip
-          v-else-if="item.lightning >= 50"
+          v-else-if="item.raw.lightning >= 50"
           color="lightning darken-4"
-          small
+          size="small"
         >
-          {{ item.lightning }}
+          {{ item.raw.lightning }}
         </v-chip>
         <v-chip
-          v-else-if="item.lightning >= 1"
+          v-else-if="item.raw.lightning >= 1"
           color="lightning darken-5"
-          small
+          size="small"
         >
-          {{ item.lightning }}
+          {{ item.raw.lightning }}
         </v-chip>
         <v-chip
           v-else
-          color="transparent"
-          small
+          variant="plain"
+          size="small"
         >
-          {{ item.lightning }}
+          {{ item.raw.lightning }}
         </v-chip>
       </template>
-      <template #[`item.magic`]="{ item }">
+      <template #item.magic="{ item }">
         <v-chip
-          v-if="item.magic >= 100"
+          v-if="item.raw.magic >= 100"
           color="magic"
-          small
+          size="small"
         >
-          <strong>{{ item.magic }}</strong>
+          <strong>{{ item.raw.magic }}</strong>
         </v-chip>
         <v-chip
-          v-else-if="item.magic >= 75"
+          v-else-if="item.raw.magic >= 75"
           color="magic darken-3"
-          small
+          size="small"
         >
-          {{ item.magic }}
+          {{ item.raw.magic }}
         </v-chip>
         <v-chip
-          v-else-if="item.magic >= 50"
+          v-else-if="item.raw.magic >= 50"
           color="magic darken-4"
-          small
+          size="small"
         >
-          {{ item.magic }}
+          {{ item.raw.magic }}
         </v-chip>
         <v-chip
-          v-else-if="item.magic >= 1"
+          v-else-if="item.raw.magic >= 1"
           color="magic darken-4"
-          small
+          size="small"
         >
-          {{ item.magic }}
+          {{ item.raw.magic }}
         </v-chip>
         <v-chip
           v-else
-          color="transparent"
-          small
+          variant="plain"
+          size="small"
         >
-          {{ item.magic }}
+          {{ item.raw.magic }}
         </v-chip>
       </template>
-      <template #[`item.physical`]="{ item }">
+      <template #item.physical="{ item }">
         <v-chip
-          v-if="item.physical >= 100"
+          v-if="item.raw.physical >= 100"
           color="physical"
-          small
+          size="small"
         >
-          <strong>{{ item.physical }}</strong>
+          <strong>{{ item.raw.physical }}</strong>
         </v-chip>
         <v-chip
-          v-else-if="item.physical >= 75"
+          v-else-if="item.raw.physical >= 75"
           color="physical darken-3"
-          small
+          size="small"
         >
-          {{ item.physical }}
+          {{ item.raw.physical }}
         </v-chip>
         <v-chip
-          v-else-if="item.physical >= 50"
+          v-else-if="item.raw.physical >= 50"
           color="physical darken-4"
-          small
+          size="small"
         >
-          {{ item.physical }}
+          {{ item.raw.physical }}
         </v-chip>
         <v-chip
-          v-else-if="item.physical >= 1"
+          v-else-if="item.raw.physical >= 1"
           color="physical darken-4"
-          small
+          size="small"
         >
-          {{ item.physical }}
+          {{ item.raw.physical }}
         </v-chip>
         <v-chip
           v-else
-          color="transparent"
-          small
+          variant="plain"
+          size="small"
         >
-          {{ item.physical }}
+          {{ item.raw.physical }}
         </v-chip>
       </template>
-      <template #[`item.poison`]="{ item }">
+      <template #item.poison="{ item }">
         <v-chip
-          v-if="item.poison >= 100"
+          v-if="item.raw.poison >= 100"
           color="poison"
-          small
+          size="small"
         >
-          <strong>{{ item.poison }}</strong>
+          <strong>{{ item.raw.poison }}</strong>
         </v-chip>
         <v-chip
-          v-else-if="item.poison >= 75"
+          v-else-if="item.raw.poison >= 75"
           color="poison darken-3"
-          small
+          size="small"
         >
-          {{ item.poison }}
+          {{ item.raw.poison }}
         </v-chip>
         <v-chip
-          v-else-if="item.poison >= 50"
+          v-else-if="item.raw.poison >= 50"
           color="poison darken-4"
-          small
+          size="small"
         >
-          {{ item.poison }}
+          {{ item.raw.poison }}
         </v-chip>
         <v-chip
-          v-else-if="item.poison >= 1"
+          v-else-if="item.raw.poison >= 1"
           color="poison darken-4"
-          small
+          size="small"
         >
-          {{ item.poison }}
+          {{ item.raw.poison }}
         </v-chip>
         <v-chip
           v-else
-          color="transparent"
-          small
+          variant="plain"
+          size="small"
         >
-          {{ item.poison }}
+          {{ item.raw.poison }}
         </v-chip>
       </template>
+      <template #bottom />
     </v-data-table>
   </div>
 </template>
@@ -387,15 +383,15 @@ export default {
   },
   data: () => ({
     headers: [
-      { text: 'Name', value: 'name', width: '15%' },
-      { text: 'Model', value: 'model', width: '15%' },
-      { text: 'Type', value: 'type', width: '10%' },
-      { text: 'Cold', value: 'cold', width: '10%' },
-      { text: 'Fire', value: 'fire', width: '10%' },
-      { text: 'Lightning', value: 'lightning', width: '10%' },
-      { text: 'Magic', value: 'magic', width: '10%' },
-      { text: 'Physical', value: 'physical', width: '10%' },
-      { text: 'Poison', value: 'poison', width: '10%' }
+      { title: 'Name', value: 'name', width: '15%', key: 'name' },
+      { title: 'Model', value: 'model', width: '15%', key: 'model' },
+      { title: 'Type', value: 'type', width: '10%', key: 'type' },
+      { title: 'Cold', value: 'cold', width: '10%', key: 'cold' },
+      { title: 'Fire', value: 'fire', width: '10%', key: 'fire' },
+      { title: 'Lightning', value: 'lightning', width: '10%', key: 'lightning' },
+      { title: 'Magic', value: 'magic', width: '10%', key: 'magic' },
+      { title: 'Physical', value: 'physical', width: '10%', key: 'physical' },
+      { title: 'Poison', value: 'poison', width: '10%', key: 'poison' }
     ]
   }),
   computed: {
@@ -405,7 +401,7 @@ export default {
       const mobs = []
       for (let m = 0; m < this.mapData.mobs.length; m++) {
         const mob = { ...this.mapData.mobs[m].data } // copy by value
-        if (this.mapData.mobs[m].note) mob.note = this.mapData.mobs[m].note // add note to mobs data
+        if (this.mapData.mobs[m].note) { mob.note = this.mapData.mobs[m].note } // add note to mobs data
         mob.cold = this.applyResistanceReduction(
           mob.cold + this.mapColdResistance,
           this.convictionResistance + this.lowerResResistance,
@@ -442,12 +438,12 @@ export default {
     },
     immunes: function () {
       const immunes = {
-        cold: this.mobs.filter((mob) => mob.cold >= 100).length,
-        fire: this.mobs.filter((mob) => mob.fire >= 100).length,
-        lightning: this.mobs.filter((mob) => mob.lightning >= 100).length,
-        magic: this.mobs.filter((mob) => mob.magic >= 100).length,
-        physical: this.mobs.filter((mob) => mob.physical >= 100).length,
-        poison: this.mobs.filter((mob) => mob.poison >= 100).length
+        cold: this.mobs.filter(mob => mob.cold >= 100).length,
+        fire: this.mobs.filter(mob => mob.fire >= 100).length,
+        lightning: this.mobs.filter(mob => mob.lightning >= 100).length,
+        magic: this.mobs.filter(mob => mob.magic >= 100).length,
+        physical: this.mobs.filter(mob => mob.physical >= 100).length,
+        poison: this.mobs.filter(mob => mob.poison >= 100).length
       }
       immunes.count =
         immunes.cold +

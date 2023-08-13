@@ -1,18 +1,13 @@
 import { defineConfig } from 'vite'
-import { createVuePlugin } from 'vite-plugin-vue2'
-import { VuetifyResolver } from 'unplugin-vue-components/resolvers'
-import Components from 'unplugin-vue-components/vite'
+import vue from '@vitejs/plugin-vue'
+import vuetify from 'vite-plugin-vuetify'
 
 const path = require('path')
 export default defineConfig({
   base: '/pod-map-calc/',
   plugins: [
-    createVuePlugin(),
-    Components({
-      resolvers: [
-        VuetifyResolver()
-      ]
-    })
+    vue(),
+    vuetify()
   ],
   resolve: {
     alias: {

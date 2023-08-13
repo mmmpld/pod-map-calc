@@ -9,7 +9,7 @@
           cols="12"
           lg="2"
           md="4"
-          class="px-8 black d-none d-md-block"
+          class="px-8 bg-black d-none d-md-block"
         />
         <v-divider vertical />
         <v-col class="px-8">
@@ -21,7 +21,7 @@
           cols="12"
           lg="2"
           md="4"
-          class="px-8 black"
+          class="px-8 bg-black"
         >
           <v-form>
             <h3>Resistance Reduction</h3>
@@ -103,16 +103,17 @@
         </v-col>
         <v-divider vertical />
         <v-col class="px-8">
-          <v-main>
+          <v-main class="flex-column">
             <v-tabs v-model="tab">
               <v-tab>Maps</v-tab>
               <v-tab>Farms</v-tab>
             </v-tabs>
-            <v-tabs-items
+
+            <v-window
               v-model="tab"
               class="pt-5"
             >
-              <v-tab-item
+              <v-window-item
                 key="maps"
                 class="maps-tab"
               >
@@ -137,8 +138,8 @@
                   :map-poison-resistance="mapPoisonResistance"
                   class="mb-8"
                 />
-              </v-tab-item>
-              <v-tab-item
+              </v-window-item>
+              <v-window-item
                 key="farms"
                 class="farms-tab"
               >
@@ -163,8 +164,8 @@
                   :map-poison-resistance="mapPoisonResistance"
                   class="mb-8"
                 />
-              </v-tab-item>
-            </v-tabs-items>
+              </v-window-item>
+            </v-window>
           </v-main>
         </v-col>
       </v-row>
@@ -184,160 +185,160 @@ export default {
   data: () => ({
     convictionResistanceRaw: parseInt(localStorage.convictionResistance) || null,
     convictionOptions: [
-      { value: null, text: 'none' },
-      { value: -30, text: '1' },
-      { value: -35, text: '2' },
-      { value: -40, text: '3' },
-      { value: -45, text: '4' },
-      { value: -50, text: '5' },
-      { value: -55, text: '6' },
-      { value: -60, text: '7' },
-      { value: -65, text: '8' },
-      { value: -70, text: '9' },
-      { value: -75, text: '10' },
-      { value: -80, text: '11' },
-      { value: -85, text: '12 (Infinity)' },
-      { value: -90, text: '13' },
-      { value: -95, text: '14' },
-      { value: -100, text: '15' },
-      { value: -105, text: '16' },
-      { value: -110, text: '17' },
-      { value: -115, text: '18' },
-      { value: -120, text: '19' },
-      { value: -125, text: '20' },
-      { value: -130, text: '21' },
-      { value: -135, text: '22' },
-      { value: -140, text: '23' },
-      { value: -145, text: '24' },
-      { value: -150, text: '25' }
+      { value: null, title: 'none' },
+      { value: -30, title: '1' },
+      { value: -35, title: '2' },
+      { value: -40, title: '3' },
+      { value: -45, title: '4' },
+      { value: -50, title: '5' },
+      { value: -55, title: '6' },
+      { value: -60, title: '7' },
+      { value: -65, title: '8' },
+      { value: -70, title: '9' },
+      { value: -75, title: '10' },
+      { value: -80, title: '11' },
+      { value: -85, title: '12 (Infinity)' },
+      { value: -90, title: '13' },
+      { value: -95, title: '14' },
+      { value: -100, title: '15' },
+      { value: -105, title: '16' },
+      { value: -110, title: '17' },
+      { value: -115, title: '18' },
+      { value: -120, title: '19' },
+      { value: -125, title: '20' },
+      { value: -130, title: '21' },
+      { value: -135, title: '22' },
+      { value: -140, title: '23' },
+      { value: -145, title: '24' },
+      { value: -150, title: '25' }
     ],
     lowerResResistanceRaw: parseInt(localStorage.lowerResResistance) || null,
     lowerResOptions: [
-      { value: null, text: 'none' },
-      { value: -52, text: '1' },
-      { value: -61, text: '2' },
-      { value: -68, text: '3' },
-      { value: -75, text: '4' },
-      { value: -80, text: '5' },
-      { value: -84, text: '6' },
-      { value: -87, text: '7' },
-      { value: -89, text: '8' },
-      { value: -92, text: '9' },
-      { value: -94, text: '10' },
-      { value: -96, text: '11' },
-      { value: -98, text: '12' },
-      { value: -100, text: '13' },
-      { value: -101, text: '14' },
-      { value: -102, text: '15' },
-      { value: -104, text: '16' },
-      { value: -104, text: '17' },
-      { value: -105, text: '18' },
-      { value: -106, text: '19' },
-      { value: -107, text: '20' },
-      { value: -108, text: '21' },
-      { value: -109, text: '22' },
-      { value: -110, text: '23' },
-      { value: -111, text: '24' },
-      { value: -112, text: '25' },
-      { value: -113, text: '26' },
-      { value: -114, text: '27' },
-      { value: -115, text: '28' },
-      { value: -116, text: '29' },
-      { value: -117, text: '30' },
-      { value: -118, text: '31' },
-      { value: -119, text: '32' },
-      { value: -120, text: '33' },
-      { value: -121, text: '34' },
-      { value: -122, text: '35' },
-      { value: -123, text: '36' },
-      { value: -124, text: '37' },
-      { value: -125, text: '38' },
-      { value: -126, text: '39' },
-      { value: -127, text: '40' },
-      { value: -128, text: '41' },
-      { value: -129, text: '42' },
-      { value: -130, text: '43' },
-      { value: -131, text: '44' },
-      { value: -132, text: '45' },
-      { value: -133, text: '46' },
-      { value: -134, text: '47' },
-      { value: -135, text: '48' },
-      { value: -136, text: '49' },
-      { value: -137, text: '50' },
-      { value: -138, text: '51' },
-      { value: -139, text: '52' },
-      { value: -140, text: '53' },
-      { value: -141, text: '54' },
-      { value: -142, text: '55' },
-      { value: -143, text: '56' },
-      { value: -144, text: '57' },
-      { value: -145, text: '58' },
-      { value: -146, text: '59' },
-      { value: -147, text: '60' }
+      { value: null, title: 'none' },
+      { value: -52, title: '1' },
+      { value: -61, title: '2' },
+      { value: -68, title: '3' },
+      { value: -75, title: '4' },
+      { value: -80, title: '5' },
+      { value: -84, title: '6' },
+      { value: -87, title: '7' },
+      { value: -89, title: '8' },
+      { value: -92, title: '9' },
+      { value: -94, title: '10' },
+      { value: -96, title: '11' },
+      { value: -98, title: '12' },
+      { value: -100, title: '13' },
+      { value: -101, title: '14' },
+      { value: -102, title: '15' },
+      { value: -104, title: '16' },
+      { value: -104, title: '17' },
+      { value: -105, title: '18' },
+      { value: -106, title: '19' },
+      { value: -107, title: '20' },
+      { value: -108, title: '21' },
+      { value: -109, title: '22' },
+      { value: -110, title: '23' },
+      { value: -111, title: '24' },
+      { value: -112, title: '25' },
+      { value: -113, title: '26' },
+      { value: -114, title: '27' },
+      { value: -115, title: '28' },
+      { value: -116, title: '29' },
+      { value: -117, title: '30' },
+      { value: -118, title: '31' },
+      { value: -119, title: '32' },
+      { value: -120, title: '33' },
+      { value: -121, title: '34' },
+      { value: -122, title: '35' },
+      { value: -123, title: '36' },
+      { value: -124, title: '37' },
+      { value: -125, title: '38' },
+      { value: -126, title: '39' },
+      { value: -127, title: '40' },
+      { value: -128, title: '41' },
+      { value: -129, title: '42' },
+      { value: -130, title: '43' },
+      { value: -131, title: '44' },
+      { value: -132, title: '45' },
+      { value: -133, title: '46' },
+      { value: -134, title: '47' },
+      { value: -135, title: '48' },
+      { value: -136, title: '49' },
+      { value: -137, title: '50' },
+      { value: -138, title: '51' },
+      { value: -139, title: '52' },
+      { value: -140, title: '53' },
+      { value: -141, title: '54' },
+      { value: -142, title: '55' },
+      { value: -143, title: '56' },
+      { value: -144, title: '57' },
+      { value: -145, title: '58' },
+      { value: -146, title: '59' },
+      { value: -147, title: '60' }
     ],
     grimWardResistanceRaw: parseInt(localStorage.grimWardResistance) || null,
     grimWardOptions: [
-      { value: null, text: 'none' },
-      { value: -10, text: '1' },
-      { value: -12, text: '2' },
-      { value: -14, text: '3' },
-      { value: -16, text: '4' },
-      { value: -18, text: '5' },
-      { value: -20, text: '6' },
-      { value: -22, text: '7' },
-      { value: -24, text: '8' },
-      { value: -26, text: '9' },
-      { value: -28, text: '10' },
-      { value: -30, text: '11' },
-      { value: -32, text: '12' },
-      { value: -34, text: '13' },
-      { value: -36, text: '14' },
-      { value: -38, text: '15' },
-      { value: -40, text: '16' },
-      { value: -42, text: '17' },
-      { value: -44, text: '18' },
-      { value: -46, text: '19' },
-      { value: -48, text: '20' },
-      { value: -50, text: '21' },
-      { value: -52, text: '22' },
-      { value: -54, text: '23' },
-      { value: -56, text: '24' },
-      { value: -58, text: '25' },
-      { value: -60, text: '26' },
-      { value: -62, text: '27' },
-      { value: -64, text: '28' },
-      { value: -66, text: '29' },
-      { value: -68, text: '30' },
-      { value: -70, text: '31' },
-      { value: -72, text: '32' },
-      { value: -74, text: '33' },
-      { value: -76, text: '34' },
-      { value: -78, text: '35' },
-      { value: -80, text: '36' },
-      { value: -82, text: '37' },
-      { value: -84, text: '38' },
-      { value: -86, text: '39' },
-      { value: -88, text: '40' },
-      { value: -90, text: '41' },
-      { value: -92, text: '42' },
-      { value: -94, text: '43' },
-      { value: -96, text: '44' },
-      { value: -98, text: '45' },
-      { value: -100, text: '46' },
-      { value: -102, text: '47' },
-      { value: -104, text: '48' },
-      { value: -106, text: '49' },
-      { value: -108, text: '50' },
-      { value: -110, text: '51' },
-      { value: -112, text: '52' },
-      { value: -114, text: '53' },
-      { value: -116, text: '54' },
-      { value: -118, text: '55' },
-      { value: -120, text: '56' },
-      { value: -122, text: '57' },
-      { value: -124, text: '58' },
-      { value: -126, text: '59' },
-      { value: -128, text: '60' }
+      { value: null, title: 'none' },
+      { value: -10, title: '1' },
+      { value: -12, title: '2' },
+      { value: -14, title: '3' },
+      { value: -16, title: '4' },
+      { value: -18, title: '5' },
+      { value: -20, title: '6' },
+      { value: -22, title: '7' },
+      { value: -24, title: '8' },
+      { value: -26, title: '9' },
+      { value: -28, title: '10' },
+      { value: -30, title: '11' },
+      { value: -32, title: '12' },
+      { value: -34, title: '13' },
+      { value: -36, title: '14' },
+      { value: -38, title: '15' },
+      { value: -40, title: '16' },
+      { value: -42, title: '17' },
+      { value: -44, title: '18' },
+      { value: -46, title: '19' },
+      { value: -48, title: '20' },
+      { value: -50, title: '21' },
+      { value: -52, title: '22' },
+      { value: -54, title: '23' },
+      { value: -56, title: '24' },
+      { value: -58, title: '25' },
+      { value: -60, title: '26' },
+      { value: -62, title: '27' },
+      { value: -64, title: '28' },
+      { value: -66, title: '29' },
+      { value: -68, title: '30' },
+      { value: -70, title: '31' },
+      { value: -72, title: '32' },
+      { value: -74, title: '33' },
+      { value: -76, title: '34' },
+      { value: -78, title: '35' },
+      { value: -80, title: '36' },
+      { value: -82, title: '37' },
+      { value: -84, title: '38' },
+      { value: -86, title: '39' },
+      { value: -88, title: '40' },
+      { value: -90, title: '41' },
+      { value: -92, title: '42' },
+      { value: -94, title: '43' },
+      { value: -96, title: '44' },
+      { value: -98, title: '45' },
+      { value: -100, title: '46' },
+      { value: -102, title: '47' },
+      { value: -104, title: '48' },
+      { value: -106, title: '49' },
+      { value: -108, title: '50' },
+      { value: -110, title: '51' },
+      { value: -112, title: '52' },
+      { value: -114, title: '53' },
+      { value: -116, title: '54' },
+      { value: -118, title: '55' },
+      { value: -120, title: '56' },
+      { value: -122, title: '57' },
+      { value: -124, title: '58' },
+      { value: -126, title: '59' },
+      { value: -128, title: '60' }
     ],
     hasAmplifyDamage: localStorage.hasAmplifyDamage === 'true',
     hasDecrepify: localStorage.hasDecrepify === 'true',
@@ -577,27 +578,27 @@ export default {
       return 0
     },
     mapColdResistance: function () {
-      if (typeof (this.mapColdResistanceRaw) === 'number') return this.mapColdResistanceRaw
+      if (typeof (this.mapColdResistanceRaw) === 'number') { return this.mapColdResistanceRaw }
       return 0
     },
     mapFireResistance: function () {
-      if (typeof (this.mapFireResistanceRaw) === 'number') return this.mapFireResistanceRaw
+      if (typeof (this.mapFireResistanceRaw) === 'number') { return this.mapFireResistanceRaw }
       return 0
     },
     mapLightningResistance: function () {
-      if (typeof (this.mapLightningResistanceRaw) === 'number') return this.mapLightningResistanceRaw
+      if (typeof (this.mapLightningResistanceRaw) === 'number') { return this.mapLightningResistanceRaw }
       return 0
     },
     mapMagicResistance: function () {
-      if (typeof (this.mapMagicResistanceRaw) === 'number') return this.mapMagicResistanceRaw
+      if (typeof (this.mapMagicResistanceRaw) === 'number') { return this.mapMagicResistanceRaw }
       return 0
     },
     mapPhysicalResistance: function () {
-      if (typeof (this.mapPhysicalResistanceRaw) === 'number') return this.mapPhysicalResistanceRaw
+      if (typeof (this.mapPhysicalResistanceRaw) === 'number') { return this.mapPhysicalResistanceRaw }
       return 0
     },
     mapPoisonResistance: function () {
-      if (typeof (this.mapPoisonResistanceRaw) === 'number') return this.mapPoisonResistanceRaw
+      if (typeof (this.mapPoisonResistanceRaw) === 'number') { return this.mapPoisonResistanceRaw }
       return 0
     }
   },
@@ -624,149 +625,190 @@ export default {
 }
 </script>
 
-<style>
-  .cold {
+<style lang="scss">
+  .text-cold {
+    color: black;
     background-color: rgb(33,150,243,1) !important;
     border-color: rgb(33,150,243,1) !important;
+    &.darken-1 {
+      color: white;
+      background-color: rgb(33,150,243,0.8) !important;
+      border-color: rgb(33,150,243,0.8) !important;
+    }
+    &.darken-2 {
+      color: white;
+      background-color: rgb(33,150,243,0.6) !important;
+      border-color: rgb(33,150,243,0.7) !important;
+    }
+    &.darken-3 {
+      color: white;
+      background-color: rgb(33,150,243,0.4) !important;
+      border-color: rgb(33,150,243,0.4) !important;
+    }
+    &.darken-4 {
+      color: white;
+      background-color: rgb(33,150,243,0.2) !important;
+      border-color: rgb(33,150,243,0.2) !important;
+    }
+    &.darken-5 {
+      color: white;
+      background-color: rgb(33,150,243,0.1) !important;
+      border-color: rgb(33,150,243,0.1) !important;
+    }
   }
-  .cold.darken-1 {
-    background-color: rgb(33,150,243,0.8) !important;
-    border-color: rgb(33,150,243,0.8) !important;
-  }
-  .cold.darken-2 {
-    background-color: rgb(33,150,243,0.6) !important;
-    border-color: rgb(33,150,243,0.7) !important;
-  }
-  .cold.darken-3 {
-    background-color: rgb(33,150,243,0.4) !important;
-    border-color: rgb(33,150,243,0.4) !important;
-  }
-  .cold.darken-4 {
-    background-color: rgb(33,150,243,0.2) !important;
-    border-color: rgb(33,150,243,0.2) !important;
-  }
-  .cold.darken-5 {
-    background-color: rgb(33,150,243,0.1) !important;
-    border-color: rgb(33,150,243,0.1) !important;
-  }
-  .fire {
+
+  .text-fire {
+    color: black;
     background-color: rgb(244,67,54,1) !important;
     border-color: rgb(244,67,54,1) !important;
+    &.darken-1 {
+      color: white;
+      background-color: rgb(244,67,54,0.8) !important;
+      border-color: rgb(244,67,54,0.8) !important;
+    }
+    &.darken-2 {
+      color: white;
+      background-color: rgb(244,67,54,0.6) !important;
+      border-color: rgb(244,67,54,0.7) !important;
+    }
+    &.darken-3 {
+      color: white;
+      background-color: rgb(244,67,54,0.4) !important;
+      border-color: rgb(244,67,54,0.4) !important;
+    }
+    &.darken-4 {
+      color: white;
+      background-color: rgb(244,67,54,0.2) !important;
+      border-color: rgb(244,67,54,0.2) !important;
+    }
+    &.darken-5 {
+      color: white;
+      background-color: rgb(244,67,54,0.1) !important;
+      border-color: rgb(244,67,54,0.1) !important;
+    }
   }
-  .fire.darken-1 {
-    background-color: rgb(244,67,54,0.8) !important;
-    border-color: rgb(244,67,54,0.8) !important;
-  }
-  .fire.darken-2 {
-    background-color: rgb(244,67,54,0.6) !important;
-    border-color: rgb(244,67,54,0.7) !important;
-  }
-  .fire.darken-3 {
-    background-color: rgb(244,67,54,0.4) !important;
-    border-color: rgb(244,67,54,0.4) !important;
-  }
-  .fire.darken-4 {
-    background-color: rgb(244,67,54,0.2) !important;
-    border-color: rgb(244,67,54,0.2) !important;
-  }
-  .fire.darken-5 {
-    background-color: rgb(244,67,54,0.1) !important;
-    border-color: rgb(244,67,54,0.1) !important;
-  }
-  .lightning {
+
+  .text-lightning {
+    color: black;
     background-color: rgb(255,193,7,1) !important;
     border-color: rgb(255,193,7,1) !important;
+    &.darken-1 {
+      color: white;
+      background-color: rgb(255,193,7,0.8) !important;
+      border-color: rgb(255,193,7,0.8) !important;
+    }
+    &.darken-2 {
+      color: white;
+      background-color: rgb(255,193,7,0.6) !important;
+      border-color: rgb(255,193,7,0.7) !important;
+    }
+    &.darken-3 {
+      color: white;
+      background-color: rgb(255,193,7,0.4) !important;
+      border-color: rgb(255,193,7,0.4) !important;
+    }
+    &.darken-4 {
+      color: white;
+      background-color: rgb(255,193,7,0.2) !important;
+      border-color: rgb(255,193,7,0.2) !important;
+    }
+    &.darken-5 {
+      color: white;
+      background-color: rgb(255,193,7,0.1) !important;
+      border-color: rgb(255,193,7,0.1) !important;
+    }
   }
-  .lightning.darken-1 {
-    background-color: rgb(255,193,7,0.8) !important;
-    border-color: rgb(255,193,7,0.8) !important;
-  }
-  .lightning.darken-2 {
-    background-color: rgb(255,193,7,0.6) !important;
-    border-color: rgb(255,193,7,0.7) !important;
-  }
-  .lightning.darken-3 {
-    background-color: rgb(255,193,7,0.4) !important;
-    border-color: rgb(255,193,7,0.4) !important;
-  }
-  .lightning.darken-4 {
-    background-color: rgb(255,193,7,0.2) !important;
-    border-color: rgb(255,193,7,0.2) !important;
-  }
-  .lightning.darken-5 {
-    background-color: rgb(255,193,7,0.1) !important;
-    border-color: rgb(255,193,7,0.1) !important;
-  }
-  .magic {
+
+  .text-magic {
+    color: black;
     background-color: rgb(156,39,176,1) !important;
     border-color: rgb(156,39,176,1) !important;
+    &.darken-1 {
+      color: white;
+      background-color: rgb(156,39,176,0.8) !important;
+      border-color: rgb(156,39,176,0.8) !important;
+    }
+    &.darken-2 {
+      color: white;
+      background-color: rgb(156,39,176,0.6) !important;
+      border-color: rgb(156,39,176,0.7) !important;
+    }
+    &.darken-3 {
+      color: white;
+      background-color: rgb(156,39,176,0.4) !important;
+      border-color: rgb(156,39,176,0.4) !important;
+    }
+    &.darken-4 {
+      color: white;
+      background-color: rgb(156,39,176,0.2) !important;
+      border-color: rgb(156,39,176,0.2) !important;
+    }
+    &.darken-5 {
+      color: white;
+      background-color: rgb(156,39,176,0.1) !important;
+      border-color: rgb(156,39,176,0.1) !important;
+    }
   }
-  .magic.darken-1 {
-    background-color: rgb(156,39,176,0.8) !important;
-    border-color: rgb(156,39,176,0.8) !important;
-  }
-  .magic.darken-2 {
-    background-color: rgb(156,39,176,0.6) !important;
-    border-color: rgb(156,39,176,0.7) !important;
-  }
-  .magic.darken-3 {
-    background-color: rgb(156,39,176,0.4) !important;
-    border-color: rgb(156,39,176,0.4) !important;
-  }
-  .magic.darken-4 {
-    background-color: rgb(156,39,176,0.2) !important;
-    border-color: rgb(156,39,176,0.2) !important;
-  }
-  .magic.darken-5 {
-    background-color: rgb(156,39,176,0.1) !important;
-    border-color: rgb(156,39,176,0.1) !important;
-  }
-  .physical {
+
+  .text-physical {
+    color: black;
     background-color: rgb(121,85,72,1) !important;
     border-color: rgb(121,85,72,1) !important;
+    &.darken-1 {
+      color: white;
+      background-color: rgb(121,85,72,0.8) !important;
+      border-color: rgb(121,85,72,0.8) !important;
+    }
+    &.darken-2 {
+      color: white;
+      background-color: rgb(121,85,72,0.6) !important;
+      border-color: rgb(121,85,72,0.7) !important;
+    }
+    &.darken-3 {
+      color: white;
+      background-color: rgb(121,85,72,0.4) !important;
+      border-color: rgb(121,85,72,0.4) !important;
+    }
+    &.darken-4 {
+      color: white;
+      background-color: rgb(121,85,72,0.2) !important;
+      border-color: rgb(121,85,72,0.2) !important;
+    }
+    &.darken-5 {
+      color: white;
+      background-color: rgb(121,85,72,0.1) !important;
+      border-color: rgb(121,85,72,0.1) !important;
+    }
   }
-  .physical.darken-1 {
-    background-color: rgb(121,85,72,0.8) !important;
-    border-color: rgb(121,85,72,0.8) !important;
-  }
-  .physical.darken-2 {
-    background-color: rgb(121,85,72,0.6) !important;
-    border-color: rgb(121,85,72,0.7) !important;
-  }
-  .physical.darken-3 {
-    background-color: rgb(121,85,72,0.4) !important;
-    border-color: rgb(121,85,72,0.4) !important;
-  }
-  .physical.darken-4 {
-    background-color: rgb(121,85,72,0.2) !important;
-    border-color: rgb(121,85,72,0.2) !important;
-  }
-  .physical.darken-5 {
-    background-color: rgb(121,85,72,0.1) !important;
-    border-color: rgb(121,85,72,0.1) !important;
-  }
-  .poison {
+
+  .text-poison {
+    color: black;
     background-color: rgb(76,175,80,1) !important;
     border-color: rgb(76,175,80,1) !important;
-  }
-  .poison.darken-1 {
-    background-color: rgb(76,175,80,0.8) !important;
-    border-color: rgb(76,175,80,0.8) !important;
-  }
-  .poison.darken-2 {
-    background-color: rgb(76,175,80,0.6) !important;
-    border-color: rgb(76,175,80,0.7) !important;
-  }
-  .poison.darken-3 {
-    background-color: rgb(76,175,80,0.4) !important;
-    border-color: rgb(76,175,80,0.4) !important;
-  }
-  .poison.darken-4 {
-    background-color: rgb(76,175,80,0.2) !important;
-    border-color: rgb(76,175,80,0.2) !important;
-  }
-  .poison.darken-5 {
-    background-color: rgb(76,175,80,0.1) !important;
-    border-color: rgb(76,175,80,0.1) !important;
+    &.darken-1 {
+      color: white;
+      background-color: rgb(76,175,80,0.8) !important;
+      border-color: rgb(76,175,80,0.8) !important;
+    }
+    &.darken-2 {
+      color: white;
+      background-color: rgb(76,175,80,0.6) !important;
+      border-color: rgb(76,175,80,0.7) !important;
+    }
+    &.darken-3 {
+      color: white;
+      background-color: rgb(76,175,80,0.4) !important;
+      border-color: rgb(76,175,80,0.4) !important;
+    }
+    &.darken-4 {
+      color: white;
+      background-color: rgb(76,175,80,0.2) !important;
+      border-color: rgb(76,175,80,0.2) !important;
+    }
+    &.darken-5 {
+      color: white;
+      background-color: rgb(76,175,80,0.1) !important;
+      border-color: rgb(76,175,80,0.1) !important;
+    }
   }
 </style>

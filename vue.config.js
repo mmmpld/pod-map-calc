@@ -1,6 +1,6 @@
 module.exports = {
-  "transpileDependencies": [
-    "vuetify"
+  transpileDependencies: [
+    'vuetify'
   ],
-  publicPath: "/pod-map-calc/",
+  publicPath: '/pod-map-calc/'
 }
