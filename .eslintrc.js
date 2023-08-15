@@ -7,5 +7,8 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
     'plugin:vuetify/base'
-  ]
+  ],
+  parserOptions: {
+    'ecmaVersion': 2022
+  }
 }
