@@ -52,21 +52,25 @@
               v-model.number="coldPierceRaw"
               type="number"
               label="Cold Pierce %"
+              min="0"
             />
             <v-text-field
               v-model.number="lightningPierceRaw"
               type="number"
               label="Lightning Pierce %"
+              min="0"
             />
             <v-text-field
               v-model.number="firePierceRaw"
               type="number"
               label="Fire Pierce %"
+              min="0"
             />
             <v-text-field
               v-model.number="poisonPierceRaw"
               type="number"
               label="Poison Pierce %"
+              min="0"
             />
             <h3>Additional Monster Resistance</h3>
             <v-text-field
