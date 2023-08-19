@@ -5,9 +5,7 @@
 
 /* eslint-disable quotes */
 /* eslint-disable quote-props */
-import superuniques from 'd2-data/json/SuperUniques.json' assert { type: "json" }
-import monstats from 'd2-data/json/monstats.json' assert { type: "json" }
-import strings from 'd2-data/json/LocaleStringsEn.json' assert { type: "json" }
+import { localeStringsEn as strings, monstats, superUniques as superuniques } from 'pod-data'
 import mobs from '../src/assets/mobs.json' assert { type: "json" }
 
 const mapMonsters = Object.entries(mobs)
