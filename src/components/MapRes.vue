@@ -80,7 +80,7 @@
       calculate-widths
     >
       <template #item.name="{ item }">
-        {{ item.raw.name }} <span
+        {{ item.raw.name ?? item.raw.id }} <span
           v-if="item.raw.note"
           class="text-caption"
         >({{ item.raw.note }})</span>
@@ -384,8 +384,8 @@ export default {
   data: () => ({
     headers: [
       { title: 'Name', value: 'name', width: '15%', key: 'name' },
-      { title: 'Model', value: 'model', width: '15%', key: 'model' },
-      { title: 'Type', value: 'type', width: '10%', key: 'type' },
+      // { title: 'Model', value: 'model', width: '15%', key: 'model' },
+      // { title: 'Type', value: 'type', width: '10%', key: 'type' },
       { title: 'Cold', value: 'cold', width: '10%', key: 'cold' },
       { title: 'Fire', value: 'fire', width: '10%', key: 'fire' },
       { title: 'Lightning', value: 'lightning', width: '10%', key: 'lightning' },
