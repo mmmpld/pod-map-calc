@@ -14,6 +14,7 @@
         <v-divider vertical />
         <v-col class="px-8">
           <h1>Path of Diablo Map Calculator</h1>
+          <BetaThrob />
         </v-col>
       </v-row>
       <v-row>
@@ -179,12 +180,14 @@
 
 <script>
 import MapRes from './components/MapRes.vue'
+import BetaThrob from './components/BetaThrob.vue'
 import mobs from './assets/mobs.json'
 
 export default {
   name: 'App',
   components: {
-    MapRes
+    MapRes,
+    BetaThrob
   },
   data: () => ({
     convictionResistanceRaw: parseInt(localStorage.convictionResistance) || null,
