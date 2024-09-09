@@ -110,7 +110,7 @@
           <v-main class="flex-column">
             <v-tabs v-model="tab">
               <v-tab>Maps</v-tab>
-              <v-tab>Farms</v-tab>
+              <!-- <v-tab>Farms</v-tab> -->
             </v-tabs>
 
             <v-window
@@ -359,126 +359,153 @@ export default {
     tab: null,
     maps: [
       {
-        title: 'Icy Cavern',
+        title: 'Decomposing Settlement',
         mobs: [
-          { data: mobs.bloodLord },
-          { data: mobs.templeGuard },
-          { data: mobs.unholyCorpse },
-          { data: mobs.demonSprite },
-          { data: mobs.bushBarb },
-          {
-            data: mobs.horror,
-            note: 'boss area only'
-          }
+          { data: mobs.map2_sandmaggot5 },
+          { data: mobs.map2_overseer6 },
+          { data: mobs.map1_minion5 },
+          { data: mobs.map1_mummy5 },
+          { data: mobs.map2_baboon5 },
+          { data: mobs.map2_frogdemon3 },
+          { data: mobs.map1_fetishshaman8 },
+          { data: mobs.map1_fetish8 },
+          { data: mobs.map1_putriddefiler5 },
+          { data: mobs.map2_brute5 }
         ]
       },
       {
-        title: 'Frigid Plateau',
+        title: 'Baleful Alcazar',
         mobs: [
-          { data: mobs.unholyCorpse },
-          { data: mobs.horrorArcher },
-          { data: mobs.doomKnightGuest },
-          { data: mobs.oblivionKnightGuest },
-          { data: mobs.blunderbore },
-          { data: mobs.deathMauler },
-          { data: mobs.fiend },
-          { data: mobs.stormCaster },
-          { data: mobs.templeGuard },
-          { data: mobs.zealot }
+          { data: mobs.map3_zombie5 },
+          { data: mobs.map3_bighead10 },
+          { data: mobs.map3_sk_archer10 },
+          { data: mobs.map2_skmage_fire7 },
+          { data: mobs.map2_unraveler9 },
+          { data: mobs.map2_deathmauler6 },
+          { data: mobs.map1_frogdemon3 },
+          { data: mobs.map1_slinger6 },
+          { data: mobs.map2_pantherwoman6 },
+          { data: mobs.map2_mosquito4 }
         ]
       },
       {
         title: 'Dim Cellar',
         mobs: [
-          { data: mobs.blunderbore },
-          { data: mobs.spiderMagus },
-          { data: mobs.deathMauler },
-          { data: mobs.fleshLancer },
-          { data: mobs.theBanished },
-          { data: mobs.soulKiller },
-          { data: mobs.bushBarb },
-          { data: mobs.bloodWing }
+          { data: mobs.map2_blunderbore5 },
+          { data: mobs.map2_batdemon7 },
+          { data: mobs.map1_sandraider5 },
+          { data: mobs.map1_bighead7 },
+          { data: mobs.map2_sk_archer10 },
+          { data: mobs.map3_arach5 },
+          { data: mobs.map2_scarab5 },
+          { data: mobs.map1_bloodlord7 },
+          { data: mobs.map1_mosquito4 },
+          { data: mobs.map1_quillrat5 }
         ]
       },
       {
-        title: 'Musty Crypt',
+        title: 'Icy Cavern',
         mobs: [
-          { data: mobs.bloodLord },
-          { data: mobs.templeGuard },
-          { data: mobs.demonSprite },
-          { data: mobs.frozenScorch },
-          { data: mobs.boneScarab },
-          { data: mobs.hellWhip },
-          { data: mobs.hellSpawn },
-          { data: mobs.slinger },
-          { data: mobs.fiend },
-          { data: mobs.fanaticEnslaved },
-          { data: mobs.flyingScimitar }
+          { data: mobs.map1_blunderbore5 },
+          { data: mobs.map2_zombie5 },
+          { data: mobs.map3_dkmag3 },
+          { data: mobs.map2_snowyeti4 },
+          { data: mobs.map2_suicideminion8 },
+          { data: mobs.map1_deathmauler6 },
+          { data: mobs.map2_quillrat5 },
+          { data: mobs.map1_wraith5 },
+          { data: mobs.map2_putriddefiler5 },
+          { data: mobs.map3_mummy6 },
         ]
       },
       {
         title: 'Desecrated Temple',
         mobs: [
-          { data: mobs.doomKnightGuest },
-          { data: mobs.oblivionKnightGuest },
-          { data: mobs.theBanished },
-          { data: mobs.frozenScorch },
-          { data: mobs.blunderbore },
-          { data: mobs.bloodWing },
-          { data: mobs.spiderMagus },
-          { data: mobs.deathClan },
-          { data: mobs.stormCaster },
-          { data: mobs.demonSprite },
-          { data: mobs.bushBarb }
+          { data: mobs.map2_cantor4 },
+          { data: mobs.map2_cr_archer5 },
+          { data: mobs.map2_corruptrogue4 },
+          { data: mobs.map3_sandraider7 },
+          { data: mobs.map2_dkmag3 },
+          { data: mobs.map3_unraveler9 },
+          { data: mobs.map1_baboon8 },
+          { data: mobs.map1_thornhulk4 },
+          { data: mobs.map1_goatman5 },
+          { data: mobs.map1_swarm4 }
         ]
       },
       {
-        title: 'Ruined Citadel',
+        title: 'Musty Crypt',
         mobs: [
-          { data: mobs.fleshLancer },
-          { data: mobs.bloodTemptress },
-          { data: mobs.serpentMagus },
-          { data: mobs.boneScarab },
-          { data: mobs.templeGuard },
-          { data: mobs.heirophant },
-          { data: mobs.zealot },
-          { data: mobs.darkShape },
-          { data: mobs.slinger },
-          { data: mobs.cadaver }
+          { data: mobs.map3_batdemon7 },
+          { data: mobs.map2_councilmember3 },
+          { data: mobs.map1_megademon6 },
+          { data: mobs.map2_vampire5 },
+          { data: mobs.map2_arach5 },
+          { data: mobs.map2_clawviper5 },
+          { data: mobs.map2_reanimatedhorde6 },
+          { data: mobs.map2_mummy6 },
+          { data: mobs.map1_foulcrow8 },
+          { data: mobs.map1_vilechild3 }
+        ]
+      },
+      {
+        title: 'Frigid Plateau',
+        mobs: [
+          { data: mobs.map2_succubus5 },
+          { data: mobs.map1_dkfig2 },
+          { data: mobs.map2_siegebeast5 },
+          { data: mobs.map1_snowyeti4 },
+          { data: mobs.map1_frozenhorror5 },
+          { data: mobs.map1_imp5 },
+          { data: mobs.map1_reanimatedhorde6 },
+          { data: mobs.map1_fallenshaman5 },
+          { data: mobs.map1_fallen5 },
+          { data: mobs.map1_suicideminion8 }
         ]
       },
       {
         title: 'Forgotten Desert',
         mobs: [
-          { data: mobs.bloodWing },
-          { data: mobs.unholyCorpse },
-          { data: mobs.hellWhip },
-          { data: mobs.hellSpawn },
-          { data: mobs.stormCaster },
-          { data: mobs.councilMember },
-          { data: mobs.soulKiller },
-          { data: mobs.burningDeadMage },
-          { data: mobs.bloodLord },
-          {
-            data: mobs.fireTower,
-            note: 'static'
-          },
-          { data: mobs.bushBarb }
+          { data: mobs.map2_fingermage3 },
+          { data: mobs.map1_unraveler9 },
+          { data: mobs.map2_skeleton4 },
+          { data: mobs.map1_sandmaggot5 },
+          { data: mobs.map1_arach5 },
+          { data: mobs.map1_clawviper10 },
+          { data: mobs.map1_overseer6 },
+          { data: mobs.map1_sandleaper5 },
+          { data: mobs.map1_slinger9 },
+          { data: mobs.map1_scarab5 }
         ]
       },
       {
         title: 'Burnt Forest',
         mobs: [
-          { data: mobs.pitLord },
-          { data: mobs.horrorArcher },
-          { data: mobs.templeGuard },
-          { data: mobs.mauler },
-          { data: mobs.horrorMage },
-          { data: mobs.blackRogue },
-          { data: mobs.horadrimAncient },
-          { data: mobs.infidel },
-          { data: mobs.damned },
-          { data: mobs.horror }
+          { data: mobs.map1_fingermage5 },
+          { data: mobs.map2_megademon6 },
+          { data: mobs.map1_dkmag3 },
+          { data: mobs.map1_regurgitator3 },
+          { data: mobs.map2_bighead10 },
+          { data: mobs.map1_sk_archer11 },
+          { data: mobs.map1_skmage_fire7 },
+          { data: mobs.map1_skeleton5 },
+          { data: mobs.map1_siegebeast5 },
+          { data: mobs.map1_vampire9 }
+        ]
+      },
+      {
+        title: 'Ruined Citadel',
+        mobs: [
+          { data: mobs.map3_blunderbore6 },
+          { data: mobs.map1_willowisp4 },
+          { data: mobs.map1_batdemon7 },
+          { data: mobs.map1_succubus8 },
+          { data: mobs.map1_cantor6 },
+          { data: mobs.map1_cr_archer5 },
+          { data: mobs.map1_corruptrogue4 },
+          { data: mobs.map2_sandraider7 },
+          { data: mobs.map1_councilmember3 },
+          { data: mobs.map1_zombie5 }
         ]
       },
       {
