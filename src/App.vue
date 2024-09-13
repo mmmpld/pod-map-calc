@@ -372,7 +372,6 @@ export default {
           { data: mobs.map2_frogdemon3 },
           { data: mobs.map1_fetishshaman8 },
           { data: mobs.map1_fetish8, note: 'Lil guy the shaman rides' },
-          { data: mobs.map1_fetish8 },
           { data: mobs.map1_putriddefiler5 },
           { data: mobs.map2_brute5 }
         ]
