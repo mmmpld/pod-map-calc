@@ -371,6 +371,7 @@ export default {
           { data: mobs.map2_baboon5 },
           { data: mobs.map2_frogdemon3 },
           { data: mobs.map1_fetishshaman8 },
+          { data: mobs.map1_fetish8, note: 'Lil guy the shaman rides' },
           { data: mobs.map1_fetish8 },
           { data: mobs.map1_putriddefiler5 },
           { data: mobs.map2_brute5 }
@@ -411,7 +412,7 @@ export default {
         mobs: [
           { data: mobs.map1_blunderbore5 },
           { data: mobs.map2_zombie5 },
-          { data: mobs.map3_dkmag3 },
+          { data: mobs.map1_doomknight2 },
           { data: mobs.map2_snowyeti4 },
           { data: mobs.map2_suicideminion8 },
           { data: mobs.map1_deathmauler6 },
@@ -428,7 +429,7 @@ export default {
           { data: mobs.map2_cr_archer5 },
           { data: mobs.map2_corruptrogue4 },
           { data: mobs.map3_sandraider7 },
-          { data: mobs.map2_dkmag3 },
+          { data: mobs.map1_zealot5 },
           { data: mobs.map3_unraveler9 },
           { data: mobs.map1_baboon8 },
           { data: mobs.map1_thornhulk4 },
@@ -463,7 +464,7 @@ export default {
           { data: mobs.map1_reanimatedhorde6 },
           { data: mobs.map1_fallenshaman5 },
           { data: mobs.map1_fallen5 },
-          { data: mobs.map1_suicideminion8 }
+          { data: mobs.map2_bloodlord7 }
         ]
       },
       {
