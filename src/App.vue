@@ -14,6 +14,11 @@
         <v-divider vertical />
         <v-col class="px-8">
           <h1>Path of Diablo Map Calculator</h1>
+          <v-badge
+            content="Beta Patch 2"
+            inline
+            color="info"
+          />
           <BetaThrob />
         </v-col>
       </v-row>
