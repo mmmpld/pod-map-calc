@@ -3,6 +3,9 @@
     <div class="d-flex">
       <h2 class="ml-4 mr-10 align-self-baseline">
         {{ mapData.title }}
+        <v-chip :color="mapColor">
+          {{ mapData.areaLevel }}
+        </v-chip>
       </h2>
       <div
         v-if="immunes.count > 0"
@@ -307,12 +310,19 @@
           {{ item.raw.poison }}
         </v-chip>
       </template>
+      <template #item.life="{ item }">
+        <span :title="calcLife(item.raw.minHp) + '–' + calcLife(item.raw.maxHp)">
+          {{ humanizedAverage([calcLife(item.raw.minHp), calcLife(item.raw.maxHp)]) }}
+        </span>
+      </template>
       <template #bottom />
     </v-data-table>
   </div>
 </template>
 
 <script>
+import { monLvl } from 'pod-data'
+
 export default {
   name: 'MapRes',
   props: {
@@ -379,6 +389,10 @@ export default {
     mapPoisonResistance: {
       type: Number,
       default: 0
+    },
+    playerCount: {
+      type: Number,
+      default: 1
     }
   },
   data: () => ({
@@ -391,7 +405,8 @@ export default {
       { title: 'Lightning', value: 'lightning', width: '10%', key: 'lightning' },
       { title: 'Magic', value: 'magic', width: '10%', key: 'magic' },
       { title: 'Physical', value: 'physical', width: '10%', key: 'physical' },
-      { title: 'Poison', value: 'poison', width: '10%', key: 'poison' }
+      { title: 'Poison', value: 'poison', width: '10%', key: 'poison' },
+      { title: 'Life', value: 'life', width: '10%', key: 'life'}
     ]
   }),
   computed: {
@@ -453,6 +468,9 @@ export default {
         immunes.physical +
         immunes.poison
       return immunes
+    },
+    mapColor: function () {
+      return this.areaLevelColorName(this.mapData.areaLevel)
     }
   },
   methods: {
@@ -469,6 +487,43 @@ export default {
       if (modifiedMobResistance <= 99) { modifiedMobResistance += negativePierceResistance } // apply pierce only if not immune
       modifiedMobResistance = Math.max(modifiedMobResistance, 0) // minimum mob res zero
       return modifiedMobResistance
+    },
+    /**
+     * Calculate monster life for the current area level and player count
+     * @param {number} baseHp - MinHp(H) or MaxHp(H) from MonStats
+     * @see {@link https://www.theamazonbasin.com/wiki/index.php/Life#Monster}
+     * @see {@link https://d2mods.info/forum/kb/viewarticle?a=360}
+     */
+    calcLife: function (baseHp) {
+      if (isNaN(baseHp)) return 0
+      const monsterLvl = this.mapData.areaLevel // nightmare and hell monsters use the area level as the monster level (for standard mobs)
+      const monLvlValue = monLvl[monsterLvl]["HP(H)"] // get hp multiplier from table
+      const life = Math.floor((monLvlValue * baseHp) / 100) // calc life for one player
+      const playerModifier = 0.5 + (0.5 * this.playerCount) // 50% extra life is added per additional player
+      return life * playerModifier
+    },
+    /**
+     * Short formatted average
+     * @param {number[]} values - Values to average
+     */
+    humanizedAverage: function (values) {
+      const average = values.reduce((sum, currentValue) => sum + currentValue, 0) / values.length
+      const humanized = Intl.NumberFormat('en-US', {
+        notation: "compact",
+        maximumFractionDigits: 1
+      }).format(average);
+      return humanized
+    },
+    areaLevelColorName: function (areaLevel) {
+      switch (areaLevel) {
+        case 88:
+          return 'red'
+        case 87:
+          return 'yellow'
+          case 86:
+        default:
+          return 'white'
+      }
     }
   }
 }

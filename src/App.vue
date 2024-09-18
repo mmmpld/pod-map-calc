@@ -109,6 +109,11 @@
               label="Map Poison Resist %"
               min="0"
             />
+            <v-select
+              v-model="playerCountRaw"
+              :items="playerCountOptions"
+              label="Player Count"
+            />
           </v-form>
         </v-col>
         <v-divider vertical />
@@ -146,6 +151,7 @@
                   :map-magic-resistance="mapMagicResistance"
                   :map-physical-resistance="mapPhysicalResistance"
                   :map-poison-resistance="mapPoisonResistance"
+                  :player-count="playerCount"
                   class="mb-8"
                 />
               </v-window-item>
@@ -172,6 +178,7 @@
                   :map-magic-resistance="mapMagicResistance"
                   :map-physical-resistance="mapPhysicalResistance"
                   :map-poison-resistance="mapPoisonResistance"
+                  :player-count="playerCount"
                   class="mb-8"
                 />
               </v-window-item>
@@ -364,10 +371,22 @@ export default {
     mapMagicResistanceRaw: null,
     mapPhysicalResistanceRaw: null,
     mapPoisonResistanceRaw: null,
+    playerCountRaw: parseInt(localStorage.playerCount) || null,
+    playerCountOptions: [
+      { value: 1, title: '1' },
+      { value: 2, title: '2' },
+      { value: 3, title: '3' },
+      { value: 4, title: '4' },
+      { value: 5, title: '5' },
+      { value: 6, title: '6' },
+      { value: 7, title: '7' },
+      { value: 8, title: '8' }
+  ],
     tab: null,
     maps: [
       {
         title: 'Decomposing Settlement',
+        areaLevel: 86,
         mobs: [
           { data: mobs.map2_sandmaggot5 },
           { data: mobs.map2_overseer6 },
@@ -383,6 +402,7 @@ export default {
       },
       {
         title: 'Baleful Alcazar',
+        areaLevel: 86,
         mobs: [
           { data: mobs.map3_zombie5 },
           { data: mobs.map3_bighead10 },
@@ -398,6 +418,7 @@ export default {
       },
       {
         title: 'Dim Cellar',
+        areaLevel: 87,
         mobs: [
           { data: mobs.map2_blunderbore5 },
           { data: mobs.map2_batdemon7 },
@@ -413,6 +434,7 @@ export default {
       },
       {
         title: 'Icy Cavern',
+        areaLevel: 87,
         mobs: [
           { data: mobs.map1_blunderbore5 },
           { data: mobs.map2_zombie5 },
@@ -428,6 +450,7 @@ export default {
       },
       {
         title: 'Desecrated Temple',
+        areaLevel: 87,
         mobs: [
           { data: mobs.map2_cantor4 },
           { data: mobs.map2_cr_archer5 },
@@ -443,6 +466,7 @@ export default {
       },
       {
         title: 'Musty Crypt',
+        areaLevel: 88,
         mobs: [
           { data: mobs.map3_batdemon7 },
           { data: mobs.map2_councilmember3 },
@@ -458,6 +482,7 @@ export default {
       },
       {
         title: 'Frigid Plateau',
+        areaLevel: 88,
         mobs: [
           { data: mobs.map2_succubus5 },
           { data: mobs.map1_dkfig2 },
@@ -473,6 +498,7 @@ export default {
       },
       {
         title: 'Forgotten Desert',
+        areaLevel: 88,
         mobs: [
           { data: mobs.map2_fingermage3 },
           { data: mobs.map1_unraveler9 },
@@ -488,6 +514,7 @@ export default {
       },
       {
         title: 'Burnt Forest',
+        areaLevel: 88,
         mobs: [
           { data: mobs.map1_fingermage5 },
           { data: mobs.map2_megademon6 },
@@ -503,6 +530,7 @@ export default {
       },
       {
         title: 'Ruined Citadel',
+        areaLevel: 88,
         mobs: [
           { data: mobs.map3_blunderbore6 },
           { data: mobs.map1_willowisp4 },
@@ -518,6 +546,7 @@ export default {
       },
       {
         title: 'Pleasant Pasture',
+        areaLevel: 86,
         mobs: [
           { data: mobs.hellBovine }
         ]
@@ -639,6 +668,14 @@ export default {
     mapPoisonResistance: function () {
       if (typeof (this.mapPoisonResistanceRaw) === 'number') { return this.mapPoisonResistanceRaw }
       return 0
+    },
+    playerCount: function () {
+      if (typeof (this.playerCountRaw) === 'number') {
+        localStorage.playerCount = this.playerCountRaw
+        return this.playerCountRaw
+      }
+      localStorage.removeItem('playerCount')
+      return 1
     }
   },
   watch: {
