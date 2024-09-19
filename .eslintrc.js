@@ -5,6 +5,7 @@ module.exports = {
     es2022: true
   },
   extends: [
+    'tseslint.configs.recommended',
     'plugin:vue/vue3-recommended',
     'plugin:vuetify/base'
   ],
