@@ -121,7 +121,7 @@
           <v-main class="flex-column">
             <v-tabs v-model="tab">
               <v-tab>Maps</v-tab>
-              <v-tab>Farms</v-tab>
+              <v-tab data-testid="farm-tab-button">Farms</v-tab>
             </v-tabs>
 
             <v-window
