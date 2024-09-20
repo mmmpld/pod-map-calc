@@ -561,11 +561,11 @@ export default {
           { id: 'doomknight3' },
           { id: 'fingermage3' },
           { id: 'megademon3' },
-          { id: 'fingermage3', name: 'Grand Vizier of Chaos', fire: 75, lifeMin: 9890, lifeMax: 13600 },
+          { id: 'fingermage3', name: 'Grand Vizier of Chaos', fire: 75, monsterPromotion: 'Super Unique' },
           { id: 'fingermage3', note: 'Grand Vizier minions', mLvl: 88, monsterPromotion: 'Minion' },
-          { id: 'megademon3', name: 'Infector of Souls', cold: 70, lifeMin: 25964, lifeMax: 30910 },
+          { id: 'megademon3', name: 'Infector of Souls', cold: 70, monsterPromotion: 'Super Unique' },
           { id: 'megademon3', note: 'Infector minions', mLvl: 88, monsterPromotion: 'Minion' },
-          { id: 'doomknight3', name: 'Lord De Seis', lifeMin: 14836, lifeMax: 18546 },
+          { id: 'doomknight3', name: 'Lord De Seis', monsterPromotion: 'Super Unique' },
           { id: 'doomknight1', note: 'Lord De Seis minions', mLvl: 88, monsterPromotion: 'Minion' },
           { id: 'diablo', name: 'Diablo', mLvl: 94, lifeMin: 113812, lifeMax: 113812 },
         ]
@@ -589,7 +589,7 @@ export default {
           { id: 'cr_archer3' },
           { id: 'fallen3' },
           { id: 'wraith1' },
-          { id: 'corruptrogue3', name: 'The Countess', mLvl: 82, fire: 108, lifeMin: 6590, lifeMax: 10984 },
+          { id: 'corruptrogue3', name: 'The Countess', mLvl: 82, fire: 108, monsterPromotion: 'Super Unique' },
           { id: 'corruptrogue3', note: 'Countess minions', mLvl: 82, monsterPromotion: 'Minion' },
         ]
       }

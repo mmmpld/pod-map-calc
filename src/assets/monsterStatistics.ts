@@ -116,7 +116,7 @@ function monsterPromotionLifeMultiplier (monsterPromotionType: MonsterPromotion 
     switch (monsterPromotionType) {
       case monsterPromotion.unique:
       case monsterPromotion.superUnique:
-        return 3
+        return 2
       case monsterPromotion.minion:
         return 1.5
       case monsterPromotion.possessed:
