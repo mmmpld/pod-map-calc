@@ -567,7 +567,7 @@ export default {
           { id: 'megademon3', note: 'Infector minions', mLvl: 88, monsterPromotion: 'Minion' },
           { id: 'doomknight3', name: 'Lord De Seis', monsterPromotion: 'Super Unique' },
           { id: 'doomknight1', note: 'Lord De Seis minions', mLvl: 88, monsterPromotion: 'Minion' },
-          { id: 'diablo', name: 'Diablo', mLvl: 94, lifeMin: 113812, lifeMax: 113812 },
+          { id: 'diablo', mLvl: 94 },
         ]
       },
       {
