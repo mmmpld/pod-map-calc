@@ -1,5 +1,28 @@
 export default [
   {
+    title: 'The Countess',
+    areaLevel: 79,
+    mobs: [
+      { id: 'goatman3' },
+      { id: 'cr_archer3' },
+      { id: 'fallen3' },
+      { id: 'wraith1' },
+      { id: 'corruptrogue3', name: 'The Countess', mLvl: 82, fire: 108, monsterPromotion: 'Super Unique' },
+      { id: 'corruptrogue3', note: 'Countess minions', mLvl: 82, monsterPromotion: 'Minion' },
+    ]
+  },
+  {
+    title: 'The Pit',
+    areaLevel: 85,
+    mobs: [
+      { id: 'skeleton3' },
+      { id: 'cr_archer3' },
+      { id: 'corruptrogue3' },
+      { id: 'fallen3' },
+      { id: 'fallenshaman3' },
+    ]
+  },
+  {
     title: 'Chaos Sanctuary',
     areaLevel: 85,
     mobs: [
@@ -16,27 +39,4 @@ export default [
       { id: 'diablo', mLvl: 94 },
     ]
   },
-  {
-    title: 'The Pit',
-    areaLevel: 85,
-    mobs: [
-      { id: 'skeleton3' },
-      { id: 'cr_archer3' },
-      { id: 'corruptrogue3' },
-      { id: 'fallen3' },
-      { id: 'fallenshaman3' },
-    ]
-  },
-  {
-    title: 'The Countess',
-    areaLevel: 79,
-    mobs: [
-      { id: 'goatman3' },
-      { id: 'cr_archer3' },
-      { id: 'fallen3' },
-      { id: 'wraith1' },
-      { id: 'corruptrogue3', name: 'The Countess', mLvl: 82, fire: 108, monsterPromotion: 'Super Unique' },
-      { id: 'corruptrogue3', note: 'Countess minions', mLvl: 82, monsterPromotion: 'Minion' },
-    ]
-  }
 ]
