@@ -1,4 +1,4 @@
-{
+export default {
   "map1_deathmauler6": {"id":"map1_deathmauler6","physical":25,"magic":8,"fire":140,"lightning":40,"cold":15,"poison":15,"minHp":115,"maxHp":145},
   "map1_reanimatedhorde6": {"id":"map1_reanimatedhorde6","physical":50,"magic":50,"fire":0,"lightning":0,"cold":0,"poison":76,"minHp":110,"maxHp":135},
   "map1_fingermage5": {"id":"map1_fingermage5","physical":40,"magic":15,"fire":66,"lightning":72,"cold":25,"poison":105,"minHp":80,"maxHp":110},

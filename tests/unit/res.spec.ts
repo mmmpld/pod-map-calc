@@ -12,7 +12,10 @@ const wrapper = mount(App, {
 })
 
 describe('map resistances should be static', () => {
-  it('has not changed', () => {
+  it('has not changed', async () => {
+    const mapsTabButton = wrapper.find('[data-testid="maps-tab-button"]')
+    expect(mapsTabButton.exists())
+    await mapsTabButton.trigger('click')
     expect(wrapper.find('.maps-tab').html()).toMatchSnapshot()
   })
 })
