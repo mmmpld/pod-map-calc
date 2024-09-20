@@ -23,6 +23,17 @@ export default [
     ]
   },
   {
+    title: 'Arcane Sanctuary',
+    areaLevel: 79,
+    mobs: [
+      { id: 'wraith3' },
+      { id: 'goatman4' },
+      { id: 'vampire1' },
+      { id: 'lightningspire', note: 'static' },
+      { id: 'summoner', mLvl: 80, monsterPromotion: 'Super Unique' },
+    ]
+  },
+  {
     title: 'Chaos Sanctuary',
     areaLevel: 85,
     mobs: [

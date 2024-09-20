@@ -723,6 +723,346 @@ exports[`farm resistances should be static > has not changed 1`] = `
   </div>
   <div class=\\"mb-8\\">
     <div class=\\"d-flex\\">
+      <h2 class=\\"ml-4 mr-10 align-self-baseline\\">Arcane Sanctuary <span class=\\"v-chip v-theme--dark text-white v-chip--density-default v-chip--size-default v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+        <!---->
+        <!---->
+        <div class=\\"v-chip__content\\">79</div>
+        <!---->
+        <!----></span>
+      </h2>
+      <div class=\\"align-self-baseline\\"><span class=\\"mr-2\\">immunes</span><span class=\\"v-chip v-theme--dark text-cold v-chip--density-compact v-chip--size-default v-chip--variant-tonal mr-2\\" draggable=\\"false\\" title=\\"cold immunes\\"><!----><span class=\\"v-chip__underlay\\"></span>
+        <!---->
+        <!---->
+        <div class=\\"v-chip__content\\"><strong>1</strong></div>
+        <!---->
+        <!----></span><span class=\\"v-chip v-theme--dark text-fire v-chip--density-compact v-chip--size-default v-chip--variant-tonal mr-2\\" draggable=\\"false\\" title=\\"fire immunes\\"><!----><span class=\\"v-chip__underlay\\"></span>
+        <!---->
+        <!---->
+        <div class=\\"v-chip__content\\"><strong>1</strong></div>
+        <!---->
+        <!----></span><span class=\\"v-chip v-theme--dark text-lightning v-chip--density-compact v-chip--size-default v-chip--variant-tonal mr-2\\" draggable=\\"false\\" title=\\"lightning immunes\\"><!----><span class=\\"v-chip__underlay\\"></span>
+        <!---->
+        <!---->
+        <div class=\\"v-chip__content\\"><strong>1</strong></div>
+        <!---->
+        <!----></span>
+        <!--v-if--><span class=\\"v-chip v-theme--dark text-physical v-chip--density-compact v-chip--size-default v-chip--variant-tonal mr-2\\" draggable=\\"false\\" title=\\"physical immunes\\"><!----><span class=\\"v-chip__underlay\\"></span>
+        <!---->
+        <!---->
+        <div class=\\"v-chip__content\\"><strong>1</strong></div>
+        <!---->
+        <!----></span><span class=\\"v-chip v-theme--dark text-poison v-chip--density-compact v-chip--size-default v-chip--variant-tonal mr-2\\" draggable=\\"false\\" title=\\"poison immunes\\"><!----><span class=\\"v-chip__underlay\\"></span>
+        <!---->
+        <!---->
+        <div class=\\"v-chip__content\\"><strong>1</strong></div>
+        <!---->
+        <!----></span>
+      </div>
+    </div>
+    <div class=\\"v-table v-table--has-top v-table--has-bottom v-theme--dark v-table--density-default v-data-table\\" disable-pagination=\\"\\" hide-default-footer=\\"\\" dense=\\"\\" calculate-widths=\\"\\">
+      <!---->
+      <div class=\\"v-table__wrapper\\">
+        <table>
+          <!---->
+          <thead>
+            <tr>
+              <th class=\\"v-data-table__td v-data-table-column--align-start v-data-table__th v-data-table__th--sortable v-data-table__th v-data-table__th--sortable\\" style=\\"width: 15%; min-width: 15%;\\">
+                <div class=\\"v-data-table-header__content\\"><span>Name</span><i class=\\"mdi-arrow-up mdi v-icon notranslate v-theme--dark v-icon--size-default v-data-table-header__sort-icon\\" aria-hidden=\\"true\\"></i>
+                  <!---->
+                </div>
+              </th>
+              <th class=\\"v-data-table__td v-data-table-column--align-start v-data-table__th v-data-table__th--sortable v-data-table__th v-data-table__th--sortable\\" style=\\"width: 10%; min-width: 10%;\\">
+                <div class=\\"v-data-table-header__content\\"><span>Cold</span><i class=\\"mdi-arrow-up mdi v-icon notranslate v-theme--dark v-icon--size-default v-data-table-header__sort-icon\\" aria-hidden=\\"true\\"></i>
+                  <!---->
+                </div>
+              </th>
+              <th class=\\"v-data-table__td v-data-table-column--align-start v-data-table__th v-data-table__th--sortable v-data-table__th v-data-table__th--sortable\\" style=\\"width: 10%; min-width: 10%;\\">
+                <div class=\\"v-data-table-header__content\\"><span>Fire</span><i class=\\"mdi-arrow-up mdi v-icon notranslate v-theme--dark v-icon--size-default v-data-table-header__sort-icon\\" aria-hidden=\\"true\\"></i>
+                  <!---->
+                </div>
+              </th>
+              <th class=\\"v-data-table__td v-data-table-column--align-start v-data-table__th v-data-table__th--sortable v-data-table__th v-data-table__th--sortable\\" style=\\"width: 10%; min-width: 10%;\\">
+                <div class=\\"v-data-table-header__content\\"><span>Lightning</span><i class=\\"mdi-arrow-up mdi v-icon notranslate v-theme--dark v-icon--size-default v-data-table-header__sort-icon\\" aria-hidden=\\"true\\"></i>
+                  <!---->
+                </div>
+              </th>
+              <th class=\\"v-data-table__td v-data-table-column--align-start v-data-table__th v-data-table__th--sortable v-data-table__th v-data-table__th--sortable\\" style=\\"width: 10%; min-width: 10%;\\">
+                <div class=\\"v-data-table-header__content\\"><span>Magic</span><i class=\\"mdi-arrow-up mdi v-icon notranslate v-theme--dark v-icon--size-default v-data-table-header__sort-icon\\" aria-hidden=\\"true\\"></i>
+                  <!---->
+                </div>
+              </th>
+              <th class=\\"v-data-table__td v-data-table-column--align-start v-data-table__th v-data-table__th--sortable v-data-table__th v-data-table__th--sortable\\" style=\\"width: 10%; min-width: 10%;\\">
+                <div class=\\"v-data-table-header__content\\"><span>Physical</span><i class=\\"mdi-arrow-up mdi v-icon notranslate v-theme--dark v-icon--size-default v-data-table-header__sort-icon\\" aria-hidden=\\"true\\"></i>
+                  <!---->
+                </div>
+              </th>
+              <th class=\\"v-data-table__td v-data-table-column--align-start v-data-table__th v-data-table__th--sortable v-data-table__th v-data-table__th--sortable\\" style=\\"width: 10%; min-width: 10%;\\">
+                <div class=\\"v-data-table-header__content\\"><span>Poison</span><i class=\\"mdi-arrow-up mdi v-icon notranslate v-theme--dark v-icon--size-default v-data-table-header__sort-icon\\" aria-hidden=\\"true\\"></i>
+                  <!---->
+                </div>
+              </th>
+              <th class=\\"v-data-table__td v-data-table-column--align-start v-data-table__th v-data-table__th--sortable v-data-table__th v-data-table__th--sortable\\" style=\\"width: 10%; min-width: 10%;\\">
+                <div class=\\"v-data-table-header__content\\"><span>Life</span><i class=\\"mdi-arrow-up mdi v-icon notranslate v-theme--dark v-icon--size-default v-data-table-header__sort-icon\\" aria-hidden=\\"true\\"></i>
+                  <!---->
+                </div>
+              </th>
+            </tr>
+            <!---->
+          </thead>
+          <!---->
+          <tbody>
+            <tr class=\\"v-data-table__tr\\">
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">Specter
+                <!--v-if-->
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-cold darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">70</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-magic darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">50</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\"><strong>100</strong></div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-poison darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">75</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"2677–3707\\">3.2K</span></td>
+            </tr>
+            <!---->
+            <tr class=\\"v-data-table__tr\\">
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">Hell Clan
+                <!--v-if-->
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-fire v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\"><strong>110</strong></div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">50</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"4119–5354\\">4.7K</span></td>
+            </tr>
+            <!---->
+            <tr class=\\"v-data-table__tr\\">
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">Ghoul Lord
+                <!--v-if-->
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-cold v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\"><strong>110</strong></div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-fire darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">33</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-lightning darken-5 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">25</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">30</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-poison darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">50</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"6178–8238\\">7.2K</span></td>
+            </tr>
+            <!---->
+            <tr class=\\"v-data-table__tr\\">
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">Lightning Spire <span class=\\"text-caption\\">(static)</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-fire darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">90</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-lightning v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\"><strong>100</strong></div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-magic darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">90</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-poison v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\"><strong>1000</strong></div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"20595–24714\\">22.7K</span></td>
+            </tr>
+            <!---->
+            <tr class=\\"v-data-table__tr\\">
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">The Summoner
+                <!--v-if-->
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-cold darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">75</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-fire darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">75</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-lightning darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">75</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">0</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"9250–11774\\">10.5K</span></td>
+            </tr>
+            <!---->
+          </tbody>
+          <!---->
+          <!---->
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class=\\"mb-8\\">
+    <div class=\\"d-flex\\">
       <h2 class=\\"ml-4 mr-10 align-self-baseline\\">Chaos Sanctuary <span class=\\"v-chip v-theme--dark text-white v-chip--density-default v-chip--size-default v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
         <!---->
         <!---->
