@@ -76,6 +76,7 @@
     </div>
     <v-data-table
       disable-pagination
+      items-per-page="-1"
       hide-default-footer
       :headers="headers"
       :items="mobs"
@@ -311,8 +312,8 @@
         </v-chip>
       </template>
       <template #item.life="{ item }">
-        <span :title="calcLife(item.raw.minHp) + '–' + calcLife(item.raw.maxHp)">
-          {{ humanizedAverage([calcLife(item.raw.minHp), calcLife(item.raw.maxHp)]) }}
+        <span :title="item.raw.lifeMin + '–' + item.raw.lifeMax">
+          {{ item.raw.life }}
         </span>
       </template>
       <template #bottom />
@@ -321,7 +322,7 @@
 </template>
 
 <script>
-import { monLvl } from 'pod-data'
+import { statisticsMap, findName, calcLife } from '@/assets/monsterStatistics'
 
 export default {
   name: 'MapRes',
@@ -415,8 +416,23 @@ export default {
       const decrepifyResistance = this.hasDecrepify ? -50 : 0
       const mobs = []
       for (let m = 0; m < this.mapData.mobs.length; m++) {
-        const mob = { ...this.mapData.mobs[m].data } // copy by value
-        if (this.mapData.mobs[m].note) { mob.note = this.mapData.mobs[m].note } // add note to mobs data
+        const mob = { ...this.mapData.mobs[m] } // copy by value
+        // attempt to fill missing data from vanilla files
+        if (mob.id) {
+          const mobStats = statisticsMap.get(mob.id)
+          if (mobStats) {
+            mob.name = mob.name ?? findName(mobStats.NameStr)
+            mob.cold = mob.cold ?? mobStats['ResCo(H)'] ?? 0
+            mob.fire = mob.fire ?? mobStats['ResFi(H)'] ?? 0
+            mob.lightning = mob.lightning ?? mobStats['ResLi(H)'] ?? 0
+            mob.magic = mob.magic ?? mobStats['ResMa(H)'] ?? 0
+            mob.physical = mob.physical ?? mobStats['ResDm(H)'] ?? 0
+            mob.poison = mob.poison ?? mobStats['ResPo(H)'] ?? 0
+            mob.minHp = mob.minHp ?? mobStats['MinHP(H)'] ?? 0
+            mob.maxHp = mob.maxHp ?? mobStats['MaxHP(H)'] ?? 0
+          }
+        }
+        // apply calculations
         mob.cold = this.applyResistanceReduction(
           mob.cold + this.mapColdResistance,
           this.convictionResistance + this.lowerResResistance,
@@ -447,6 +463,9 @@ export default {
           this.lowerResResistance,
           this.poisonPierce
         )
+        mob.lifeMin = mob.lifeMin ?? calcLife(mob.minHp ?? 0, mob.mLvl ?? this.mapData.areaLevel, this.playerCount, 'Hell', mob.monsterPromotion ?? 'Standard')
+        mob.lifeMax = mob.lifeMax ?? calcLife(mob.maxHp ?? 0, mob.mLvl ?? this.mapData.areaLevel, this.playerCount, 'Hell', mob.monsterPromotion ?? 'Standard')
+        mob.life = this.humanizedAverage([ mob.lifeMin, mob.lifeMax])
         mobs.push(mob)
       }
       return mobs
@@ -487,20 +506,6 @@ export default {
       if (modifiedMobResistance <= 99) { modifiedMobResistance += negativePierceResistance } // apply pierce only if not immune
       modifiedMobResistance = Math.max(modifiedMobResistance, 0) // minimum mob res zero
       return modifiedMobResistance
-    },
-    /**
-     * Calculate monster life for the current area level and player count
-     * @param {number} baseHp - MinHp(H) or MaxHp(H) from MonStats
-     * @see {@link https://www.theamazonbasin.com/wiki/index.php/Life#Monster}
-     * @see {@link https://d2mods.info/forum/kb/viewarticle?a=360}
-     */
-    calcLife: function (baseHp) {
-      if (isNaN(baseHp)) return 0
-      const monsterLvl = this.mapData.areaLevel // nightmare and hell monsters use the area level as the monster level (for standard mobs)
-      const monLvlValue = monLvl[monsterLvl]["HP(H)"] // get hp multiplier from table
-      const life = Math.floor((monLvlValue * baseHp) / 100) // calc life for one player
-      const playerModifier = 0.5 + (0.5 * this.playerCount) // 50% extra life is added per additional player
-      return life * playerModifier
     },
     /**
      * Short formatted average

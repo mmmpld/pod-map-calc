@@ -103,19 +103,5 @@
   "map2_frogdemon3": {"id":"map2_frogdemon3","physical":15,"magic":20,"fire":40,"lightning":40,"cold":25,"poison":33,"minHp":110,"maxHp":140},
   "map2_pantherwoman6": {"id":"map2_pantherwoman6","physical":50,"magic":25,"fire":55,"lightning":55,"cold":50,"poison":50,"minHp":60,"maxHp":100},
   "map2_quillrat5": {"id":"map2_quillrat5","physical":33,"magic":25,"fire":25,"lightning":25,"cold":25,"poison":20,"minHp":20,"maxHp":70},
-  "map2_putriddefiler5": {"id":"map2_putriddefiler5","physical":99,"magic":80,"fire":80,"lightning":80,"cold":80,"poison":80,"minHp":80,"maxHp":130},
-  "hellBovine": {
-    "name": "Hell Bovine",
-    "model": "Hell Bovine",
-    "type": "Animal",
-    "cold": 50,
-    "fire": 50,
-    "lightning": 50,
-    "magic": 33,
-    "physical": 50,
-    "poison": 33,
-    "id": "hellbovine",
-    "minHp":220,
-    "maxHp":270
-  }
+  "map2_putriddefiler5": {"id":"map2_putriddefiler5","physical":99,"magic":80,"fire":80,"lightning":80,"cold":80,"poison":80,"minHp":80,"maxHp":130}
 }
