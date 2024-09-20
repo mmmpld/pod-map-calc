@@ -50,4 +50,26 @@ export default [
       { id: 'diablo', mLvl: 94 },
     ]
   },
+  {
+    title: 'Halls of Vaught (Nihlathak)',
+    areaLevel: 84,
+    mobs: [
+      { id: 'minion9' },
+      { id: 'succubus4' },
+      { id: 'putriddefiler2' },
+      { id: 'reanimatedhorde3' },
+      { id: 'wraith6' },
+      { id: 'arach6' },
+      { id: 'sk_archer9' },
+      { id: 'fetishshaman6' },
+      { id: 'fetish6' },
+      { id: 'fetishblow6', note: 'Blow dart type' },
+      { id: 'baboon6' },
+      { id: 'clawviper9' },
+      { id: 'painworm4' },
+      { id: 'nihlathakboss', mLvl: 95, monsterPromotion: 'Super Unique' },
+      { id: 'minion6', note: 'Nihlathak\'s dudes' },
+      { id: 'suicideminion6', note: 'Nihlathak\'s dudes when whipped' },
+    ]
+  },
 ]
