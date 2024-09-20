@@ -43,15 +43,25 @@ export function findName (nameStr) {
  * @see {@link https://www.theamazonbasin.com/wiki/index.php/Life#Monster}
  * @see {@link https://d2mods.info/forum/kb/viewarticle?a=360}
  */
-export function calcLife (baseHp: number, mLvl: number, playerCount: PlayerCount, difficulty: Difficulties = difficulties.hell, monsterPromotionType: MonsterPromotion = monsterPromotion.standard, isSinglePlayer = false) {
-  const monLvlValue = monLvl[mLvl][hpKey(difficulty, isSinglePlayer)] // get hp multiplier from table
+export function calcLife (baseHp: number, mLvl: number, playerCount: PlayerCount, difficulty: Difficulties = difficulties.hell, monsterPromotionType: MonsterPromotion = monsterPromotion.standard, isNonLadder = false) {
+  const monLvlValue = monLvl[mLvl][hpKey(difficulty, isNonLadder)] // get hp multiplier from table
   const life = Math.floor((monLvlValue * baseHp) / 100) // calc life for one player
   const playerModifier = 0.5 + (0.5 * playerCount) // 50% extra life is added per additional player
   return life * playerModifier * monsterPromotionLifeMultiplier(monsterPromotionType)
 }
 
-function hpKey (difficulty: Difficulties = difficulties.hell, singlePlayer: boolean = false) {
-  if (singlePlayer) {
+function hpKey (difficulty: Difficulties = difficulties.hell, isNonLadder: boolean = false) {
+  if (isNonLadder) {
+    switch (difficulty) {
+      case difficulties.normal:
+        return 'HP'
+      case difficulties.nightmare:
+        return 'HP(N)'
+      case difficulties.hell:
+      default:
+        return 'HP(H)'
+    }
+  } else {
     switch (difficulty) {
       case difficulties.normal:
         return 'L-HP'
@@ -61,15 +71,6 @@ function hpKey (difficulty: Difficulties = difficulties.hell, singlePlayer: bool
       default:
         return 'L-HP(H)'
     }
-  }
-  switch (difficulty) {
-    case difficulties.normal:
-      return 'HP'
-    case difficulties.nightmare:
-      return 'HP(N)'
-    case difficulties.hell:
-    default:
-      return 'HP(H)'
   }
 }
 
