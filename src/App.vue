@@ -14,12 +14,6 @@
         <v-divider vertical />
         <v-col class="px-8">
           <h1>Path of Diablo Map Calculator</h1>
-          <v-badge
-            content="Beta Patch 3"
-            inline
-            color="info"
-          />
-          <BetaThrob />
         </v-col>
       </v-row>
       <v-row>
@@ -192,15 +186,13 @@
 
 <script>
 import MapRes from './components/MapRes.vue'
-import BetaThrob from './components/BetaThrob.vue'
 import mapMobs from './assets/mapMobs'
 import farmMobs from './assets/farmMobs'
 
 export default {
   name: 'App',
   components: {
-    MapRes,
-    BetaThrob
+    MapRes
   },
   data: () => ({
     convictionResistanceRaw: parseInt(localStorage.convictionResistance) || null,
