@@ -651,7 +651,7 @@ exports[`map resistances should be static > has not changed 1`] = `
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-magic darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">90</div>
+                <div class=\\"v-chip__content\\">75</div>
                 <!---->
                 <!----></span>
               </td>
@@ -847,7 +847,7 @@ exports[`map resistances should be static > has not changed 1`] = `
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-magic darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">90</div>
+                <div class=\\"v-chip__content\\">80</div>
                 <!---->
                 <!----></span>
               </td>
@@ -1917,7 +1917,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"22442–25648\\">24K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"17633–19236\\">18.4K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
@@ -2200,7 +2200,7 @@ exports[`map resistances should be static > has not changed 1`] = `
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">99</div>
+                <div class=\\"v-chip__content\\">90</div>
                 <!---->
                 <!----></span>
               </td>
@@ -2966,7 +2966,7 @@ exports[`map resistances should be static > has not changed 1`] = `
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">10</div>
+                <div class=\\"v-chip__content\\">36</div>
                 <!---->
                 <!----></span>
               </td>
@@ -3075,7 +3075,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"13706–16317\\">15K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"26108–32635\\">29.4K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
@@ -3159,10 +3159,10 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">50</div>
+                <div class=\\"v-chip__content\\">78</div>
                 <!---->
                 <!----></span>
               </td>
@@ -3239,14 +3239,14 @@ exports[`map resistances should be static > has not changed 1`] = `
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-fire darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">14</div>
+                <div class=\\"v-chip__content\\">38</div>
                 <!---->
                 <!----></span>
               </td>
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-lightning darken-5 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">14</div>
+                <div class=\\"v-chip__content\\">38</div>
                 <!---->
                 <!----></span>
               </td>
@@ -3260,7 +3260,7 @@ exports[`map resistances should be static > has not changed 1`] = `
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">50</div>
+                <div class=\\"v-chip__content\\">33</div>
                 <!---->
                 <!----></span>
               </td>
@@ -3369,7 +3369,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"2610–3589\\">3.1K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"7179–8485\\">7.8K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
@@ -3560,34 +3560,34 @@ exports[`map resistances should be static > has not changed 1`] = `
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">map1_dkfig2
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">map5_dkmag3
                 <!--v-if-->
               </td>
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-cold darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">25</div>
+                <div class=\\"v-chip__content\\">60</div>
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-fire darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-fire darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">87</div>
-                <!---->
-                <!----></span>
-              </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-lightning darken-5 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
-                <!---->
-                <!---->
-                <div class=\\"v-chip__content\\">25</div>
+                <div class=\\"v-chip__content\\">60</div>
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-lightning darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">0</div>
+                <div class=\\"v-chip__content\\">60</div>
+                <!---->
+                <!----></span>
+              </td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-magic darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+                <!---->
+                <!---->
+                <div class=\\"v-chip__content\\">60</div>
                 <!---->
                 <!----></span>
               </td>
@@ -3601,7 +3601,7 @@ exports[`map resistances should be static > has not changed 1`] = `
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-poison darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">50</div>
+                <div class=\\"v-chip__content\\">60</div>
                 <!---->
                 <!----></span>
               </td>
@@ -3654,11 +3654,11 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"23497–27413\\">25.5K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"26108–28066\\">27.1K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">map1_snowyeti4
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">map1_vilemother3
                 <!--v-if-->
               </td>
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-cold darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
@@ -3801,7 +3801,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"2937–4242\\">3.6K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"7832–9137\\">8.5K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
@@ -3899,7 +3899,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"3589–5874\\">4.7K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"14359–23497\\">18.9K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
@@ -3948,7 +3948,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"32635–35245\\">33.9K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"16317–17622\\">17K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
@@ -3997,7 +3997,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"15664–19581\\">17.6K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"19581–22191\\">20.9K</span></td>
             </tr>
             <!---->
           </tbody>
@@ -4188,7 +4188,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"11095–13706\\">12.4K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"19581–22844\\">21.2K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
@@ -4241,7 +4241,7 @@ exports[`map resistances should be static > has not changed 1`] = `
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">map1_sandmaggot5
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">map2_willowisp5
                 <!--v-if-->
               </td>
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-cold v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
@@ -4286,7 +4286,7 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"7179–9790\\">8.5K</span></td>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span title=\\"2937–5547\\">4.2K</span></td>
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
@@ -4615,8 +4615,12 @@ exports[`map resistances should be static > has not changed 1`] = `
         <!---->
         <div class=\\"v-chip__content\\"><strong>1</strong></div>
         <!---->
-        <!----></span>
-        <!--v-if--><span class=\\"v-chip v-theme--dark text-poison v-chip--density-compact v-chip--size-default v-chip--variant-tonal mr-2\\" draggable=\\"false\\" title=\\"poison immunes\\"><!----><span class=\\"v-chip__underlay\\"></span>
+        <!----></span><span class=\\"v-chip v-theme--dark text-physical v-chip--density-compact v-chip--size-default v-chip--variant-tonal mr-2\\" draggable=\\"false\\" title=\\"physical immunes\\"><!----><span class=\\"v-chip__underlay\\"></span>
+        <!---->
+        <!---->
+        <div class=\\"v-chip__content\\"><strong>1</strong></div>
+        <!---->
+        <!----></span><span class=\\"v-chip v-theme--dark text-poison v-chip--density-compact v-chip--size-default v-chip--variant-tonal mr-2\\" draggable=\\"false\\" title=\\"poison immunes\\"><!----><span class=\\"v-chip__underlay\\"></span>
         <!---->
         <!---->
         <div class=\\"v-chip__content\\"><strong>2</strong></div>
@@ -5051,10 +5055,10 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-physical v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">33</div>
+                <div class=\\"v-chip__content\\"><strong>133</strong></div>
                 <!---->
                 <!----></span>
               </td>
@@ -5118,7 +5122,7 @@ exports[`map resistances should be static > has not changed 1`] = `
             </tr>
             <!---->
             <tr class=\\"v-data-table__tr\\">
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">map1_vampire9
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 15%;\\">map1_cr_lancer5
                 <!--v-if-->
               </td>
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-cold darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
@@ -5298,10 +5302,10 @@ exports[`map resistances should be static > has not changed 1`] = `
                 <!---->
                 <!----></span>
               </td>
-              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark v-chip--density-default v-chip--size-small v-chip--variant-plain\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
+              <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-poison darken-3 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">0</div>
+                <div class=\\"v-chip__content\\">75</div>
                 <!---->
                 <!----></span>
               </td>
@@ -5399,7 +5403,7 @@ exports[`map resistances should be static > has not changed 1`] = `
               <td class=\\"v-data-table__td v-data-table-column--align-start\\" style=\\"width: 10%;\\"><span class=\\"v-chip v-theme--dark text-poison darken-4 v-chip--density-default v-chip--size-small v-chip--variant-tonal\\" draggable=\\"false\\"><!----><span class=\\"v-chip__underlay\\"></span>
                 <!---->
                 <!---->
-                <div class=\\"v-chip__content\\">25</div>
+                <div class=\\"v-chip__content\\">71</div>
                 <!---->
                 <!----></span>
               </td>

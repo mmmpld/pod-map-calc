@@ -102,9 +102,9 @@ export default [
     areaLevel: 88,
     mobs: [
       mobs.map2_succubus5,
-      mobs.map1_dkfig2,
+      mobs.map5_dkmag3,
       mobs.map2_siegebeast5,
-      mobs.map1_snowyeti4,
+      mobs.map1_vilemother3,
       mobs.map1_frozenhorror5,
       mobs.map1_imp5,
       mobs.map1_reanimatedhorde6,
@@ -120,7 +120,7 @@ export default [
       mobs.map2_fingermage3,
       mobs.map1_unraveler9,
       mobs.map2_skeleton4,
-      mobs.map1_sandmaggot5,
+      mobs.map2_willowisp5,
       mobs.map1_arach5,
       mobs.map1_clawviper10,
       mobs.map1_overseer6,
@@ -142,7 +142,7 @@ export default [
       mobs.map1_skmage_fire7,
       mobs.map1_skeleton5,
       mobs.map1_siegebeast5,
-      mobs.map1_vampire9,
+      mobs.map1_cr_lancer5,
     ]
   },
   {

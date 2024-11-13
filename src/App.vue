@@ -15,7 +15,7 @@
         <v-col class="px-8">
           <h1>Path of Diablo Map Calculator</h1>
           <v-badge
-            content="Beta Patch 2"
+            content="Beta Patch 3"
             inline
             color="info"
           />
