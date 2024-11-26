@@ -34,6 +34,22 @@ export default [
     ]
   },
   {
+    title: 'Abyssal Furnace',
+    areaLevel: 87,
+    mobs: [
+      mobs.map2_goatman5,
+      mobs.map_vulture5,
+      mobs.map4_sandraider7,
+      mobs.map2_wraith5,
+      mobs.map2_zealot5,
+      mobs.map2_brute1,
+      mobs.map3_cantor6,
+      mobs.map2_thornhulk4,
+      mobs.map2_sandleaper5,
+      mobs.map3_willowisp5
+    ]
+  },
+  {
     title: 'Dim Cellar',
     areaLevel: 87,
     mobs: [
