@@ -90,7 +90,7 @@ export default {
   "map2_overseer6": {"id":"map2_overseer6","physical":40,"magic":4,"fire":33,"lightning":20,"cold":33,"poison":4,"minHp":400,"maxHp":500},
   "map3_overseer6": {"id":"map3_overseer6","physical":33,"magic":15,"fire":33,"lightning":20,"cold":20,"poison":25,"minHp":400,"maxHp":500},
   "map1_pantherwoman6": {"id":"map1_pantherwoman6","physical":50,"magic":0,"fire":50,"lightning":50,"cold":50,"poison":50,"minHp":60,"maxHp":100},
-  "map2_scarab5": {"id":"map2_scarab5","physical":33,"magic":10,"fire":10,"lightning":109,"cold":0,"poison":10,"minHp":70,"maxHp":110},
+  "map2_scarab5": {"id":"map2_scarab5","physical":33,"magic":10,"fire":10,"lightning":119,"cold":0,"poison":10,"minHp":70,"maxHp":110},
   "map2_snowyeti4": {"id":"map2_snowyeti4","physical":33,"magic":4,"fire":4,"lightning":25,"cold":87,"poison":4,"minHp":580,"maxHp":600},
   "map2_reanimatedhorde6": {"id":"map2_reanimatedhorde6","physical":33,"magic":50,"fire":38,"lightning":38,"cold":0,"poison":83,"minHp":110,"maxHp":135},
   "map1_fallen5": {"id":"map1_fallen5","physical":50,"magic":75,"fire":120,"lightning":75,"cold":75,"poison":75,"minHp":250,"maxHp":270},
