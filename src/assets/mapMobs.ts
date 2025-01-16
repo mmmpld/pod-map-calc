@@ -158,7 +158,7 @@ export default [
       mobs.map1_skmage_fire7,
       mobs.map1_skeleton5,
       mobs.map1_siegebeast5,
-      mobs.map1_cr_lancer5,
+      mobs.map1_vampire9,
     ]
   },
   {

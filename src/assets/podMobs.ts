@@ -13,6 +13,7 @@ export default {
   "map1_cantor6": {"id":"map1_cantor6","physical":15,"magic":15,"fire":23,"lightning":50,"cold":23,"poison":5,"minHp":90,"maxHp":130},
   "map1_sk_archer11": {"id":"map1_sk_archer11","physical":33,"magic":10,"fire":68,"lightning":68,"cold":62,"poison":102,"minHp":70,"maxHp":240},
   "map1_cr_lancer5": {"id":"map1_cr_lancer5","physical":90,"magic":0,"fire":119,"lightning":33,"cold":75,"poison":50,"minHp":150,"maxHp":200},
+  "map1_vampire9": {"id":"map1_vampire9","physical":90,"magic":0,"fire":119,"lightning":33,"cold":75,"poison":50,"minHp":150,"maxHp":200},
   "map1_skmage_fire7": {"id":"map1_skmage_fire7","physical":33,"magic":0,"fire":89,"lightning":15,"cold":50,"poison":72,"minHp":55,"maxHp":200},
   "map1_vilemother3": {"id":"map1_vilemother3","physical":40,"magic":0,"fire":0,"lightning":25,"cold":95,"poison":100,"minHp":155,"maxHp":210},
   "map1_overseer6": {"id":"map1_overseer6","physical":40,"magic":0,"fire":33,"lightning":25,"cold":84,"poison":0,"minHp":400,"maxHp":500},
