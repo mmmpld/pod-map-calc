@@ -115,6 +115,7 @@
           <v-main class="flex-column">
             <v-tabs v-model="tab">
               <v-tab data-testid="maps-tab-button">Maps</v-tab>
+              <!-- <v-tab data-testid="beta-tab-button">Beta</v-tab> -->
               <v-tab data-testid="farm-tab-button">Farms</v-tab>
             </v-tabs>
 
@@ -128,6 +129,33 @@
               >
                 <MapRes
                   v-for="(map, index) in maps"
+                  :key="index"
+                  :map-data="map"
+                  :conviction-resistance="convictionResistance"
+                  :lower-res-resistance="lowerResResistance"
+                  :grim-ward-resistance="grimWardResistance"
+                  :has-amplify-damage="hasAmplifyDamage"
+                  :has-decrepify="hasDecrepify"
+                  :cold-pierce="coldPierce"
+                  :fire-pierce="firePierce"
+                  :lightning-pierce="lightningPierce"
+                  :poison-pierce="poisonPierce"
+                  :map-cold-resistance="mapColdResistance"
+                  :map-fire-resistance="mapFireResistance"
+                  :map-lightning-resistance="mapLightningResistance"
+                  :map-magic-resistance="mapMagicResistance"
+                  :map-physical-resistance="mapPhysicalResistance"
+                  :map-poison-resistance="mapPoisonResistance"
+                  :player-count="playerCount"
+                  class="mb-8"
+                />
+              </v-window-item>
+              <v-window-item
+                key="beta"
+                class="maps-tab"
+              >
+                <MapRes
+                  v-for="(map, index) in betaMaps"
                   :key="index"
                   :map-data="map"
                   :conviction-resistance="convictionResistance"
@@ -187,6 +215,7 @@
 <script>
 import MapRes from './components/MapRes.vue'
 import mapMobs from './assets/mapMobs'
+import betaMapMobs from './assets/betaMapMobs'
 import farmMobs from './assets/farmMobs'
 
 export default {
@@ -377,6 +406,7 @@ export default {
   ],
     tab: null,
     maps: mapMobs,
+    betaMaps: betaMapMobs,
     farms: farmMobs
   }),
   computed: {
