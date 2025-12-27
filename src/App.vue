@@ -115,8 +115,8 @@
           <v-main class="flex-column">
             <v-tabs v-model="tab">
               <v-tab data-testid="maps-tab-button">Maps</v-tab>
-              <!-- <v-tab data-testid="beta-tab-button">Beta</v-tab> -->
               <v-tab data-testid="farm-tab-button">Farms</v-tab>
+              <v-tab data-testid="beta-tab-button" disabled>Beta</v-tab>
             </v-tabs>
 
             <v-window
@@ -151,11 +151,11 @@
                 />
               </v-window-item>
               <v-window-item
-                key="beta"
-                class="maps-tab"
+                key="farms"
+                class="farms-tab"
               >
                 <MapRes
-                  v-for="(map, index) in betaMaps"
+                  v-for="(map, index) in farms"
                   :key="index"
                   :map-data="map"
                   :conviction-resistance="convictionResistance"
@@ -178,11 +178,11 @@
                 />
               </v-window-item>
               <v-window-item
-                key="farms"
-                class="farms-tab"
+                key="beta"
+                class="maps-tab"
               >
                 <MapRes
-                  v-for="(map, index) in farms"
+                  v-for="(map, index) in betaMaps"
                   :key="index"
                   :map-data="map"
                   :conviction-resistance="convictionResistance"
