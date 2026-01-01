@@ -116,7 +116,7 @@
             <v-tabs v-model="tab">
               <v-tab data-testid="maps-tab-button">Maps</v-tab>
               <v-tab data-testid="farm-tab-button">Farms</v-tab>
-              <v-tab data-testid="beta-tab-button" disabled>Beta</v-tab>
+              <v-tab data-testid="beta-tab-button">Beta</v-tab>
             </v-tabs>
 
             <v-window

@@ -2,7 +2,7 @@ import mobs from './betaPodMobs'
 
 export default [
   {
-    title: 'Decomposing Settlement',
+    title: 'Decayed Ziggurat (Decomposing Settlement)',
     areaLevel: 86,
     mobs: [
       mobs.map2_sandmaggot5,
@@ -46,7 +46,7 @@ export default [
       mobs.map3_cantor6,
       mobs.map2_thornhulk4,
       mobs.map2_sandleaper5,
-      mobs.map3_willowisp5
+      mobs.map3_willowisp5,
     ]
   },
   {
