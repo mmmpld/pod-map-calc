@@ -3,6 +3,7 @@ import mobs from './betaPodMobs'
 export default [
   {
     title: 'Decayed Ziggurat (Decomposing Settlement)',
+    note: 'Not updated.',
     areaLevel: 86,
     mobs: [
       mobs.map2_sandmaggot5,
@@ -19,6 +20,7 @@ export default [
   },
   {
     title: 'Baleful Alcazar',
+    note: 'Updated. Randomly picks 1 of all these immune types: Physical, Magic, Fire, Cold , Poison, Lightning.',
     areaLevel: 86,
     mobs: [
       mobs.map3_zombie5,
@@ -35,6 +37,7 @@ export default [
   },
   {
     title: 'Abyssal Furnace',
+    note: 'Updated. Randomly picks 2 of these 3 types: Fire, Lightning, Poison.',
     areaLevel: 87,
     mobs: [
       mobs.map2_goatman5,
@@ -51,6 +54,7 @@ export default [
   },
   {
     title: 'Dim Cellar',
+    note: 'Not updated.',
     areaLevel: 87,
     mobs: [
       mobs.map2_blunderbore5,
@@ -67,6 +71,7 @@ export default [
   },
   {
     title: 'Icy Cavern',
+    note: 'Not updated.',
     areaLevel: 87,
     mobs: [
       mobs.map1_blunderbore5,
@@ -83,6 +88,7 @@ export default [
   },
   {
     title: 'Desecrated Temple',
+    note: 'Not updated.',
     areaLevel: 87,
     mobs: [
       mobs.map2_cantor4,
@@ -99,6 +105,7 @@ export default [
   },
   {
     title: 'Musty Crypt',
+    note: 'Not updated.',
     areaLevel: 88,
     mobs: [
       mobs.map3_batdemon7,
@@ -115,6 +122,7 @@ export default [
   },
   {
     title: 'Frigid Plateau',
+    note: 'Not updated.',
     areaLevel: 88,
     mobs: [
       mobs.map2_succubus5,
@@ -131,6 +139,7 @@ export default [
   },
   {
     title: 'Forgotten Desert',
+    note: 'Not updated.',
     areaLevel: 88,
     mobs: [
       mobs.map2_fingermage3,
@@ -147,6 +156,7 @@ export default [
   },
   {
     title: 'Burnt Forest',
+    note: 'Not updated.',
     areaLevel: 88,
     mobs: [
       mobs.map1_fingermage5,
@@ -163,6 +173,7 @@ export default [
   },
   {
     title: 'Ruined Citadel',
+    note: 'Not updated.',
     areaLevel: 88,
     mobs: [
       mobs.map3_blunderbore6,
@@ -179,6 +190,7 @@ export default [
   },
   {
     title: 'Pleasant Pasture',
+    note: 'Not updated.',
     areaLevel: 86,
     mobs: [
       { id: 'hellbovine', model: 'Hell Bovine', type: 'Animal' }

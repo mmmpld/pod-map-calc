@@ -74,6 +74,9 @@
         no immunes
       </div>
     </div>
+    <div v-if="mapData.note" class="text-caption ml-4 mb-1">
+      {{  mapData.note }}
+    </div>
     <v-data-table
       disable-pagination
       items-per-page="-1"
