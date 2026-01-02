@@ -55,15 +55,27 @@
               min="0"
             />
             <v-text-field
+              v-model.number="firePierceRaw"
+              type="number"
+              label="Fire Pierce %"
+              min="0"
+            />
+            <v-text-field
               v-model.number="lightningPierceRaw"
               type="number"
               label="Lightning Pierce %"
               min="0"
             />
             <v-text-field
-              v-model.number="firePierceRaw"
+              v-model.number="magicPierceRaw"
               type="number"
-              label="Fire Pierce %"
+              label="Magic Pierce %"
+              min="0"
+            />
+            <v-text-field
+              v-model.number="physicalPierceRaw"
+              type="number"
+              label="Physical Pierce %"
               min="0"
             />
             <v-text-field
@@ -145,6 +157,8 @@
                   :cold-pierce="coldPierce"
                   :fire-pierce="firePierce"
                   :lightning-pierce="lightningPierce"
+                  :magic-pierce="magicPierce"
+                  :physical-pierce="physicalPierce"
                   :poison-pierce="poisonPierce"
                   :map-cold-resistance="mapColdResistance"
                   :map-fire-resistance="mapFireResistance"
@@ -172,6 +186,8 @@
                   :cold-pierce="coldPierce"
                   :fire-pierce="firePierce"
                   :lightning-pierce="lightningPierce"
+                  :magic-pierce="magicPierce"
+                  :physical-pierce="physicalPierce"
                   :poison-pierce="poisonPierce"
                   :map-cold-resistance="mapColdResistance"
                   :map-fire-resistance="mapFireResistance"
@@ -199,6 +215,8 @@
                   :cold-pierce="coldPierce"
                   :fire-pierce="firePierce"
                   :lightning-pierce="lightningPierce"
+                  :magic-pierce="magicPierce"
+                  :physical-pierce="physicalPierce"
                   :poison-pierce="poisonPierce"
                   :map-cold-resistance="mapColdResistance"
                   :map-fire-resistance="mapFireResistance"
@@ -392,6 +410,8 @@ export default {
     coldPierceRaw: parseInt(localStorage.coldPierce) || null,
     firePierceRaw: parseInt(localStorage.firePierce) || null,
     lightningPierceRaw: parseInt(localStorage.lightningPierce) || null,
+    magicPierceRaw: parseInt(localStorage.magicPierce) || null,
+    physicalPierceRaw: parseInt(localStorage.physicalPierce) || null,
     poisonPierceRaw: parseInt(localStorage.poisonPierce) || null,
     mapColdResistanceRaw: null,
     mapFireResistanceRaw: null,
@@ -462,6 +482,22 @@ export default {
         return this.lightningPierceRaw
       }
       localStorage.removeItem('lightningPierce')
+      return 0
+    },
+    magicPierce: function () {
+      if (typeof (this.magicPierceRaw) === 'number') {
+        localStorage.magicPierce = this.magicPierceRaw
+        return this.magicPierceRaw
+      }
+      localStorage.removeItem('magicPierce')
+      return 0
+    },
+    physicalPierce: function () {
+      if (typeof (this.physicalPierceRaw) === 'number') {
+        localStorage.physicalPierce = this.physicalPierceRaw
+        return this.physicalPierceRaw
+      }
+      localStorage.removeItem('physicalPierce')
       return 0
     },
     poisonPierce: function () {

@@ -366,6 +366,14 @@ export default {
       type: Number,
       default: 0
     },
+    magicPierce: {
+      type: Number,
+      default: 0
+    },
+    physicalPierce: {
+      type: Number,
+      default: 0
+    },
     poisonPierce: {
       type: Number,
       default: 0
@@ -454,12 +462,12 @@ export default {
         mob.magic = this.applyResistanceReduction(
           mob.magic + this.mapMagicResistance,
           0,
-          0
+          this.magicPierce
         )
         mob.physical = this.applyResistanceReduction(
           mob.physical + this.mapPhysicalResistance,
           this.grimWardResistance + ampResistance + decrepifyResistance,
-          0
+          this.physicalPierce
         )
         mob.poison = this.applyResistanceReduction(
           mob.poison + this.mapPoisonResistance,
