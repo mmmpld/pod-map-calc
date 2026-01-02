@@ -74,15 +74,15 @@
             />
             <h3>Additional Monster Resistance</h3>
             <v-text-field
-              v-model.number="mapPhysicalResistanceRaw"
-              type="number"
-              label="Map Physical Resist %"
-              min="0"
-            />
-            <v-text-field
               v-model.number="mapColdResistanceRaw"
               type="number"
               label="Map Cold Resist %"
+              min="0"
+            />
+            <v-text-field
+              v-model.number="mapFireResistanceRaw"
+              type="number"
+              label="Map Fire Resist %"
               min="0"
             />
             <v-text-field
@@ -92,9 +92,15 @@
               min="0"
             />
             <v-text-field
-              v-model.number="mapFireResistanceRaw"
+              v-model.number="mapMagicResistanceRaw"
               type="number"
-              label="Map Fire Resist %"
+              label="Map Magic Resist %"
+              min="0"
+            />
+            <v-text-field
+              v-model.number="mapPhysicalResistanceRaw"
+              type="number"
+              label="Map Physical Resist %"
               min="0"
             />
             <v-text-field
