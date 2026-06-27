@@ -140,6 +140,7 @@
             <v-window
               v-model="tab"
               class="pt-5"
+              :touch="false"
             >
               <v-window-item
                 key="maps"
